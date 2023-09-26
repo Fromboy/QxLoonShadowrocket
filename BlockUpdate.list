@@ -1,8 +1,8 @@
 # !name=屏蔽系统更新
 # !desc=屏蔽 iOS 系统更新。
 # !date=2023-09-26 10:52:05
-# Shadowrocket url=https://raw.githubusercontent.com/xOS/Config/Her/Module/General/BlockUpdate.sgmodule
-# Loon uel=
+# Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
+# Loon uel=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 
 [Rule]
