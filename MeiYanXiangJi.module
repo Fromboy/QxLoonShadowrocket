@@ -1,0 +1,12 @@
+## 脚本自用请勿传播
+#!name=美颜相机解锁
+#!desc=美颜相机解锁会员(IOS >= 15)
+# > 美颜相机(2022.11.15)
+
+[MITM]
+hostname = api.account.meitu.com, api.meiyan.com
+[Script]
+# 解锁个人中心
+美颜相机 = type=http-response, pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json) script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/MeiYanXiangJi.js, timeout=60, script-update-interval=0
+# 解锁装饰
+美颜相机 = type=http-request, pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json) script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/MeiYanXiangJi.js, timeout=60, script-update-interval=0
