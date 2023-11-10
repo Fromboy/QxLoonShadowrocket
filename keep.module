@@ -1,0 +1,17 @@
+
+/******************************
+
+脚本功能：Keep -跑步健身——解锁VIP
+下载地址：https://is.gd/crzdNV
+软件版本：7.36.0
+
+*******************************
+
+
+
+
+[Script]
+keep = type=http-response,pattern=^https:\/\/api\.gotokeep\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/keep.js
+
+[MITM]
+hostname= %APPEND% api.gotokeep.com
