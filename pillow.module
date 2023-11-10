@@ -1,10 +1,20 @@
-﻿#!name=Pillow
-#!desc=Pillow解锁会员
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pillow.png
-#!homepage=https://yfamily.vercel.app#!date=2023-11-10
-#!author=CheeryTodo
-
-[Script]
-Pillow=type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts),requires-body=1 ,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/pillow.js
-[MITM]
+﻿#!name=Pillow
+
+#!desc=Pillow解锁会员
+
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pillow.png
+
+#!homepage=https://yfamily.vercel.app
+
+#!date=2023-11-10
+
+
+
+
+[Script]
+
+Pillow=type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts),requires-body=1 ,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/pillow.js
+
+[MITM]
+
 hostname = %APPEND% api.revenuecat.com
