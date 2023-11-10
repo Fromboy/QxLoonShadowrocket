@@ -1,6 +1,11 @@
-# *********脚本功能：Keep -跑步健身——解锁VIP
-# 下载地址：https://is.gd/crzdNV
-# *********软件版本：7.36.0
+#!url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/keep.module
+#!name=Keep解锁🔓
+#!desc=2023.10.04 部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
+# 功能: 1.解锁直播跟练课（包括，单车🚴瑜伽🧘‍♀️操课等） 2.显示永久会员3.去除随机广告
+
+# *********脚本功能：Keep -跑步健身——解锁VIP 
+# 下载地址：https://is.gd/crzdNV 
+# *********软件版本：(版本7.36.0最完美)
 
 [Script]
 keep=type=http-response,pattern=^https:\/\/api\.gotokeep\.com,requires-body=1,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/keep.js
