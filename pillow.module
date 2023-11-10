@@ -13,7 +13,7 @@
 
 [Script]
 
-Pillow=type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts),requires-body=1 ,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/pillow.js
+Pillow=type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts),requires-body=1 ,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Pillow.js
 
 [MITM]
 
