@@ -8,7 +8,9 @@
 # *********软件版本：(版本7.36.0最完美)
 
 [Script]
+
 keep=type=http-response,pattern=^https:\/\/api\.gotokeep\.com,requires-body=1,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/keep.js
 
 [MITM]
+
 hostname = %APPEND% api.gotokeep.com
