@@ -2,11 +2,11 @@
 #!desc=屏蔽 iOS 系统更新。
 #!date=2023-09-26 10:52:05
 # ===================各个屏蔽地址==========================
-# Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
+# Shadowrocket url=
 
-# Loon uel=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
+# Loon uel=
 
-# QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
+# QuantumultX url=
 
 [Rule]
 DOMAIN,gdmf.apple.com,REJECT
