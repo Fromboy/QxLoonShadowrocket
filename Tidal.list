@@ -1,0 +1,19 @@
+# Tidal 分流规则合辑
+# Date 2023-11-24
+# TOTAL: 6
+# Clash配置分流
+/*TOTAL: 6
+DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🇺🇲 美国节点
+DOMAIN-SUFFIX,tidal.com,🇺🇲 美国节点
+DOMAIN-SUFFIX,tidalhifi.com,🇺🇲 美国节点
+DOMAIN-SUFFIX,wimpmusic.com,🇺🇲 美国节点
+USER-AGENT,TIDAL*,🇺🇲 美国节点
+USER-AGENT,TIDAL*dia,🇺🇲 美国节点
+*/
+
+HOST-SUFFIX,tidal-cms.s3.amazonaws.com,TIDAL
+HOST-SUFFIX,tidal.com,TIDAL
+HOST-SUFFIX,tidalhifi.com,TIDAL
+HOST-SUFFIX,wimpmusic.com,TIDAL
+USER-AGENT,TIDAL*,TIDAL
+USER-AGENT,TIDAL*dia,TIDAL
