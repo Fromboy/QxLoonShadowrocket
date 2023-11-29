@@ -1,6 +1,6 @@
 name: 彩云天气SVIP
 desc: 彩云天气会员解锁
-#!author= 
+#!author= https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/ColorWeather.stoverride
 
 http:
   rewrite:
