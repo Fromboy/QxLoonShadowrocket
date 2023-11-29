@@ -7,7 +7,6 @@
 # Stash url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
 
 rules:
-
   - DOMAIN,mesu.apple.com,REJECT
   - DOMAIN,gdmf.apple.com,REJECT
   - DOMAIN,updates-http.cdn-apple.com,REJECT
