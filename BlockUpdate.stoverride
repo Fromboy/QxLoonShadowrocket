@@ -5,8 +5,16 @@
 # Loon uel=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 # Stash url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
-[Rule]
-DOMAIN,mesu.apple.com,REJECT
-DOMAIN,gdmf.apple.com,REJECT
-DOMAIN,updates-http.cdn-apple.com,REJECT
-DOMAIN,xp.apple.com,REJECT
+
+rules:
+
+  - DOMAIN,mesu.apple.com,REJECT
+  - DOMAIN,gdmf.apple.com,REJECT
+  - DOMAIN,updates-http.cdn-apple.com,REJECT
+  - DOMAIN,xp.apple.com,REJECT
+  - DOMAIN,gdmf.apple.com.akadns.net,REJECT
+  - DOMAIN,mesu-cdn.apple.com.akadns.net,REJECT
+  - DOMAIN,mesu-cdn.origin-apple.com.akadns.net,REJECT
+  - DOMAIN,mesu.g.aaplimg.com,REJECT
+  - DOMAIN,appldnld.apple.com,REJECT
+  - DOMAIN,appldnld.apple.com.akadns.net,REJECT
