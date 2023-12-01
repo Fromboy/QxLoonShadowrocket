@@ -3,16 +3,10 @@
 #!script url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule
 #!date=2023-09-26 10:52:05
 # ===================各个屏蔽地址==========================
-# Shadowrocket 
-# url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
-# Surge 
-# url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule（比较全面）
-
-# Loon 
-# url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
-
-# QuantumultX 
-# url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
+# Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
+# Surge url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule（比较全面）
+# Loon url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
+# QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 
 [Rule]
 DOMAIN,gdmf.apple.com,REJECT
