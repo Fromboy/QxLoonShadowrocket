@@ -8,7 +8,8 @@
 # Loon uel=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
 
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
-
+[script]
+script-path=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule
 [Rule]
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,gdmf.apple.com.akadns.net,REJECT
