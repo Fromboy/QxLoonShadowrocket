@@ -1,0 +1,8 @@
+#!name=QQ音乐热歌榜
+#!desc=QQ音乐热歌榜面板。将想要显示的条目数量填入songCount=，例：songCount=10。不填默认展示前8条
+
+[Panel]
+qm=script-name=qm
+
+[Script]
+qm=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/qqmusic.js,argument=icon=music.note.list&color=#31c27c&songCount=
