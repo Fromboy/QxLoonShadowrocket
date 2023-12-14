@@ -1,0 +1,7 @@
+#!name=节点详情
+#!desc=因国内很多软件都显示IP地址，且部分需要住宅IP才能生效(比如抖音)，使用了代理后显示IP未知是因为代理节点是机房的IP，所以写个脚本判断当前节点是不是住宅IP
+#!homepage=
+[Panel]
+节点详情=script-name=节点详情
+[Script]
+当前汇率=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/server_info.js,argument=icon=yensign.circle&color=#D4AF37
