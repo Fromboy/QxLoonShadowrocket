@@ -1,5 +1,6 @@
 #!name=网易云热歌榜
 #!desc=网易云热歌榜面板。将想要显示的条目数量填入songCount=，例：songCount=10。不填默认展示前8条
+#!date=2023-12-13
 
 [Panel]
 nm=script-name=nm
