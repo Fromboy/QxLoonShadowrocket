@@ -5,4 +5,4 @@
 Music100=script-name=Music100
 
 [Script]
-Music100=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Music100.js,argument=icon=music.note.list&color=#fc5656&songCount=&sort=billboard-artist-200
+Music100=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Music100.js,argument=icon=music.note.list&color=#fc5656&songCount=&sort=billboard-global-200
