@@ -4,4 +4,4 @@
 [Panel]
 节点详情=script-name=节点详情
 [Script]
-当前汇率=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/server_info.js,argument=icon=yensign.circle&color=#D4AF37
+节点详情=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/server_info.js,argument=icon=yensign.circle&color=#D4AF37
