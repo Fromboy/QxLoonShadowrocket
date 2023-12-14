@@ -1,4 +1,4 @@
 #!name=当前汇率
 #!#!desc=汇率面板
-
+[Script]
 当前汇率=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/rates.js,argument=icon=yensign.circle&color=#D4AF37
