@@ -1,0 +1,10 @@
+#!name=NetSpeed
+#!desc=测试网络下载速度,延迟并根据速度和延迟改变图表颜色,乌龟🐢兔子🐰闪电⚡️
+
+[panel]
+
+NetSpeed = script-name=NetSpeed,update-interval=-1
+
+[script]
+
+NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Net_Speed.js,argument=title=NetSpeed&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb=3
