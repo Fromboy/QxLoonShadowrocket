@@ -5,4 +5,4 @@
 nm=script-name=nm
 
 [Script]
-nm=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/music163.js,argument=icon=headphones&color=#e20000&songCount=
+nm=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/music163.js,argument=icon=headphones&color=#e20000&songCount=10
