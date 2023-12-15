@@ -5,4 +5,4 @@
 qm=script-name=qm
 
 [Script]
-qm=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/qqmusic.js,argument=icon=music.note.list&color=#31c27c&songCount=
+qm=type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/qqmusic.js,argument=icon=music.note.list&color=#31c27c&songCount=10
