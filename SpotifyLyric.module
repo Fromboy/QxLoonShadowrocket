@@ -1,0 +1,12 @@
+#!name= spotify歌翻译
+#!desc= 2000的百度账户
+
+[MITM]
+# 因破解会员模块已经mitm故此模块注释掉
+#hostname = %APPEND% spclient.wg.spotify.com
+[Script]
+# 修改下方argument中的appid和securityKey,填入自己的appid和密钥
+spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/spotifylyric.js,argument=appid=20230915001818599&securityKey=lwsZnUDzv5cvOQCQvAyb
+/*
+-----------申请百度翻译(有标准版和高级版 建议申请高级版)api--------------2022年8月1日起，通用翻译API标准版免费调用量调整为5万字符/月，高级版免费调用量调整为100万字符/月注册百度翻译个人开发者: http://api.fanyi.baidu.com/register注册后如果需要认证可自行选择是否实人认证(高级版需要验证)开通(通用翻译)API服务: https://fanyi-api.baidu.com/choose成功后即可看到自己的appid和密钥(不要泄露给任何人): http://api.fanyi.baidu.com/manage/developer
+*/
