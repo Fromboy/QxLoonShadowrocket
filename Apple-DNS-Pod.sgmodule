@@ -1,5 +1,5 @@
-#!name=DNSPod
-#!desc=Apple下载解析加速。
+#!name=🍎DNSPod
+#!desc=Apple🍎下载解析加速。
 
 [Host]
 *.itunes.apple.com = script:Dnspod
