@@ -1,5 +1,5 @@
 #!name=NetSpeed
-#!desc=测试网络下载速度,延迟并根据速度和延迟改变图表颜色,乌龟🐢兔子🐰闪电⚡️
+#!desc=测试网络下载速度,延迟并根据速度和延迟改变图表颜色,乌龟🐢兔子🐰闪电⚡️ ？
 #!auther=@xream @wuhu_zzz @keywos @整点猫咪 技术指导：整点薯条
 ## 各种花里胡哨参数，通过argument传入，用=连接key及相应value，用&链接各种key，可以任意选择想填入的参数
 ## title：标题
@@ -10,9 +10,7 @@
 ## ⚠️不想变化多端？？
 ## 可直接使用最基本的panel参数，title、icon、icon-color
 ## 配置实例：titile=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
-
-
-[Panel]
+[PANEL]
 NetSpeed = script-name=NetSpeed,update-interval=-1
-[script]
+[SCRIPT]
 NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Net_Speed.js,argument=title=NetSpeed&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb=3
