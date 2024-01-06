@@ -13,3 +13,10 @@ DOMAIN,mesu.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
+
+# 屏蔽mac系统更新
+DOMAIN,swscan.apple.com,REJECT
+DOMAIN,swdist.apple.com,REJECT
+DOMAIN,swcdn.apple.com,REJECT
+DOMAIN,swquery.apple.com,REJECT
+DOMAIN,swdownload.apple.com,REJECT
