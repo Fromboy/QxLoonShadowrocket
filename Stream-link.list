@@ -1,0 +1,9 @@
+#  分流规则合辑
+# Date 2024-02-01
+# 网址: http://www.stream-link.org
+# EPG: http://content.stream-link.org/epg/guide.xml
+
+#直播 stream-link直播域名，不适用于中国大陆和台湾节点
+Host-suffix, stream-link.online, stream-link
+Host-suffix, stream-link.org, stream-link
+
