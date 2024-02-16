@@ -8,7 +8,7 @@
 
 # 你猜为什么会有这个插件呢？
 
-[Rule]
+# [Rule]
 # DNS Leak from Shadowrocket Default
 HOST-SUFFIX, dnsleaktest.com, PROXY
 HOST-SUFFIX, dnsleak.com, PROXY
