@@ -12,6 +12,26 @@
 # 🔔7）不要頻繁刷新訂閱，同時嚴禁長時間佔用、濫用資源以及拉流!(系統自動封IP，並且456錯誤)
 
 #直播 stream-link直播域名，不适用于中国大陆和台湾节点
+# NAME:stream-link
+# AUTHOR:stream-link
+# UPDATED: 2024-01-23 16:40:00
+# HOST-SUFFIX: 2
+# TOTAL: 2
 Host-suffix, stream-link.online, stream-link
 Host-suffix, stream-link.org, stream-link
+
+# 直播livednow.com直播域名,不适用于中国大陆和台湾节点
+# NAME: livednow
+# AUTHOR: livednow.com
+# UPDATED: 2024-01-23 16:40:00
+# HOST-SUFFIX: 5
+# TOTAL: 5
+HOST-SUFFIX,livednow.com,Livednow
+HOST-SUFFIX,hinet.net,Livednow
+HOST-SUFFIX,hoy.tv,Livednow
+HOST-SUFFIX,akamaized.net,Livednow
+HOST-SUFFIX,tvb.com,Livednow
+
+# 加速服务器地址cdn.jsdelivr.net
+Host-suffix, jsdelivr.net, jsdelivr
 
