@@ -1,0 +1,46 @@
+#!name = DNS防泄漏
+#!desc = 专为小白设计的DNS防泄漏
+#!openUrl = 
+#!author = 非正常人类研究中心
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Prevent_DNS_Leaks.png
+#!date = 2024-01-11 21:38:24
+
+# 你猜为什么会有这个插件呢？
+
+[Rule]
+# DNS Leak from Shadowrocket Default
+HOST-SUFFIX, dnsleaktest.com, PROXY
+HOST-SUFFIX, dnsleak.com, PROXY
+HOST-SUFFIX, expressvpn.com, PROXY
+HOST-SUFFIX, nordvpn.com, PROXY
+HOST-SUFFIX, surfshark.com, PROXY
+HOST-SUFFIX, ipleak.net, PROXY
+HOST-SUFFIX, perfect-privacy.com, PROXY
+HOST-SUFFIX, browserleaks.com, PROXY
+HOST-SUFFIX, browserleaks.org, PROXY
+HOST-SUFFIX, vpnunlimited.com, PROXY
+HOST-SUFFIX, whoer.net, PROXY
+HOST-SUFFIX, whrq.net, PROXY
+
+# Astrill
+HOST-SUFFIX, astrill.com, PROXY
+HOST-SUFFIX, astrill.org, PROXY
+HOST-SUFFIX, dnsleak.asn247.net, PROXY
+
+# Surfshark
+HOST-SUFFIX, surfshark.com, PROXY
+HOST-SUFFIX, surfsharkdns.com, PROXY
+
+# Pixelscan
+HOST-SUFFIX, pixelscan.net, PROXY
+
+# PING0
+HOST, ipv4.ping0.cc, PROXY
+HOST, ipv6.ping0.cc, PROXY
+
+# IPAPI.CO
+HOST-SUFFIX, ipapi.co, PROXY
+
+# BrowserScan
+HOST, ip-scan.adspower.net, PROXY
