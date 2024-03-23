@@ -34,7 +34,7 @@ DOMAIN,paddle.s3.amazonaws.com,REJECT
 DOMAIN,fireball.studio,REJECT
 DOMAIN,in.appcenter.ms,REJECT
 
-# 屏蔽app cleanaer系统更新 24-02-22
+# 屏蔽APP Cleaner系统更新 24-02-22
 DOMAIN,download.nektony.com,REJECT
 
 
