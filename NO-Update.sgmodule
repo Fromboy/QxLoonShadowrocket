@@ -29,7 +29,9 @@ DOMAIN,swdownload.apple.com,REJECT
 
 # 屏蔽One Switch系统更新 24-02-22
 DOMAIN,paddleapi.com,REJECT
-DOMAIN, paddle.com,REJECT
-DOMAIN, paddle.s3.amazonaws.com,REJECT
+DOMAIN,paddle.com,REJECT
+DOMAIN,paddle.s3.amazonaws.com,REJECT
+DOMAIN,fireball.studio,REJECT
+DOMAIN,in.appcenter.ms,REJECT
 
 
