@@ -13,3 +13,30 @@ DOMAIN,mesu.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
+
+# 屏蔽mac系统更新
+DOMAIN,swscan.apple.com,REJECT
+DOMAIN,swdist.apple.com,REJECT
+DOMAIN,swcdn.apple.com,REJECT
+DOMAIN,swquery.apple.com,REJECT
+DOMAIN,swdownload.apple.com,REJECT
+
+# 屏蔽One Switch快捷开关系统更新 24-02-22
+DOMAIN,paddleapi.com,REJECT
+DOMAIN,paddle.com,REJECT
+DOMAIN,paddle.s3.amazonaws.com,REJECT
+DOMAIN,fireball.studio,REJECT
+DOMAIN,in.appcenter.ms,REJECT
+
+# 屏蔽APP Cleaner卸载软件系统更新 24-02-22
+DOMAIN,download.nektony.com,REJECT
+
+# 屏蔽CleanMY MAC清理软件系统更新 24-02-22
+DOMAIN,updates.devmate.com,REJECT
+
+# 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
+DOMAIN,ic.adobe.io,REJECT
+DOMAIN,crs.cr.adobe.com,REJECT
+DOMAIN,ims-prod06.adobelogin.com,REJECT
+DOMAIN,lcs-cops.adobe.io.com,REJECT
+DOMAIN,4vzokhpsbs.adobe.io,REJECT
