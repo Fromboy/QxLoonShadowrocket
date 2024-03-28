@@ -45,4 +45,6 @@ DOMAIN,ic.adobe.io,REJECT
 DOMAIN,crs.cr.adobe.com,REJECT
 DOMAIN,ims-prod06.adobelogin.com,REJECT
 DOMAIN,lcs-cops.adobe.io.com,REJECT
+DOMAIN,4vzokhpsbs.adobe.io,REJECT
+
 
