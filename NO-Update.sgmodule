@@ -40,5 +40,8 @@ DOMAIN,download.nektony.com,REJECT
 # 屏蔽CleanMY MAC清理软件系统更新 24-02-22
 DOMAIN,updates.devmate.com,REJECT
 
+# 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
+DOMAIN,ic.adobe.io,REJECT
+DOMAIN,crs.cr.adobe.com,REJECT
 
 
