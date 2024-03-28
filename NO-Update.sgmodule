@@ -43,5 +43,6 @@ DOMAIN,updates.devmate.com,REJECT
 # 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
 DOMAIN,ic.adobe.io,REJECT
 DOMAIN,crs.cr.adobe.com,REJECT
-
+DOMAIN,ims-prod06.adobelogin.com,REJECT
+DOMAIN,lcs-cops.adobe.io.com,REJECT
 
