@@ -8,7 +8,7 @@
 
 #QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 
-[Rule]
+# [Rule]
 host-suffix,mesu.apple.com,REJECT
 host-suffix,gdmf.apple.com,REJECT
 host-suffix,updates-http.cdn-apple.com,REJECT
