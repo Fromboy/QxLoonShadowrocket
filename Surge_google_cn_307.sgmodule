@@ -1,8 +1,11 @@
-#!name= 谷歌中国重定向
+#!name= 谷歌中国重定向Google Rewrite
 #!desc=将 google.cn 的请求重定向到 google.com
 
 [URL Rewrite]
 ^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 307
+^https?://(www\.)?g\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn url 302 https://www.google.com
+^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
 
 [MITM]
 hostname = %APPEND% g.cn,www.g.cn,google.cn,www.google.cn
