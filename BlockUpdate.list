@@ -27,6 +27,9 @@ host-suffix,paddle.s3.amazonaws.com,REJECT
 host-suffix,fireball.studio,REJECT
 host-suffix,in.appcenter.ms,REJECT
 
+# 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
+host-suffix,menubarx.app,REJECT
+
 # 屏蔽APP Cleaner卸载软件系统更新 24-02-22
 host-suffix,download.nektony.com,REJECT
 
