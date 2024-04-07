@@ -43,7 +43,7 @@ DOMAIN,download.nektony.com,REJECT
 # 屏蔽CleanMY MAC清理软件系统更新 24-02-22
 DOMAIN,updates.devmate.com,REJECT
 
-#
+# 屏蔽Surge代理软件自动更新
 DOMAIN,www.nssurge.com,REJECT
 
 
