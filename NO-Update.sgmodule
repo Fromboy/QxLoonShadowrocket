@@ -32,7 +32,7 @@ DOMAIN,paddleapi.com,REJECT
 DOMAIN,paddle.com,REJECT
 DOMAIN,paddle.s3.amazonaws.com,REJECT
 DOMAIN,fireball.studio,REJECT
-DOMAIN,in.appcenter.ms,REJECT
+
 
 # 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
 # DOMAIN,menubarx.app,REJECT
