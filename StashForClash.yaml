@@ -39,6 +39,7 @@ dns:
   nameserver:        # 默认 DNS 服务
     - 223.5.5.5
     - 119.29.29.29
+    - 114.114.114.114
   fallback:          # 国外 DNS 服务器
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
@@ -53,12 +54,14 @@ dns:
 # 策略组引用
 pr:   &a3 {type: select,   proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }
 p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
-auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe] }
+auto: &a4 {type: url-test, lazy: true,  url: http://www.gstatic.com/generate_204, interval: 300, use: [Subscribe] }
 use:  &a2 {type: select,   use: [Subscribe] }
 c:    &a6 {type: http,     behavior: classical, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 
+## ⚠⚠请手动填入你的订阅[多机场订阅用|分割即可⚠⚠ ##
+## 订阅URL⏰ url: https://sub.xeton.dev/sub?target=clash&url=请手动填入你的订阅[多机场订阅用|分割即可]&list=true&udp=false 
 proxy-providers:
   Subscribe:
     <<: *a1
