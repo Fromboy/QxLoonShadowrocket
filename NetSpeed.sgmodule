@@ -13,4 +13,4 @@
 [PANEL]
 NetSpeed = script-name=NetSpeed,update-interval=1
 [SCRIPT]
-NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Net_Speed.js,argument=title=NetSpeed&iconfast=bolt&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb=3
+NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Net_Speed.js,argument=title=NetSpeed&iconfast=bird&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F&mb=3
