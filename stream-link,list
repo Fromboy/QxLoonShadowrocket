@@ -1,0 +1,44 @@
+#  分流规则合辑
+# Date 2024-02-01
+# 网址: http://www.stream-link.org
+# EPG: http://content.stream-link.org/epg/guide.xml
+# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️错误请看提示
+# 🔔1）使用除中國大陸以及臺灣省之外的IP訂閱m3u，播放前刷新；刷新後，訂閱頻道數為0。更換其他的國家或者地區的IP，再刷新；
+# 🔔2）播放中出現(404錯誤)，說明列表內容已經更新，請重新刷新訂閱；
+# 🔔3）刷新訂閱和播放時的IP必須相同，IP不一致會導致(403錯誤)；
+# 🔔4）使用中國大陸和臺灣省的IP，將出現(401錯誤)；
+# 🔔5）同一時間只接受2個同時播放，超過(503錯誤)；
+# 🔔6）建議關閉軟件的“預覽圖”功能；
+# 🔔7）不要頻繁刷新訂閱，同時嚴禁長時間佔用、濫用資源以及拉流!(系統自動封IP，並且456錯誤)
+
+#直播 stream-link直播域名，不适用于中国大陆和台湾节点
+# NAME:𝒔𝒕𝒓𝒆𝒂𝒎-𝒍𝒊𝒏𝒌
+# AUTHOR:𝒔𝒕𝒓𝒆𝒂𝒎-𝒍𝒊𝒏𝒌
+# UPDATED: 2024-01-23 16:40:00
+# HOST-SUFFIX: 2
+# TOTAL: 2
+DOMAIN-SUFFIX, stream-link.online, stream-link
+DOMAIN-SUFFIX, stream-link.org, stream-link
+
+## 动物谷直播域名
+## URL https://live.hkdvb.com/
+DOMAIN-SUFFIX, hkdvb.com, stream-link
+
+# 直播livednow.com直播域名,不适用于中国大陆和台湾节点
+# ⏰⏰⏰⏰⏰⏰更新日志 Livednow 体育直播 v0.6.8由于某些人不加节制的请求，网站已增加请求数限制和黑名单机制
+# ⚠️⚠️⚠️⚠️使用 aptv 请务必关闭预览图功能，否则会导致 ip 被拉黑，感谢理解⚠️⚠️⚠️⚠️⚠️⚠️
+# URL 
+请不要滥用该服务。
+# NAME: livednow
+# AUTHOR: livednow.com
+# UPDATED: 2024-01-23 16:40:00
+# HOST-SUFFIX: 5
+# TOTAL: 5
+DOMAIN-SUFFIX,livednow.com,Livednow
+DOMAIN-SUFFIX,hinet.net,Livednow
+DOMAIN-SUFFIX,hoy.tv,Livednow
+DOMAIN-SUFFIX,akamaized.net,Livednow
+DOMAIN-SUFFIX,tvb.com,Livednow
+
+# 加速服务器地址cdn.jsdelivr.net
+DOMAIN-SUFFIX, jsdelivr.net, jsdelivr
