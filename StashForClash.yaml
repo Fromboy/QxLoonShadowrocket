@@ -62,7 +62,7 @@ d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 
 ## ⚠⚠请手动填入你的订阅[多机场订阅用|分割即可⚠⚠ ##
-## 订阅URL⏰ url: https://sub.xeton.dev/sub?target=clash&url=请手动填入你的订阅[多机场订阅用|分割即可]&list=true&udp=false 
+## 订阅URL⏰ url: https://sub.xeton.dev/sub?target=clash&url=[https://www.v2youzi.top/api/v1/client/subscribe?token=750b04a8428322e97f6c3c3cf2988f12]&list=true&udp=false 
 proxy-providers:
   Subscribe:
     <<: *a1
