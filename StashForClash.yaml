@@ -66,7 +66,7 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: https://sub.xeton.dev/sub?target=clash&url=[https://www.v2youzi.top/api/v1/client/subscribe?token=750b04a8428322e97f6c3c3cf2988f12]&list=true&udp=false 
+    url: https://www.v2youzi.top/api/v1/client/subscribe?token=750b04a8428322e97f6c3c3cf2988f12
     path: ./proxy_providers/tmp.yaml
     benchmark-timeout: 3
     benchmark-url: http://www.gstatic.com/generate_204
