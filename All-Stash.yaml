@@ -15,22 +15,18 @@ ipv6: true
 external-controller: :9090
 
 # > 机场流量信息显示🛶
-subscribe-url: 
+subscribe-url: https://sub.store/download/collection/AllServer
 
 proxy-providers:
- Subscribe:
-  interval: 86400
-    url: https://dy1.mmydy.xyz/api/v1/client/subscribe?token=e5e95228c4df871cf61e58578b9d5d9b
-    path: ./proxy_providers/tmp.yaml
-    benchmark-timeout: 3
-    benchmark-url: http://www.gstatic.com/generate_204
-    filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
-  SubXJB:
+ All:
+    type: http
+    url: "https://sub.store/download/collection/AllServer"
     interval: 86400
-    url: https://1.xn--xc3ao8r.top/api/v1/client/subscribe?token=f154ee85bef8d8f864b4dc0313c19296
-    filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
-    benchmark-timeout: 3
-    benchmark-url: http://www.gstatic.com/generate_204
+    path: ./all.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://cp.cloudflare.com/generate_204
 
 dns:
   enable: true
