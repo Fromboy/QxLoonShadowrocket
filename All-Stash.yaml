@@ -15,7 +15,7 @@ ipv6: true
 external-controller: :9090
 
 # > 机场流量信息显示🛶
-subscribe-url: https://sub.store/download/Server1
+subscribe-url: 
 
 proxy-providers:
  Subscribe:
