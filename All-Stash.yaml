@@ -117,7 +117,7 @@ proxy-groups:
       - 狮城节点
       - 美国节点
       - 其他节点
-      - DIRECT
+    
 
   - name: 香港节点
     type: select
