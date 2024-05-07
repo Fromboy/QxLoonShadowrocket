@@ -107,7 +107,7 @@ proxy-groups:
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
     proxies: 
-      - 手动切换
+      - 手动🤚切换
       - 自动选择
       - 故障转移
       - 香港节点
