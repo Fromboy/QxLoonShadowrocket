@@ -49,12 +49,13 @@ u: &u {type: select, use: [Subscribe]}
 
 # 远程订阅
 # 👇👇👇⚠️如果误删除的复制区域,复制请去掉注释⚠️👇👇
-
+# 1. 请使用Clash类型订阅链接填入引号" "内使用,
+# 2. 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
 # proxy-providers: 
 #   Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: ""}
 # 👆👆👆⚠️如果误删除的复制区域,复制请去掉注释⚠️👆👆👆
 proxy-providers: 
-  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: "https://dy1.mmydy.xyz/api/v1/client/subscribe?token=e5e95228c4df871cf61e58578b9d5d9b"}
+  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: ""}
 # 1. 请使用Clash类型订阅链接填入引号" "内使用,
 # 2. 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
 
