@@ -63,9 +63,16 @@ proxies:
 #远程订阅
 
 # ⚠️贴心区域如果删掉可以复制 url: "https://sub.store/download/collection/MySub"
-proxy-providers:
+ proxy-providers:
   MyProxy:
-        url: "https://sub.store/download/collection/MySub"
+    type: http
+    url: "改成你的订阅"
+    interval: 86400
+    path: ./MyProxy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://cp.cloudflare.com/generate_204
    
 # ⚠找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接
     # 1⃣️:使用Clash类型订阅链接替换掉引号""内的链接使用。
