@@ -69,7 +69,7 @@ proxy-groups:
     proxies: null
     icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Available.png
     use: [SF]
-    filter: ^((?!套餐|到期|余额|剩余|流量|官网).)*$
+    filter: ^((?!套餐|到期|余额|剩余|流量|请|更换|电报|TG|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|防止|国内|官网).)*$
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -78,7 +78,7 @@ proxy-groups:
     proxies: null
     use: [SF]
     icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Auto_Speed.png
-    filter: ^((?!套餐|到期|余额|剩余|流量|官网).)*$
+    filter: ^((?!套餐|到期|余额|剩余|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|防止|国内|流量|官网).)*$
   - name: 电报消息
     type: select
     proxies:
