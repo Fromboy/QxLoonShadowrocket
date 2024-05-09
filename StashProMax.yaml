@@ -11,11 +11,11 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-
+# url: "改成你的订阅"中文替换成你的机场订阅
 proxy-providers:
   SF:
     type: http
-    url: "改成你的订阅"
+    url: "http://sub.store/download/collection/%E6%80%A7%E4%BB%B7%E6%AF%94Mitce?target=Stash"
     interval: 86400
     path: ./SF.yaml
     health-check:
