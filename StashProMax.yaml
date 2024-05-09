@@ -326,7 +326,7 @@ proxy-groups:
   - name: 其他节点
     type: select
     proxies: null
-    filter: ^((?!套餐|到期|余额|剩余|流量|官网|🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
+    filter: ^((?!套餐|到期|余额|剩余|流量|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|防止|国内|官网|🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
     icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png
     use: [SF]
 rule-providers:
