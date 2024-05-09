@@ -65,7 +65,7 @@ proxies:
 
 # ⚠️贴心区域如果删掉可以复制 url: "https://sub.store/download/collection/MySub"
 proxy-providers:
-  Subscribe:
+  MyProxy:
     url: 
     path: ./proxy_providers/tmp.yaml
     benchmark-timeout: 3
