@@ -1,8 +1,9 @@
 # MengRain & Coldvvater Config (Stash)
+# Date:2022.10.5
 # 最后一次更新于：2023.08.11
+# Author: MengRain、Coldvvater
 # 下载配置后,请手动添加机场订阅
-# 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接 
-# 推荐转换地址  1⃣️ https://subcsub.com/ 2⃣️ https://bianyuan.xyz/
+# 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
 
 #混合端口
 mixed-port: 7890
@@ -60,24 +61,18 @@ dns:
 #本地代理
 proxies:
 
-#远程订阅
+#远程订阅 url: "https://sub.store/download/collection/MySub"
+proxy-providers:
 
-# ⚠️贴心区域如果删掉可以复制 url: "https://sub.store/download/collection/MySub"
- proxy-providers:
   MyProxy:
-    type: http
     url: "https://sub.store/download/collection/MySub"
+    # 使用Clash类型订阅链接替换掉引号""内的链接使用。
+    # 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
     interval: 86400
-    path: ./MyProxy.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://cp.cloudflare.com/generate_204
-   
-# ⚠找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接
-    # 1⃣️:使用Clash类型订阅链接替换掉引号""内的链接使用。
-    # 2⃣️:或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
-   
+      interval: 300
+      url: http://www.apple.com/library/test/success.html
 
 #策略组
 proxy-groups:
@@ -164,27 +159,6 @@ proxy-groups:
     interval: 300
     lazy: true
     include-all: true
-     - name: 英国节点
-    type: url-test
-    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Kingdom.png
-    use:
-      - MyProxy
-    filter: 🇬🇧|英国|英|英格兰|UK|United Kingdom
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-      - name: 其他节点
-    type: url-test
-    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png
-    use:
-      - MyProxy
-    filter: ^((?!🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
 
   - name: 全球
     type: select
@@ -197,7 +171,6 @@ proxy-groups:
       - JP 日本
       - TW 台湾
       - SG 新加坡
-      - 其他节点
       - 漏网之鱼
       - DIRECT
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
