@@ -71,7 +71,7 @@ proxies:
     path: ./MyProxy.yaml
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: http://cp.cloudflare.com/generate_204
    
 # ⚠找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接
