@@ -65,7 +65,8 @@ proxies:
 
 # ⚠️贴心区域如果删掉可以复制 url: "https://sub.store/download/collection/MySub"
 proxy-providers:
-  Subscribe: {interval: 86400, url: http://your-service-provider}
+  MyProxy:
+        url: "https://sub.store/download/collection/MySub"
    
 # ⚠找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接
     # 1⃣️:使用Clash类型订阅链接替换掉引号""内的链接使用。
