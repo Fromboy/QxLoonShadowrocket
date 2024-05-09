@@ -197,6 +197,7 @@ proxy-groups:
       - JP 日本
       - TW 台湾
       - SG 新加坡
+      - 其他节点
       - 漏网之鱼
       - DIRECT
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
