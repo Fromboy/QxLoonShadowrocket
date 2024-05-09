@@ -162,6 +162,15 @@ proxy-groups:
     interval: 300
     lazy: true
     include-all: true
+  
+  - name: 其他节点
+    type: select
+    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png
+    use:
+      - MyProxy
+    filter: ^((?!🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
+    
+    
 
   - name: 全球
     type: select
