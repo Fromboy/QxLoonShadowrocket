@@ -79,6 +79,90 @@ proxy-providers:
 
 #策略组
 proxy-groups:
+
+- name: 自动选择
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    use: 
+       - MyProxy
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    tolerance: 50
+    include-all: true
+
+  - name: Fallback
+    type: fallback
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+    use:
+      - MyProxy
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+
+  - name: US 美国
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    use:
+      - MyProxy
+    filter: 美|🇺🇲|US|(?i)States|American
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+
+  - name: HK 香港
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    use:
+      - MyProxy
+    filter: 港|🇭🇰|HK|(?i)Hong
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+
+  - name: JP 日本
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    use:
+      - MyProxy
+    filter: 日|🇯🇵|东京|JP|(?i)Japan
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+
+  - name: TW 台湾
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    use:
+      - MyProxy
+    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+
+  - name: SG 新加坡
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    use:
+      - MyProxy
+    filter: 新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
+  
+  - name: 其他节点
+    type: select
+    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png
+    use:
+      - MyProxy
+    filter: ^((?!🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
+  
   - name: 全球
     type: select
     proxies: &G
@@ -240,88 +324,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
     include-all: true
 
-  - name: 自动选择
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-    use: 
-       - MyProxy
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    tolerance: 50
-    include-all: true
-
-  - name: Fallback
-    type: fallback
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
-    use:
-      - MyProxy
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-  - name: US 美国
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-    use:
-      - MyProxy
-    filter: 美|🇺🇲|US|(?i)States|American
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-  - name: HK 香港
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-    use:
-      - MyProxy
-    filter: 港|🇭🇰|HK|(?i)Hong
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-  - name: JP 日本
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-    use:
-      - MyProxy
-    filter: 日|🇯🇵|东京|JP|(?i)Japan
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-  - name: TW 台湾
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
-    use:
-      - MyProxy
-    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
-
-  - name: SG 新加坡
-    type: url-test
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-    use:
-      - MyProxy
-    filter: 新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore
-    url: "http://www.apple.com/library/test/success.html"
-    interval: 300
-    lazy: true
-    include-all: true
   
-  - name: 其他节点
-    type: select
-    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png
-    use:
-      - MyProxy
-    filter: ^((?!🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$
 
 #远程规则集合
 rule-providers:
