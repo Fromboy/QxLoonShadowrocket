@@ -33,7 +33,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      benchmark-timeout: 3
+      benchmark-timeout: 5
       benchmark-url: http://cp.cloudflare.com/generate_204
 
 dns:
