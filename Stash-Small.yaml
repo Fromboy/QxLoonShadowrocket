@@ -130,19 +130,19 @@ proxy-groups:
       - 台湾节点
       - 新加坡节点
       
-  - name: 𝒀𝒐𝒖𝑻𝒖𝒃𝒆
+  - name: YouTube
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     proxies:
       *G
 
-  - name: 𝑵𝑬𝑻𝑭𝑳𝑰𝑿
+  - name: NETLFIX
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
     proxies:
       *G
 
-  - name: 𝑫𝒊𝒔𝒏𝒆𝒚+
+  - name: Disney+
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DisneyPlus.png
     proxies:
