@@ -149,11 +149,48 @@ proxy-groups:
     proxies:
       *G
 
+  - name: Spotify
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+     
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+      
+  - name: Twitter
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+  
+  - name: Speedtest
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
+  
+  - name: TikTok
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+    
   - name: 苹果服务
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
     proxies:
       *C
+  
+  Telegram-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
+
 
   - name: 微软服务
     type: select
@@ -171,7 +208,10 @@ proxy-groups:
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
     proxies:
-      *C
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+      
 
   - name: 游戏平台
     type: select
@@ -262,6 +302,30 @@ rule-providers:
     path: ./ruleset/Apple.yaml
     interval: 86400
 
+  Speedtest-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml
+
+  Twitter-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter_No_Resolve.yaml
+      
+  Spotify-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml
+
+  TikTok-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml
+
   Microsoft:
     type: http
     behavior: classical
@@ -317,6 +381,11 @@ rules:
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
+  - RULE-SET,Spotify-rules,Spotify
+  - RULE-SET,Speedtest-rules,Speedtest
+  - RULE-SET,TikTok-rules,TikTok
+  - RULE-SET,Telegram-rules,Telegram
+  - RULE-SET,Twitter-rules,Twitter
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,NetEaseMusic,网易音乐
