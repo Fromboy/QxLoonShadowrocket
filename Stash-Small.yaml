@@ -33,6 +33,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      url: http://www.gstatic.com/generate_204
       benchmark-timeout: 5
       benchmark-url: http://cp.cloudflare.com/generate_204
 
