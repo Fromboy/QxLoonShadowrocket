@@ -223,29 +223,30 @@ proxy-groups:
   - name: 新加坡节点
     type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    include-all: true
     filter: (?=.*(新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore)^((?!(港|台|日|韩|新|美)).)*$
     url: "http://www.apple.com/library/test/success.html"
     interval: 300
     lazy: true
-    include-all: true
+    
 
 rule-providers:
         
-  𝒀𝒐𝒖𝑻𝒖𝒃𝒆:
+  YouTube:
     type: http
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
     path: ./ruleset/YouTube.yaml
     interval: 86400
 
-  𝑵𝑬𝑻𝑭𝑳𝑰𝑿:
+ NETLFIX:
     type: http
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
     path: ./ruleset/Netflix.yaml
     interval: 86400
 
-   𝑫𝒊𝒔𝒏𝒆𝒚:
+    Disney:
     type: http
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml"
@@ -312,9 +313,9 @@ rule-providers:
     interval: 86400
     
 rules:
-  - RULE-SET,𝒀𝒐𝒖𝑻𝒖𝒃𝒆,𝒀𝒐𝒖𝑻𝒖𝒃𝒆
-  - RULE-SET,𝑵𝑬𝑻𝑭𝑳𝑰𝑿,𝑵𝑬𝑻𝑭𝑳𝑰𝑿
-  - RULE-SET,𝑫𝒊𝒔𝒏𝒆𝒚, 𝑫𝒊𝒔𝒏𝒆𝒚+
+  - RULE-SET,YouTube,𝒀𝒐𝒖𝑻𝒖𝒃𝒆
+  - RULE-SET,NETLFIX,𝑵𝑬𝑻𝑭𝑳𝑰𝑿
+  - RULE-SET,Disney, 𝑫𝒊𝒔𝒏𝒆𝒚+
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,NetEaseMusic,网易音乐
