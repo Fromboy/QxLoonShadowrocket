@@ -397,3 +397,6 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,国内网站,no-resolve
   - MATCH,漏网之鱼
+  script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
