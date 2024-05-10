@@ -380,7 +380,6 @@ rule-providers:
 
     
 rules:
-  - SCRIPT,quic,REJECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
@@ -400,6 +399,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,国内网站,no-resolve
   - MATCH,漏网之鱼
-  script:
-  shortcuts:
-    quic: network == 'udp' and dst_port == 443
+
