@@ -183,28 +183,49 @@ proxy-groups:
       *G
 
   - name: 香港节点
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     include-all: true
     filter: (?=.*(港|🇭🇰|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
       
   - name: 日本节点
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     include-all: true
     filter: (?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
      
   - name: 台湾节点
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?=.*(台|🇨🇳|🇹🇼|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
 
   - name: 美国节点
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     include-all: true
     filter: (?=.*(美|🇺🇸|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+
+  - name: SG 新加坡
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    filter: (?=.*(新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore)^((?!(港|台|日|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+    include-all: true
 
 rule-providers:
         
