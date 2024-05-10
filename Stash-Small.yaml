@@ -378,6 +378,7 @@ rule-providers:
     interval: 86400
     
 rules:
+  - SCRIPT,quic,REJECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
