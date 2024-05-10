@@ -36,7 +36,6 @@ proxy-providers:
       benchmark-timeout: 3
       benchmark-url: http://cp.cloudflare.com/generate_204
 
-
 dns:
   enable: true
   ipv6: true
