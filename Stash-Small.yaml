@@ -71,7 +71,7 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - http://cp.cloudflare.com/dns-query
+    - https://cp.cloudflare.com/dns-query
 
 proxies:
             
