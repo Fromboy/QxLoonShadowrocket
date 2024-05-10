@@ -314,7 +314,7 @@ rule-providers:
     
 rules:
   - RULE-SET,YouTube,YouTube
-  - RULE-SET,NETLFIX,NETLFIX
+  - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
