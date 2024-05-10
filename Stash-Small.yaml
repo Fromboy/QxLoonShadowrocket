@@ -224,7 +224,7 @@ proxy-groups:
     type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     include-all: true
-    filter: (?=.*(新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore)^((?!(港|台|日|韩|新|美)).)*$
+    filter: (?=.*(新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore)^((?!(港|台|日|韩|美)).)*$
     url: "http://www.apple.com/library/test/success.html"
     interval: 300
     lazy: true
