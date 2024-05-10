@@ -130,7 +130,13 @@ proxy-groups:
       - 美国节点
       - 台湾节点
       - 新加坡节点
-      
+  
+  - name: 国外媒体
+    type: select
+    icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Diaspora.png
+    proxies:
+      *G
+   
   - name: YouTube
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
