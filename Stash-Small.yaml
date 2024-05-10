@@ -395,12 +395,14 @@ rule-providers:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml
     path: ./ruleset/ChinaMedia.yaml
     interval: 86400
+ 
   GlobalMedia: # 国外媒体
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
     path: ./ruleset/Streaming.yaml
     interval: 86400
+  
   Streaming: # 国外媒体
     type: http
     behavior: domain
