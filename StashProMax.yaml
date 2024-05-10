@@ -1,9 +1,12 @@
 # By：Steve
 # 最后一次更新：2024.01.20
-# TG频道：https://t.me/st7eve
 # 下载配置后,请手动添加机场订阅
 # 下载链接：https://gh.surgee.me/https://raw.githubusercontent.com/zxfccmm4/Surge/main/StashProMax.yaml
-# 找到 {远程订阅} 部分，将SF 里面的 "改成你的订阅" 替换为 自己的机场订阅链接  
+# 找到 {远程订阅} 部分，将proxy-providers里面的 "你的订阅" 替换为 自己的机场订阅链接  
+# 是 "你的订阅" 替换为 自己的机场订阅链接 
+# 是 "你的订阅" 替换为 自己的机场订阅链接  
+# 是 "你的订阅" 替换为 自己的机场订阅链接  
+
 
 port: 7890
 socks-port: 7891
@@ -16,13 +19,13 @@ proxy-providers:
   SF:
     type: http
     url: "你的订阅地址"
-    filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|请|更换|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
     interval: 86400
     path: ./SF.yaml
     health-check:
       enable: true
       interval: 300
       url: http://cp.cloudflare.com/generate_204
+      filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
 dns:
   enable: true
   ipv6: true
