@@ -12,8 +12,10 @@ log-level: info
 ipv6: true
 external-controller: 127.0.0.1:9090
 
+# 替换上面文字用于Stash获取机场流量信息并在主页显示
 subscribe-url: 订阅链接
 # 替换上面文字用于Stash获取机场流量信息并在主页显示
+  
     # ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
     # ⚠️以下方法任选其一
     # ⚠️有Clash订阅优先使用方法二❗️
@@ -22,6 +24,8 @@ subscribe-url: 订阅链接
     #  url: "https://api.v1.mk/sub?target=clash&url=订阅链接&emoji=true&list=true&udp=true"
     # ⚠️3.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
     # ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+
 proxy-providers:
   All:
     type: http
@@ -67,6 +71,7 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - http://cp.cloudflare.com/dns-query
 
 proxies:
             
