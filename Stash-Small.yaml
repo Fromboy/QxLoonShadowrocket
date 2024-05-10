@@ -313,9 +313,9 @@ rule-providers:
     interval: 86400
     
 rules:
-  - RULE-SET,YouTube,𝒀𝒐𝒖𝑻𝒖𝒃𝒆
-  - RULE-SET,NETLFIX,𝑵𝑬𝑻𝑭𝑳𝑰𝑿
-  - RULE-SET,Disney, 𝑫𝒊𝒔𝒏𝒆𝒚+
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,NETLFIX,NETLFIX
+  - RULE-SET,Disney,Disney+
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,NetEaseMusic,网易音乐
