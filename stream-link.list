@@ -19,6 +19,7 @@
 # TOTAL: 2
 DOMAIN-SUFFIX, stream-link.online, stream-link
 DOMAIN-SUFFIX, stream-link.org, stream-link
+DOMAIN-SUFFIX, eu.org, stream-link
 
 ## 动物谷直播域名
 ## URL https://live.hkdvb.com/
