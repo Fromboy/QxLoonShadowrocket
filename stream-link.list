@@ -19,7 +19,14 @@
 # TOTAL: 2
 DOMAIN-SUFFIX, stream-link.online, stream-link
 DOMAIN-SUFFIX, stream-link.org, stream-link
+
+
+# APTV 节目单域名
 DOMAIN-SUFFIX, eu.org, stream-link
+DOMAIN, 51zmt.top, stream-link
+DOMAIN, 112114.xyz, stream-link
+DOMAIN, aptvapp.com, stream-link
+
 
 ## 动物谷直播域名
 ## URL https://live.hkdvb.com/
