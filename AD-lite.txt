@@ -1,0 +1,22 @@
+[Adblock Plus]
+! Version: 20240514001
+!!!!注释    ! 这是一条注释 # 这也是一条注释
+! pattern：主机名掩码。 每个主机名都与此掩码匹配。 该模式还可以包含特殊字符，如下所述。
+! @@: 用于例外的标记规则。 如果用户想取消匹配主机名的过滤，请在规则开头添加此标记。
+! modifiers：阐明规则参数。 规则参数有可能会限制规则的范围，甚至完全改变它们的工作方式。
+! *: 通配符字符。 它用于表示任何字符集。 这也可以是一个空的字符串或者是任意长度的字符串。
+! ||：匹配主机名的开头，包括任何子域名。 例如，||example.org 匹配 example.org 和 test.example.org，但不匹配 testexample.org。
+! ^：分隔符字符。 与浏览器广告拦截不同，主机名中没有什么可以分隔的，因此该字符的唯一目的是标记主机名的结尾。
+! |：指向主机名开头或结尾的指针。 该值取决于掩码中的字符位置。 例如，规则 ample.org| 对应于 example.org 但不对应于 example.org.com。 |example 对应于 example.org 但不对应于 test.example。
+! /example.*/ 将拦截与 example.* 正则表达式匹配的主机。
+! @@/example.*/$important 将取消拦截和匹配 example.* 的正则表达式。 请注意，此规则也包含 important 修饰符。
+
+! 屏蔽一切。
+! /.*/
+! 取消对一些 TLD 的屏蔽。
+! @@||com^
+! @@||net^
+! *$denyallow=com|net: 除了 *.com 和 *.net 以外拦截所有内容。
+! @@*$denyallow=com|net：除了 *.com 和 *.net 以外取消拦截所有内容
+! ||example.org^$denyallow=sub.example.org。 拦截 example.org 和 *.example.org ，但不拦截 sub.example.org
+
