@@ -26,8 +26,8 @@ HOST-KEYWORD,hhneko, proxy
 HOST-KEYWORD,hneko, proxy
 HOST-KEYWORD,bighneko, proxy
 HOST-KEYWORD,bighhneko, proxy
-HOST-WILDCARD,aa*.hhneko.top, proxy
-HOST-WILDCARD,aa*.hneko.top, proxy
+HOST-WILDCARD,*.hhneko.top, proxy
+HOST-WILDCARD,*.hneko.top, proxy
 HOST-SUFFIX,putao666.top, proxy
 HOST-WILDCARD,.*hhneko.*, proxy
 
