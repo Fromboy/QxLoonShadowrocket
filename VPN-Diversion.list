@@ -11,12 +11,11 @@
 # Proxy 匹配包含 instagram 关键词的域名，走代理。
 
 # Clash配置分流实例
-# DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com, proxy
-# DOMAIN-SUFFIX,tidal.com, proxy
-# DOMAIN-SUFFIX,tidalhifi.com, proxy
-# DOMAIN-SUFFIX,wimpmusic.com, proxy
-# USER-AGENT,TIDAL*, proxy
-# USER-AGENT,TIDAL*dia, proxy
+# DOMAIN-KEYWORD,ruuhub, proxy
+# DOMAIN-SUFFIX,ruuhub.app, proxy
+# DOMAIN-KEYWORD,hhneko, proxy
+# DOMAIN-KEYWORD,hneko, proxy
+
 
 # RussHub订阅域名
 HOST-SUFFIX,ruuhub.app, proxy
@@ -36,6 +35,7 @@ HOST-WILDCARD,.*hhneko.*, proxy
 # Mitce机场 100GB
 
 HOST-SUFFIX,mitce.com, proxy
+HOST-SUFFIX,mitce.com.cn, proxy
 HOST-KEYWORD,mitce, proxy
 
 # 柚子云机场 200GB
