@@ -37,9 +37,8 @@ USER-AGENT, mitce*, proxy
 
 HOST-KEYWORD, youzi, proxy
 HOST-SUFFIX, stewed.top, proxy
-HOST-WILDCARD, youzi.*, proxy
+HOST-WILDCARD, youzi*, proxy
 HOST-SUFFIX, v3yzonline.life, proxy
-HOST-SUFFIX, zhongguoyouzi.top, proxy
 HOST-WILDCARD, v2yz.*, proxy
 HOST-SUFFIX, stewedcat.top, proxy
 USER-AGENT, youzi*, proxy
