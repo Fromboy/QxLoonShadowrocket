@@ -1,4 +1,3 @@
-/*
 # VPN机场域名 分流规则合辑
 # Date 2024-06-09
 # > <⭐️HOST等同于DOMAIN ：匹配请求的域名
@@ -18,8 +17,6 @@
 # DOMAIN-SUFFIX,wimpmusic.com, proxy
 # USER-AGENT,TIDAL*, proxy
 # USER-AGENT,TIDAL*dia, proxy
-
-*/
 
 # RussHub订阅域名
 HOST-SUFFIX, ruuhub.app, proxy
