@@ -51,4 +51,10 @@ HOST-KEYWORD,zhongguoyouzi, proxy
 HOST-KEYWORD,mjjspeed, proxy
 HOST-WILDCARD,*.mjjspeed.com, proxy
 
+#蜂群VPN
+HOST-KEYWORD,fengqun, proxy
+HOST-WILDCARD,*.fengqun, proxy
+HOST-WILDCARD,fengqun.*, proxy
+
+
 
