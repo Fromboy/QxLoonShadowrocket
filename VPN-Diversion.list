@@ -26,6 +26,7 @@ HOST,.*hhneko.*, proxy
 HOST,.*bighhneko.*, proxy
 HOST-WILDCARD,aa*.hhneko.top, proxy
 HOST-SUFFIX,putao666.top, proxy
+HOST-WILDCARD,.*hhneko.*, proxy
 
 
 # Mitce机场 100GB
