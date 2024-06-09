@@ -46,3 +46,8 @@ HOST-KEYWORD,v2yz, proxy
 HOST-KEYWORD,stewedcat, proxy
 HOST-KEYWORD,zhongguoyouzi, proxy
 
+#木机机机场
+HOST-KEYWORD,mjjspeed, proxy
+HOST-WILDCARD,*.mjjspeed.com, proxy
+
+
