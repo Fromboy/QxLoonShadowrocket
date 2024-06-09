@@ -1,4 +1,3 @@
-/*
 # VPN机场域名 分流规则合辑
 # Date 2024-06-09
 # > <⭐️HOST等同于DOMAIN ：匹配请求的域名
@@ -10,16 +9,16 @@
 # > <⭐️USER-AGENT：特殊字符串头匹配（可以理解为应用名）例如：USER-AGENT，QQ*，DIRETC 匹配应用名包含QQ关键字的应用，走直连。
 # > <⭐️HOST-KEYWORD 等同于 DOMAIN-KEYWORD：匹配域名中包含的关键字。例如：DOMAIN-KEYWORD， instagram， 
 # Proxy 匹配包含 instagram 关键词的域名，走代理。
-# > <⭐️IP-CIDR：匹配处在给定域内的 IP。例如 IP-CIDR，17.0.0.0/8，Proxy 匹配IP域17.0.0.0/8 走代理。
+# > <⭐️IP-CIDR：匹配处在给定域内的 IP.例如 IP-CIDR，17.0.0.0/8，Proxy 匹配IP域17.0.0.0/8 走代理。
 
-# Clash配置分流
-DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com, proxy
-DOMAIN-SUFFIX,tidal.com, proxy
-DOMAIN-SUFFIX,tidalhifi.com, proxy
-DOMAIN-SUFFIX,wimpmusic.com, proxy
-USER-AGENT,TIDAL*, proxy
-USER-AGENT,TIDAL*dia, proxy
-*/
+# Clash配置分流实例
+# DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com, proxy
+# DOMAIN-SUFFIX,tidal.com, proxy
+# DOMAIN-SUFFIX,tidalhifi.com, proxy
+# DOMAIN-SUFFIX,wimpmusic.com, proxy
+# USER-AGENT,TIDAL*, proxy
+# USER-AGENT,TIDAL*dia, proxy
+
 
 # RussHub订阅域名
 HOST-SUFFIX, ruuhub.app, proxy
