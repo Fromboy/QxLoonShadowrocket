@@ -27,6 +27,7 @@ HOST,.*hneko.*, proxy
 HOST,.*bighhneko.*, proxy
 HOST,.*bighneko.*, proxy
 HOST-WILDCARD,aa*.hhneko.top, proxy
+HOST-WILDCARD,aa*.hneko.top, proxy
 HOST-SUFFIX,putao666.top, proxy
 HOST-WILDCARD,.*hhneko.*, proxy
 
