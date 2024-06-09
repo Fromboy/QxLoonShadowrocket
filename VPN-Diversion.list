@@ -20,15 +20,16 @@
 
 # RussHub订阅域名
 HOST-SUFFIX,ruuhub.app, proxy
+HOST-KEYWORD,ruuhub, proxy
 
 # Hneko机场分流域名 400GB
+# HOST-KEYWORD匹配域名中包含的关键字
+
 HOST-KEYWORD,hhneko, proxy
 HOST-KEYWORD,hneko, proxy
 HOST-KEYWORD,bighneko, proxy
 HOST-KEYWORD,bighhneko, proxy
-HOST-WILDCARD,*.hhneko.top, proxy
-HOST-WILDCARD,*.hneko.top, proxy
-HOST-SUFFIX,putao666.top, proxy
+HOST-KEYWORD,putao666, proxy
 HOST-WILDCARD,.*hhneko.*, proxy
 
 
