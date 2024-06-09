@@ -23,7 +23,9 @@ HOST-SUFFIX,ruuhub.app, proxy
 
 # Hneko机场分流域名 400GB
 HOST,.*hhneko.*, proxy
+HOST,.*hneko.*, proxy
 HOST,.*bighhneko.*, proxy
+HOST,.*bighneko.*, proxy
 HOST-WILDCARD,aa*.hhneko.top, proxy
 HOST-SUFFIX,putao666.top, proxy
 HOST-WILDCARD,.*hhneko.*, proxy
