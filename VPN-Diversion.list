@@ -25,6 +25,8 @@ HOST-SUFFIX, ruuhub.app, proxy
 HOST-SUFFIX, hhneko.top, proxy
 HOST-KEYWORD, hhneko, proxy
 HOST-WILDCARD, aa*.hhneko.top, proxy
+HOST-WILDCARD, *hhneko, proxy
+HOST-WILDCARD, hhneko*, proxy
 HOST-SUFFIX, putao666.top, proxy
 
 
