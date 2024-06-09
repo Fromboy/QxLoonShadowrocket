@@ -23,9 +23,10 @@ HOST-SUFFIX, ruuhub.app, proxy
 
 # Hneko机场分流域名 400GB
 HOST-SUFFIX, hhneko.top, proxy
+HOST-KEYWORD, hhneko, proxy
 HOST-WILDCARD, aa*.hhneko.top, proxy
 HOST-SUFFIX, putao666.top, proxy
-USER-AGENT, hneko*, proxy
+
 
 
 # Mitce机场 100GB
