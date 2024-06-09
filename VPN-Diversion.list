@@ -19,28 +19,29 @@
 # USER-AGENT,TIDAL*dia, proxy
 
 # RussHub订阅域名
-HOST-SUFFIX, ruuhub.app, proxy
+HOST-SUFFIX,ruuhub.app, proxy
 
 # Hneko机场分流域名 400GB
-HOST-SUFFIX, hhneko.top, proxy
-HOST-KEYWORD, hhneko, proxy
-HOST-WILDCARD, aa*.hhneko.top, proxy
-HOST-SUFFIX, putao666.top, proxy
-USER-AGENT, *hhneko, proxy
-USER-AGENT, hhneko*, proxy
+HOST-SUFFIX,hhneko.top, proxy
+HOST-KEYWORD,hhneko, proxy
+HOST-KEYWORD,bighhneko, proxy
+HOST-WILDCARD,aa*.hhneko.top, proxy
+HOST-SUFFIX,putao666.top, proxy
+USER-AGENT,*hhneko.top, proxy
+USER-AGENT,hhneko*.top, proxy
 
 
 # Mitce机场 100GB
 
-HOST-SUFFIX, mitce.com, proxy
-HOST-KEYWORD, mitce, proxy
+HOST-SUFFIX,mitce.com, proxy
+HOST-KEYWORD,mitce, proxy
 
 # 柚子云机场 200GB
 
-HOST-KEYWORD, youzi, proxy
-HOST-KEYWORD, stewed, proxy
-HOST-KEYWORD, v3yzonline, proxy
-HOST-KEYWORD, v2yz, proxy
-HOST-KEYWORD, stewedcat, proxy
-HOST-KEYWORD, zhongguoyouzi, proxy
+HOST-KEYWORD,youzi, proxy
+HOST-KEYWORD,stewed, proxy
+HOST-KEYWORD,v3yzonline, proxy
+HOST-KEYWORD,v2yz, proxy
+HOST-KEYWORD,stewedcat, proxy
+HOST-KEYWORD,zhongguoyouzi, proxy
 
