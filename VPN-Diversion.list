@@ -22,10 +22,6 @@
 HOST-SUFFIX,ruuhub.app, proxy
 
 # Hneko机场分流域名 400GB
-HOST,.*hhneko.*, proxy
-HOST,.*hneko.*, proxy
-HOST,.*bighhneko.*, proxy
-HOST,.*bighneko.*, proxy
 HOST-KEYWORD,hhneko, proxy
 HOST-KEYWORD,hneko, proxy
 HOST-KEYWORD,bighneko, proxy
