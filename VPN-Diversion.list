@@ -32,10 +32,12 @@ USER-AGENT, hneko*, proxy
 
 
 # Mitce机场 100GB
+
 HOST-SUFFIX, mitce.com, proxy
 USER-AGENT, mitce*, proxy
 
 # 柚子云机场 200GB
+
 HOST-KEYWORD, youzi, proxy
 HOST-SUFFIX, stewed.top, proxy
 HOST-WILDCARD, youzi.*, proxy
@@ -45,3 +47,4 @@ HOST-WILDCARD, v2yz.*, proxy
 HOST-SUFFIX, stewedcat.top, proxy
 USER-AGENT, youzi*, proxy
 USER-AGENT, v2yz*, proxy
+USER-AGENT, zhongguoyouzi*, proxy
