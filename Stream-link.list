@@ -29,7 +29,7 @@ Host, aptvapp.com, stream-link
 
 ## 动物谷直播域名
 ## URL https://live.hkdvb.com/
-DOMAIN-SUFFIX, hkdvb.com, stream-link
+Host-suffix, hkdvb.com, stream-link
 
 # 直播livednow.com直播域名,不适用于中国大陆和台湾节点
 # ⏰⏰⏰⏰⏰⏰更新日志 Livednow 体育直播 v0.6.8由于某些人不加节制的请求，网站已增加请求数限制和黑名单机制
