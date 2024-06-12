@@ -1,3 +1,4 @@
+# ######## URL: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/Stream-link.yaml
 #  分流规则合辑
 # Date 2024-02-01
 # 网址: http://www.stream-link.org
@@ -21,12 +22,12 @@ payload:
 # HOST-SUFFIX: 2
 # TOTAL: 2
  
-- DOMAIN-SUFFIX,stream-link.online
+ - DOMAIN-SUFFIX,stream-link.online
  - DOMAIN-SUFFIX,stream-link.org
 
 ## 直播节目单地址域名
  
-- DOMAIN-SUFFIX,eu.org
+ - DOMAIN-SUFFIX,eu.org
  - DOMAIN,51zmt.top
  - DOMAIN,112114.zyz
  - DOMAIN-SUFFIX,aptvapp.com
@@ -34,7 +35,7 @@ payload:
 ## 动物谷直播域名
 ## URL https://live.hkdvb.com/
  
-- DOMAIN-SUFFIX,hkdvb.com
+ - DOMAIN-SUFFIX,hkdvb.com
 
 # 直播livednow.com直播域名,不适用于中国大陆和台湾节点
 # ⏰⏰⏰⏰⏰⏰更新日志 Livednow 体育直播 v0.6.8由于某些人不加节制的请求，网站已增加请求数限制和黑名单机制
@@ -45,7 +46,7 @@ payload:
 # HOST-SUFFIX: 5
 # TOTAL: 5
  
-- DOMAIN-SUFFIX,livednow.com
+ - DOMAIN-SUFFIX,livednow.com
  - DOMAIN-SUFFIX,hinet.net
  - DOMAIN-SUFFIX,hoy.tv
  - DOMAIN-SUFFIX,akamaized.net
