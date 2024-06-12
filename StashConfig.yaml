@@ -2,6 +2,7 @@
 # Date:2022.10.5
 # 最后一次更新于：2023.08.11
 # Author: MengRain、Coldvvater
+# 内置Stream-link直播分流
 # 下载配置后,请手动添加机场订阅
 # 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
 
