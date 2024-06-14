@@ -3,6 +3,13 @@
 # 最后一次更新于：2023.08.11
 # Author: MengRain、Coldvvater
 # 内置Stream-link直播分流
+# > 🏆屏蔽系统更新链接: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
+# > 🏆ASN和GeoIP数据库
+# > 🏆ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
+# > 🏆ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
+# > 🏆Geo IP2 : https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+# > 🏆Geo IP2 : https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
+# > 🏆GeoLite2-ASN : https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 # 下载配置后,请手动添加机场订阅
 # 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接 
 # @排除正则 ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
