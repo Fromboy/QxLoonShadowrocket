@@ -1,5 +1,5 @@
 # ⚠️本配置仅适用于Clash Premium 2023.4.13及以上版本内核，Stash不能使用本配置⚠️
-# 屏蔽系统更新链接: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
+# > 🏆屏蔽系统更新链接: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
 # > 🏆ASN和GeoIP数据库
 # > 🏆ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
 # > 🏆ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
