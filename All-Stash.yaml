@@ -4,6 +4,12 @@
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
 # @ConfigVersion     1.0.14
+# > 🏆ASN和GeoIP数据库
+# > 🏆ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
+# > 🏆ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
+# > 🏆Geo IP2 : https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+# > 🏆Geo IP2 : https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
+# > 🏆GeoLite2-ASN : https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 #==========================================
 
 mixed-port: 7890
