@@ -3,6 +3,13 @@
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
+# > 🏆屏蔽系统更新链接: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
+# > 🏆ASN和GeoIP数据库
+# > 🏆ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
+# > 🏆ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
+# > 🏆Geo IP2 : https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+# > 🏆Geo IP2 : https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
+# > 🏆GeoLite2-ASN : https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 # @ConfigVersion     1.0.14
 # @排除正则 ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
 #==========================================
