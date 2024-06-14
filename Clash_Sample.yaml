@@ -1,11 +1,11 @@
 # mihomo 配置
 # 日期：2024-06-13 13:44:18
-# GeoIP/ ASN 地址库
-ASN和GeoIP数据库
-# ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
-# ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
-# Geo IP2 : https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
-# Geo IP2 : https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
+# > 🏆 ASN和GeoIP数据库
+# > 🏆ASN : https://gitlab.com/lodepuly/asn-china/-/raw/main/ASN.China.list
+# > 🏆ASN : https://raw.githubusercontent.com/missuo/ASN-China/main/ASN.China.list
+# > 🏆Geo IP2 : https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+# > 🏆Geo IP2 : https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
+# > 🏆GeoLite2-ASN : https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 # 适用版本：所有使用 mihomo 核心的程序
 port: 7890
 socks-port: 7891
