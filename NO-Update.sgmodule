@@ -55,9 +55,8 @@ DOMAIN,lcs-cops.adobe.io.com,REJECT
 DOMAIN,4vzokhpsbs.adobe.io,REJECT
 
 # 屏蔽BetterMouse软件自动更新
-DOMAIN,v3.paddleapi.com,REJECT
 DOMAIN,api.appcenter.ms,REJECT
-DOMAIN,checkout.paddle.com,REJECT
+
 
 
 
