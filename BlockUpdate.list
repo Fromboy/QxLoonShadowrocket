@@ -42,3 +42,8 @@ host-suffix,crs.cr.adobe.com,REJECT
 host-suffix,ims-prod06.adobelogin.com,REJECT
 host-suffix,lcs-cops.adobe.io.com,REJECT
 host-suffix,4vzokhpsbs.adobe.io,REJECT
+
+# 屏蔽BetterMouse软件自动更新
+host-suffix,v3.paddleapi.com,REJECT
+host-suffix,api.appcenter.ms,REJECT
+host-suffix,checkout.paddle.com,REJECT
