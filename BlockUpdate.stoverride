@@ -47,3 +47,8 @@ rules:
   - DOMAIN-suffix,ims-prod06.adobelogin.com,REJECT
   - DOMAIN-suffix,lcs-cops.adobe.io.com,REJECT
   - DOMAIN-suffix,4vzokhpsbs.adobe.io,REJECT
+
+# 屏蔽BetterMouse软件自动更新
+  - DOMAIN-suffix,v3.paddleapi.com,REJECT
+  - DOMAIN-suffix,api.appcenter.ms,REJECT
+  - DOMAIN-suffix,checkout.paddle.com,REJECT
