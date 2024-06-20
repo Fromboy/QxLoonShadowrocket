@@ -59,6 +59,9 @@ DOMAIN,4vzokhpsbs.adobe.io,REJECT
 # 屏蔽BetterMouse软件自动更新
 DOMAIN,api.appcenter.ms,REJECT
 
+# 屏蔽Aldente充电管家软件自动更新
+DOMAIN,apphousekitchen.com,REJECT
+
 
 
 
