@@ -47,3 +47,6 @@ host-suffix,4vzokhpsbs.adobe.io,REJECT
 
 # 屏蔽BetterMouse软件自动更新
 host-suffix,api.appcenter.ms,REJECT
+
+# 屏蔽Aldente充电管家软件自动更新
+host-suffix,apphousekitchen.com,REJECT
