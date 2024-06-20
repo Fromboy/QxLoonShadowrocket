@@ -6,6 +6,8 @@
 # Surge url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule
 # Loon url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
+# Stash重写屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
+# Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
 [Rule]
 # 屏蔽IOS系统更新
