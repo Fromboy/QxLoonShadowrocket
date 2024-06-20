@@ -87,6 +87,8 @@ proxy-providers:
       enable: true
       interval: 300
       url: http://www.apple.com/library/test/success.html
+      benchmark-url: 5
+      benchmark-url: http://1.1.1.1/generate_204
 
 #策略组
 proxy-groups:
