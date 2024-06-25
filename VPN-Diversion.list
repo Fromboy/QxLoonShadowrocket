@@ -1,0 +1,59 @@
+# VPN机场域名 分流规则合辑
+# Date 2024-06-09
+# > <⭐️HOST等同于DOMAIN ：匹配请求的域名
+# > <例如：HOST，instagram.com，Proxy 匹配instagram.com的域名，走代理。
+# > <⭐️HOST-SUFFIX 等同于 DOMAIN-SUFFIX ：匹配请求的域名后缀例如：DOMAIN-SUFFIX，image.instagram.com，Proxy
+# 匹配域名后缀为：image.instagram.com的域名，走代理。
+# > <⭐️HOST-WILDCARD当请求的域名的匹配通配符时，执行该规则例如：DOMAIN-WILDCARD, ad*.example.com, reject DOMAIN-WILDCARD 
+# 类型规则用于通配符 * 与 ? 匹配，如上示例可以匹配如下域名：ads. example. com 和adx. example. com 和advert. example. com
+# > <⭐️USER-AGENT：特殊字符串头匹配（可以理解为应用名）例如：USER-AGENT，QQ*，DIRETC 匹配应用名包含QQ关键字的应用，走直连。
+# > <⭐️HOST-KEYWORD 等同于 DOMAIN-KEYWORD：匹配域名中包含的关键字。例如：DOMAIN-KEYWORD， instagram， 
+# Proxy 匹配包含 instagram 关键词的域名，走代理。
+
+# Clash配置分流实例
+# DOMAIN-KEYWORD,ruuhub, proxy
+# DOMAIN-SUFFIX,ruuhub.app, proxy
+# DOMAIN-KEYWORD,hhneko, proxy
+# DOMAIN-KEYWORD,hneko, proxy
+
+
+# RussHub订阅域名
+DOMAIN-SUFFIX,ruuhub.app, proxy
+DOMAIN-KEYWORD,ruuhub, proxy
+
+# Hneko机场分流域名 400GB
+# HOST-KEYWORD匹配域名中包含的关键字
+
+DOMAIN-KEYWORD,hhneko, proxy
+DOMAIN-KEYWORD,hneko, proxy
+DOMAIN-KEYWORD,bighneko, proxy
+DOMAIN-KEYWORD,bighhneko, proxy
+DOMAIN-KEYWORD,putao666, proxy
+DOMAIN-WILDCARD,.*hhneko.*, proxy
+
+
+# Mitce机场 100GB
+
+DOMAIN-SUFFIX,mitce.com, proxy
+DOMAIN-SUFFIX,mitce.com.cn, proxy
+DOMAIN-KEYWORD,mitce, proxy
+
+# 柚子云机场 200GB
+
+DOMAIN-KEYWORD,youzi, proxy
+DOMAIN-KEYWORD,stewed, proxy
+DOMAIN-KEYWORD,v3yzonline, proxy
+DOMAIN-KEYWORD,v2yz, proxy
+DOMAIN-KEYWORD,stewedcat, proxy
+DOMAIN-KEYWORD,zhongguoyouzi, proxy
+
+#木机机机场
+DOMAIN-KEYWORD,mjjspeed, proxy
+DOMAIN-WILDCARD,*.mjjspeed.com, proxy
+
+#蜂群VPN
+DOMAIN-KEYWORD,fengqun, proxy
+DOMAIN-WILDCARD,*.fengqun, proxy
+DOMAIN-WILDCARD,fengqun.*, proxy
+
+
