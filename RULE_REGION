@@ -1,1 +1,4 @@
+# GEOIP分流规则
+# 2024-06-26
+# 请把此条规则放置在分流规则最低下，请注掉 Fliter_local里面的geoip cn
 GEOIP, cn, DIRECT
