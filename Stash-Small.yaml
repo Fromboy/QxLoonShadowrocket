@@ -97,9 +97,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
     include-all: true #引用所有节点
     # 包括的代理组
-    proxies:
-      - 自动选择
-      - 故障转移
     filter: ^((?!(邀请|返利|循环|官网|客服|请|更换|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
 
   - name: 自动选择
@@ -139,8 +136,6 @@ proxy-groups:
     proxies: &C
       - DIRECT
       - 手动切换
-      - 自动选择
-      - 故障转移
       - 香港节点
       - 日本节点
       - 美国节点
