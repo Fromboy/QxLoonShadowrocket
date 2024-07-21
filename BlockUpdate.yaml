@@ -50,4 +50,7 @@ payload:
 
 # 屏蔽BetterMouse软件自动更新
   - DOMAIN-suffix,api.appcenter.ms
+
+# 屏蔽Aldente充电管家软件自动更新
+ - DOMAIN-suffix,apphousekitchen.com,REJECT
   
