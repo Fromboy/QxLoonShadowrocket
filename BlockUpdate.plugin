@@ -9,7 +9,44 @@
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 
 [Rule]
+
 DOMAIN,mesu.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
+
+# 屏蔽mac系统更新
+DOMAIN,swscan.apple.com,REJECT
+DOMAIN,swdist.apple.com,REJECT
+DOMAINhost,swcdn.apple.com,REJECT
+DOMAIN,swquery.apple.com,REJECT
+DOMAIN,swdownload.apple.com,REJECT
+
+# 屏蔽One Switch快捷开关系统更新 24-02-22
+DOMAIN-suffix,paddleapi.com,REJECT
+DOMAIN-suffix,paddle.com,REJECT
+DOMAIN-suffix,paddle.s3.amazonaws.com,REJECT
+DOMAIN-suffix,fireball.studio,REJECT
+DOMAIN-suffix,in.appcenter.ms,REJECT
+
+# 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
+# host-suffix,menubarx.app,REJECT
+
+# 屏蔽APP Cleaner卸载软件系统更新 24-02-22
+DOMAIN-suffix,download.nektony.com,REJECT
+
+# 屏蔽CleanMY MAC清理软件系统更新 24-02-22
+DOMAIN-suffix,updates.devmate.com,REJECT
+
+# 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
+DOMAIN-suffix,ic.adobe.io,REJECT
+DOMAIN-suffix,crs.cr.adobe.com,REJECT
+DOMAIN-suffix,ims-prod06.adobelogin.com,REJECT
+DOMAIN-suffix,lcs-cops.adobe.io.com,REJECT
+DOMAIN-suffix,4vzokhpsbs.adobe.io,REJECT
+
+# 屏蔽BetterMouse软件自动更新
+DOMAIN-suffix,api.appcenter.ms,REJECT
+
+# 屏蔽Aldente充电管家软件自动更新
+DOMAIN-suffix,apphousekitchen.com,REJECT
