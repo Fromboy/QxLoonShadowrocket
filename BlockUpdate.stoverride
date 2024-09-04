@@ -54,4 +54,11 @@ rules:
 
 # 屏蔽Aldente充电管家软件自动更新
  - DOMAIN-suffix,apphousekitchen.com,REJECT
+
+# 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
+ - DOMAIN,dkys.org,REJECT
+ - DOMAIN,youtusoft.com,REJECT
+ - DOMAIN,hostbuf.com,REJECT
+ - DOMAIN,tcpspeed.com,REJECT
+ - DOMAIN,wn1998.com,REJECT
   
