@@ -30,7 +30,7 @@ DOMAIN-suffix,fireball.studio,REJECT
 DOMAIN-suffix,in.appcenter.ms,REJECT
 
 # 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
-# host-suffix,menubarx.app,REJECT
+# DOMAIN-suffix,menubarx.app,REJECT
 
 # 屏蔽APP Cleaner卸载软件系统更新 24-02-22
 DOMAIN-suffix,download.nektony.com,REJECT
@@ -50,3 +50,11 @@ DOMAIN-suffix,api.appcenter.ms,REJECT
 
 # 屏蔽Aldente充电管家软件自动更新
 DOMAIN-suffix,apphousekitchen.com,REJECT
+
+# 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
+DOMAIN,dkys.org,REJECT
+DOMAIN,youtusoft.com,REJECT
+DOMAIN,hostbuf.com,REJECT
+DOMAIN,tcpspeed.com,REJECT
+DOMAIN,wn1998.com,REJECT
+
