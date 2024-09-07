@@ -58,3 +58,6 @@ host,hostbuf.com,REJECT
 host,tcpspeed.com,REJECT
 host,wn1998.com,REJECT
 
+# 屏蔽Istat系统监控软件更新
+host,updates.istatmenus.app,REJECT
+
