@@ -35,7 +35,6 @@ DOMAIN,paddle.com,REJECT
 DOMAIN,paddle.s3.amazonaws.com,REJECT
 DOMAIN,fireball.studio,REJECT
 
-
 # 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
 # DOMAIN,menubarx.app,REJECT
 
@@ -47,7 +46,6 @@ DOMAIN,updates.devmate.com,REJECT
 
 # 屏蔽Surge代理软件自动更新
 DOMAIN,www.nssurge.com,REJECT
-
 
 # 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
 DOMAIN,ic.adobe.io,REJECT
@@ -68,6 +66,9 @@ DOMAIN,youtusoft.com,REJECT
 DOMAIN,hostbuf.com,REJECT
 DOMAIN,tcpspeed.com,REJECT
 DOMAIN,wn1998.com,REJECT
+
+# 屏蔽Istat系统监控软件更新
+DOMAIN,updates.istatmenus.app,REJECT
 
 
 
