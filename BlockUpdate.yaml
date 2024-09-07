@@ -59,5 +59,8 @@ payload:
  - DOMAINhostbuf.com,REJECT
  - DOMAINtcpspeed.com,REJECT
  - DOMAINwn1998.com,REJECT
+ 
+ # 屏蔽Istat系统监控软件更新
+ - DOMAIN,updates.istatmenus.app,REJECT
 
   
