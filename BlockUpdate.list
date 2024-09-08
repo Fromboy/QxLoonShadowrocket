@@ -67,4 +67,8 @@ host,updates.istatmenus.app,REJECT
 # 屏蔽Folder Colorizer软件更新
 host,api.softorino.com,REJECT
 
+# 屏蔽Parallels Desktop软件更新 24-09-08
+host,update.parallels.com,REJECT
+host,download.parallels.com,REJECT
+
 
