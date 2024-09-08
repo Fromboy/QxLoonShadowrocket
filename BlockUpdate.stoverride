@@ -73,3 +73,7 @@ rules:
 # 屏蔽Folder Colorizer软件更新
  - DOMAIN,api.softorino.com,REJECT
 
+# 屏蔽Parallels Desktop软件更新 24-09-08
+ - DOMAIN,update.parallels.com,REJECT
+ - DOMAIN,download.parallels.com,REJECT
+
