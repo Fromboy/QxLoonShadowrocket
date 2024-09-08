@@ -13,7 +13,7 @@
 
 [Rule]
 # 屏蔽IOS系统更新
-DOMAIN,gdmf.apple.com,REJECT
+# DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,gdmf.apple.com.akadns.net,REJECT
 # DOMAIN,mesu.apple.com,REJECT //翻译域名
 DOMAIN,mesu-cdn.apple.com.akadns.net,REJECT
