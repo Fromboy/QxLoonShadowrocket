@@ -64,3 +64,7 @@ rules:
 
 # 屏蔽Istat系统监控软件更新
  - DOMAIN,updates.istatmenus.app,REJECT
+
+# 屏蔽Folder Colorizer软件更新
+ - DOMAIN,api.softorino.com,REJECT
+
