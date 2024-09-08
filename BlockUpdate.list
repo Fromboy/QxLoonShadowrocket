@@ -61,3 +61,7 @@ host,wn1998.com,REJECT
 # 屏蔽Istat系统监控软件更新
 host,updates.istatmenus.app,REJECT
 
+# 屏蔽Folder Colorizer软件更新
+host,api.softorino.com,REJECT
+
+
