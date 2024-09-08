@@ -1,9 +1,11 @@
 #!name=屏蔽IOS-One Switch系统更新
 #!desc=屏蔽IOS-MAC-One Switch
 #!date=2023-09-26 10:52:05
-# ===================各个屏蔽地址==========================
+# ===================各个屏蔽地址Shadowrocket/Surge通用==========================
+# 只有 IOS 屏蔽地址
 # Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
-# Surge url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule
+# 集合有 IOS/MAC OS 和各个软件 屏蔽地址
+# Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/NO-Update.sgmodule
 # Loon url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Loon/BlockUpdate.plugin
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 # Stash重写屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
