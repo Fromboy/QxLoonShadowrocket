@@ -1,0 +1,16 @@
+/*
+************************************
+项目名称：苹果地图修改为美国🇺🇸
+软件版本：8.5 time：8.20
+使用声明：⚠️仅供参考，🈲️转载与售卖！
+Quantumultx
+**************************************
+*/
+
+[rewrite_local]
+(https?:\/\/gspe\d*-ssl\.ls\.apple\.)(com|cn)(\/.*)(country_code=[A-Z]{2})(.*) url 302 $1$2$3country_code=US$5
+(https?:\/\/gspeld*-ssl\.ls\.apple\.)(com|cn)(\/.*) (environment=[a-z/-]{4,})(.*) url 302 $1$2$3environment=prod$5
+
+[mitm]
+hostname = gspe35-ssl.ls.apple.com
+
