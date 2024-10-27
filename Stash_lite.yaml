@@ -78,6 +78,7 @@ proxy-groups:
   - {name: 欧洲节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png, type: url-test, lazy: true, interval: 300, use: [Subscribe], filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺"}
 
 rules:
+  - SCRIPT,quic,REJECT,no-track
   - GEOSITE,category-ads-all,广告拦截
   - GEOSITE,openai,AI
   - GEOSITE,category-games,游戏平台
@@ -105,5 +106,11 @@ rules:
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
+
+# 禁用QUIC
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
+
 
 
