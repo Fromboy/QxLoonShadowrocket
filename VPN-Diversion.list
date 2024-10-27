@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,mitce.com.cn, proxy
 DOMAIN-KEYWORD,mitce, proxy
 
 # 柚子云机场 200GB
-
 DOMAIN-KEYWORD,youzi, proxy
 DOMAIN-KEYWORD,stewed, proxy
 DOMAIN-KEYWORD,v3yzonline, proxy
@@ -55,5 +54,22 @@ DOMAIN-WILDCARD,*.mjjspeed.com, proxy
 DOMAIN-KEYWORD,fengqun, proxy
 DOMAIN-WILDCARD,*.fengqun, proxy
 DOMAIN-WILDCARD,fengqun.*, proxy
+
+#69云机场
+DOMAIN-KEYWORD,*.69yun69.*, proxy
+
+#极速机场
+DOMAIN-KEYWORD,*.极速机场.*, proxy
+
+#一分机场
+DOMAIN-KEYWORD,*.一分机场.*, proxy
+
+#机场
+DOMAIN-KEYWORD,*.bingredtea.*, proxy
+
+# demus音乐软件
+DOMAIN-KEYWORD,*.demus.*, proxy
+
+
 
 
