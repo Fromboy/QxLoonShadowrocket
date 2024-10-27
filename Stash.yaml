@@ -231,8 +231,7 @@ rule-providers:
 
 # 分流规则引用
 rules:
-#  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-#  - SCRIPT,quic,REJECT
+  - SCRIPT,quic,REJECT,no-track
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.metacubex.one,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
