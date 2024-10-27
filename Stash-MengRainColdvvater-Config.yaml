@@ -478,7 +478,7 @@ rule-providers:
 
 #分流规则引用
 rules:
-  - SCRIPT,quic,REJECT
+  - SCRIPT,quic,REJECT,no-track
   - RULE-SET,OpenAI-rules,OpenAI
   - RULE-SET,Netflix-rules,Netflix
   - RULE-SET,Disney-rules,Disney+
