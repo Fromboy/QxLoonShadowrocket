@@ -125,6 +125,7 @@ rule-providers:
   
  # 分流Policy 
 rules:
+  - SCRIPT,quic,REJECT,no-track
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
@@ -143,3 +144,7 @@ rules:
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🐟 兜底分流
+
+  script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
