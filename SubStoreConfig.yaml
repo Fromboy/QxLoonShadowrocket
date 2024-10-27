@@ -275,6 +275,7 @@ rule-providers:
     
 rules:
   # 分流规则引用
+  - SCRIPT,quic,REJECT,no-track
   - RULE-SET,Adblock,REJECT
   - RULE-SET,Apple,国内网站
   - RULE-SET,Google,国外网站  
@@ -291,3 +292,7 @@ rules:
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,国内网站
   - MATCH,国外网站
+
+  script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
