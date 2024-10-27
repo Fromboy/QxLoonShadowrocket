@@ -56,5 +56,17 @@ HOST-KEYWORD,fengqun, proxy
 HOST-WILDCARD,*.fengqun, proxy
 HOST-WILDCARD,fengqun.*, proxy
 
+#极速机场
+HOST-KEYWORD,*.极速机场.*, proxy
+
+#一分机场
+HOST-KEYWORD,*.一分机场.*, proxy
+
+#机场
+HOST-KEYWORD,*.bingredtea.*, proxy
+
+# demus音乐软件
+HOST-KEYWORD,*.demus.*, proxy
+
 
 
