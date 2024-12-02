@@ -1,3 +1,6 @@
+;配置最后引用这个本地代理
+;clash_rule_base=https://raw.githubusercontent.com/Orz-3/Orz-3/master/Clash/Profile.yaml
+
 mixed-port: 7890
 mode: rule
 log-level: info
