@@ -1,5 +1,7 @@
 ;配置最后引用这个本地代理
-;clash_rule_base=
+# 引用链接
+# clash_rule_base=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/main/SurfboardConfig.conf
+# clash_rule_base=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/main/Profile.yaml
 mixed-port: 7890
 mode: rule
 log-level: info
