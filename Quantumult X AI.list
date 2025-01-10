@@ -1,0 +1,138 @@
+# NAME: Bing
+# UPDATED: 2024-07-03 16:18:28
+# host-suffix: 9
+# TOTAL: 9
+host-suffix,bing.com
+host-suffix,bing.com.cn
+host-suffix,bing.net
+host-suffix,bingads.com
+host-suffix,bingagencyawards.com
+host-suffix,bingapistatistics.com
+host-suffix,bingsandbox.com
+host-suffix,bingvisualsearch.com
+host-suffix,bingworld.com
+
+# NAME: Copilot
+# UPDATED: 2024-07-03 16:18:30
+# host: 20
+# host-keyword: 1
+# host-suffix: 26
+# IP-ASN: 2
+# IP-CIDR: 2
+# TOTAL: 51
+host,api.msn.com
+host,api.statsig.com
+host,assets.msn.com
+host,browser-intake-datadoghq.com
+host,chat.openai.com.cdn.cloudflare.net
+host,copilot.microsoft.com
+host,gateway.bingviz.microsoft.net
+host,gateway.bingviz.microsoftapp.net
+host,in.appcenter.ms
+host,location.microsoft.com
+host,odc.officeapps.live.com
+host,openai-api.arkoselabs.com
+host,openaicomproductionae4b.blob.core.windows.net
+host,production-openaicom-storage.azureedge.net
+host,r.bing.com
+host,self.events.data.microsoft.com
+host,services.bingapis.com
+host,static.cloudflareinsights.com
+host,sydney.bing.com
+host,www.bing.com
+host-suffix,algolia.net
+host-suffix,api.microsoftapp.net
+host-suffix,auth0.com
+host-suffix,bing-shopping.microsoft-falcon.io
+host-suffix,challenges.cloudflare.com
+host-suffix,chatgpt.com
+host-suffix,chatgpt.livekit.cloud
+host-suffix,client-api.arkoselabs.com
+host-suffix,edgeservices.bing.com
+host-suffix,events.statsigapi.net
+host-suffix,featuregates.org
+host-suffix,host.livekit.cloud
+host-suffix,identrust.com
+host-suffix,intercom.io
+host-suffix,intercomcdn.com
+host-suffix,launchdarkly.com
+host-suffix,oaistatic.com
+host-suffix,oaiusercontent.com
+host-suffix,observeit.net
+host-suffix,openai.com
+host-suffix,openaiapi-site.azureedge.net
+host-suffix,openaicom.imgix.net
+host-suffix,segment.io
+host-suffix,sentry.io
+host-suffix,stripe.com
+host-suffix,turn.livekit.cloud
+host-keyword,openaicom-api
+IP-ASN,14061,no-resolve
+IP-ASN,20473,no-resolve
+IP-CIDR,24.199.123.28/32
+IP-CIDR,64.23.132.171/32
+
+# NAME: Gemini
+# UPDATED: 2024-07-03 16:18:30
+# host: 3
+# host-keyword: 3
+# host-suffix: 7
+# TOTAL: 13
+host,ai.google.dev
+host,alkalimakersuite-pa.clients6.google.com
+host,makersuite.google.com
+host-suffix,bard.google.com
+host-suffix,deepmind.com
+host-suffix,deepmind.google
+host-suffix,gemini.google.com
+host-suffix,generativeai.google
+host-suffix,proactivebackend-pa.googleapis.com
+host-suffix,apis.google.com
+host-keyword,colab
+host-keyword,developerprofiles
+host-keyword,generativelanguage
+
+# NAME: OpenAI
+# UPDATED: 2024-07-03 16:18:28
+# host: 8
+# host-keyword: 1
+# host-suffix: 24
+# IP-ASN: 1
+# IP-CIDR: 2
+# TOTAL: 36
+host,browser-intake-datadoghq.com
+host,chat.openai.com.cdn.cloudflare.net
+host,gemini.google.com
+host,openai-api.arkoselabs.com
+host,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+host,openaicomproductionae4b.blob.core.windows.net
+host,production-openaicom-storage.azureedge.net
+host,static.cloudflareinsights.com
+host-suffix,ai.com
+host-suffix,algolia.net
+host-suffix,api.statsig.com
+host-suffix,auth0.com
+host-suffix,chatgpt.com
+host-suffix,chatgpt.livekit.cloud
+host-suffix,client-api.arkoselabs.com
+host-suffix,events.statsigapi.net
+host-suffix,featuregates.org
+host-suffix,host.livekit.cloud
+host-suffix,identrust.com
+host-suffix,intercom.io
+host-suffix,intercomcdn.com
+host-suffix,launchdarkly.com
+host-suffix,oaistatic.com
+host-suffix,oaiusercontent.com
+host-suffix,observeit.net
+host-suffix,openai.com
+host-suffix,openaiapi-site.azureedge.net
+host-suffix,openaicom.imgix.net
+host-suffix,segment.io
+host-suffix,sentry.io
+host-suffix,stripe.com
+host-suffix,turn.livekit.cloud
+host-keyword,openai
+IP-ASN,20473
+IP-CIDR,24.199.123.28/32
+IP-CIDR,64.23.132.171/32
