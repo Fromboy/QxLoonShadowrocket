@@ -68,5 +68,8 @@ HOST-KEYWORD,*.bingredtea.*, proxy
 # demus音乐软件
 HOST-KEYWORD,*.demus.*, proxy
 
+# SteveWatch+ 软件
+HOST-SUFFIX,api.8437351.xyz, proxy
+
 
 
