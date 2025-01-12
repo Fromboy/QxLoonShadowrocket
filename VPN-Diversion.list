@@ -29,6 +29,8 @@ DOMAIN-KEYWORD,hneko, proxy
 DOMAIN-KEYWORD,bighneko, proxy
 DOMAIN-KEYWORD,bighhneko, proxy
 DOMAIN-KEYWORD,putao666, proxy
+DOMAIN-KEYWORD,subneko, proxy
+DOMAIN-KEYWORD,neko, proxy
 DOMAIN-WILDCARD,.*hhneko.*, proxy
 
 
@@ -71,7 +73,7 @@ DOMAIN-KEYWORD,*.bingredtea.*, proxy
 DOMAIN-KEYWORD,*.demus.*, proxy
 
 # SteveWatch+ 软件
-DOMAIN- SUFFIX,api.8437351.xyz, proxy
+DOMAIN-SUFFIX,api.8437351.xyz, proxy
 
 
 
