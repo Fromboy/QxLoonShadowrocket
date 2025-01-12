@@ -70,6 +70,8 @@ DOMAIN-KEYWORD,*.bingredtea.*, proxy
 # demus音乐软件
 DOMAIN-KEYWORD,*.demus.*, proxy
 
+# SteveWatch+ 软件
+DOMAIN- SUFFIX,api.8437351.xyz, proxy
 
 
 
