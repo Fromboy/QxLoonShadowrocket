@@ -1,0 +1,402 @@
+#Stash 2025-01-19
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 127.0.0.1:9090
+# 替换上面文字用于Stash获取机场流量信息并在主页显示
+subscribe-url: 
+# 替换上面文字用于Stash获取机场流量信息并在主页显示
+# ⚠️⚠️⚠️⚠️⚠️⚠使用方法介绍️⚠️⚠️⚠️⚠️⚠️
+# ⚠️以下方法任选其一
+# ⚠️有Clash订阅优先使用方法二❗️
+# ⚠️1.可以使用任意类型的链接仅替换上面文字
+# ⚠️2.多个链接使用英文符号的竖杠|隔开一起写上即可
+# url: "https://api.v1.mk/sub?target=clash&url=订阅链接&emoji=true&list=true&udp=true"
+# ⚠️3.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
+# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+proxy-providers:
+  HK400GB1:
+    type: http
+    url: ""
+    # ⚠️以下方法任选其一
+    # ⚠️有Clash订阅优先使用方法二❗️
+    # ⚠️1.可以使用任意类型的链接仅替换上面文字
+    # ⚠️2. 多个链接使用英文符号的竖杠|隔开一起写上即可
+    # ⚠️3.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
+    interval: 86400
+    path: ./all.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.apple.com/library/test/success.html
+      benchmark-timeout: 5
+      benchmark-url: http://cp.cloudflare.com/generate_204
+      filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
+    benchmark-timeout: 3
+    benchmark-url: http://www.gstatic.com/generate_204
+    filter: ^((?!(邀请|返利|请|更换|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
+  YZ200GB2:
+    benchmark-timeout: 3
+    interval: 86400
+    url:  
+    filter: ^((?!(邀请|3X|0.5|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
+    benchmark-url: http://www.gstatic.com/generate_204
+  极速机场3:
+    benchmark-timeout: 3
+    interval: 86400
+    url:  
+    benchmark-url: http://www.gstatic.com/generate_204
+    filter: ^((?!(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).)*$
+dns:
+  enable: true
+  ipv6: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 2400:3200::1
+    - 240e:4c:4008::1
+    - '2402:4e00::'
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - +.xboxlive.com
+    - msftconnecttest.com
+    - xbox.*.microsoft.com
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
+proxies:
+proxy-groups:
+  - name: 手动切换
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
+    include-all: true #引用所有节点
+    # 包括的代理组
+    proxies: null
+    filter: ^((?!(邀请|返利|循环|官网|客服|请|更换|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
+  - name: 国外网站
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+    proxies: &G
+      - 故障转移
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+      - 手动切换
+  - name: 国内网站
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+    proxies: &C
+      - DIRECT
+      - 故障转移
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+  - name: YouTube
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+    proxies: *G
+  - name: NETLFIX
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+    proxies: *G
+  - name: Disney+
+    type: select
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DisneyPlus.png
+    proxies:
+      - 故障转移
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+  - name: Spotify
+    type: select
+    proxies: *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+  - # Stream-link直播分流
+    name: Stream-link
+    proxies:
+      - 手动切换
+      - 故障转移
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Nfcloud.png
+  - name: Twitter
+    type: select
+    proxies: *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+  - name: 故障转移
+    type: fallback
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    include-all: true
+    filter: ^((?!(邀请|返利|循环|官网|请|更换|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内)).)*$
+  - name: Speedtest
+    type: select
+    proxies:
+      - DIRECT
+      - 手动切换
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
+  - name: TikTok
+    type: select
+    proxies: *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
+    name: OpenAI
+    proxies: null
+    type: select
+    include-all: true
+  - name: 苹果服务
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+    proxies:
+      - DIRECT
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+  - name: Telegram
+    type: select
+    proxies: *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+  - name: 微软服务
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+    proxies:
+      - DIRECT
+      - 手动切换
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+  - name: 网易音乐
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
+    proxies:
+      - DIRECT
+  - name: 哔哩哔哩
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+    proxies:
+      - DIRECT
+      - 香港节点
+      - 台湾节点
+  - name: 游戏平台
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
+    proxies:
+      - DIRECT
+      - 手动切换
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 新加坡节点
+  - name: 漏网之鱼
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+    proxies: *C
+  - name: 香港节点
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: (?=.*(港|🇭🇰|HK|(?i)Hong))^((?!(台|日|韩|新|美|3X)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: null
+  - name: 日本节点
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    include-all: true
+    filter: (?=.*(日|🇯🇵|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: null
+  - name: 台湾节点
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+    include-all: true
+    filter: (?=.*(台|🇨🇳|🇹🇼|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: null
+  - name: 美国节点
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?=.*(美|🇺🇸|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: true
+  - name: 新加坡节点
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?=.*(新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$
+    url: "http://www.apple.com/library/test/success.html"
+    interval: 300
+    lazy: null
+  - filter: ^((?!套餐|到期|余额|剩余|流量|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|防止|国内|官网|🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American).)*$
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AIA.png
+    include-all: true
+    name: 其他节点
+    type: select
+rule-providers:
+  YouTube:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
+    path: ./ruleset/Netflix.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml"
+    path: ./ruleset/Disney.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.txt"
+    path: ./ruleset/Apple.yaml
+    interval: 86400
+  Telegram-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
+  Speedtest-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml
+  Twitter-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter_No_Resolve.yaml
+  Spotify-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml
+  TikTok-rules:
+    behavior: classical
+    interval: 86400
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+    path: ./ruleset/Microsoft.yaml
+    interval: 86400
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml"
+    path: ./ruleset/NetEaseMusic.yaml
+    interval: 86400
+  BiliBili:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
+    path: ./ruleset/BiliBili.yaml
+    interval: 86400
+  Game:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml"
+    path: ./ruleset/Game.yaml
+    interval: 86400
+  OtherProxy:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Clash/Rule/OtherProxy.yaml"
+    path: ./ruleset/OtherProxy.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt"
+    path: ./ruleset/China.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.txt"
+    path: ./ruleset/Global-Domain.yaml
+    interval: 86400
+  Stream-link:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/Stream-link.yaml
+  ChatGPT:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
+rules:
+  - SCRIPT,quic,REJECT,no-track
+  - RULE-SET,ChatGPT,OpenAI
+  - RULE-SET,Stream-link,Stream-link
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Netflix,NETFLIX
+  - RULE-SET,Disney,Disney+
+  - RULE-SET,Spotify-rules,Spotify
+  - RULE-SET,Speedtest-rules,Speedtest
+  - RULE-SET,TikTok-rules,TikTok
+  - RULE-SET,Telegram-rules,Telegram
+  - RULE-SET,Twitter-rules,Twitter
+  - RULE-SET,Apple,苹果服务
+  - RULE-SET,Microsoft,微软服务
+  - RULE-SET,NetEaseMusic,网易音乐
+  - RULE-SET,BiliBili,哔哩哔哩
+  - RULE-SET,Game,游戏平台
+  - RULE-SET,OtherProxy,国外网站
+  - RULE-SET,China,国内网站
+  - RULE-SET,Global,国外网站
+  - GEOIP,Lan,DIRECT,no-resolve
+  - GEOIP,CN,国内网站,no-resolve
+  - MATCH,漏网之鱼
+hosts: null
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
