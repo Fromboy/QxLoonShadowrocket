@@ -136,3 +136,11 @@ DOMAIN-KEYWORD,openai
 IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
+
+# Grok-3 服务域名分流到 Proxy
+DOMAIN,grok.x.ai
+DOMAIN,api.x.ai
+DOMAIN,docs.x.ai
+DOMAIN,status.x.ai
+DOMAIN,grok-v2.x.ai
+DOMAIN-SUFFIX,x.ai
