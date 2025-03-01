@@ -138,13 +138,7 @@ IP-CIDR,24.199.123.28/32
 IP-CIDR,64.23.132.171/32
 
 # Grok-3 服务域名分流到 Proxy
-host,grok.x.ai
-host,api.x.ai
-host,docs.x.ai
 host,featureassets.org
-host,status.x.ai
-host,grok-v2.x.ai
-host,assets.x.ai
 host,grok.com
 host,assets.grok.com
 host-suffix,*.x.ai
