@@ -143,4 +143,7 @@ DOMAIN,api.x.ai
 DOMAIN,docs.x.ai
 DOMAIN,status.x.ai
 DOMAIN,grok-v2.x.ai
+DOMAIN,assets.x.ai
+DOMAIN,grok.com
+DOMAIN,assets.grok.com
 DOMAIN-SUFFIX,x.ai
