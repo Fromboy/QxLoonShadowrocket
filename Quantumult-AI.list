@@ -141,6 +141,7 @@ IP-CIDR,64.23.132.171/32
 host,grok.x.ai
 host,api.x.ai
 host,docs.x.ai
+host,featureassets.org
 host,status.x.ai
 host,grok-v2.x.ai
 host,assets.x.ai
