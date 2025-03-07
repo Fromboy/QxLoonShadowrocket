@@ -141,4 +141,4 @@ IP-CIDR,64.23.132.171/32
 host,featureassets.org
 host,grok.com
 host,assets.grok.com
-host-suffix,*.x.ai
+host-suffix,x.ai
