@@ -1,0 +1,12 @@
+# < > ✨微信如何拥有CallKit操作步骤如下：
+# < > 1. 微信更换非大陆手机号
+# < >2. 同意各种协议直至提交界面
+# < >3. 退出微信后台并卸载微信
+# < >4. 添加以下规则屏蔽热更新
+# < >4. 屏蔽微信APP更新
+
+
+DOMAIN,dl.wechat.com,REJECT
+DOMAIN,wechat.com,REJECT
+DOMAIN,dldir1.qq.com,REJECT
+DOMAIN,dldir1v6.qq.com,REJECT
