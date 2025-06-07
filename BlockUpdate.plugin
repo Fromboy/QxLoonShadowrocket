@@ -22,7 +22,7 @@ DOMAIN,xp.apple.com,REJECT
 # 屏蔽mac系统更新
 DOMAIN,swscan.apple.com,REJECT
 DOMAIN,swdist.apple.com,REJECT
-DOMAINhost,swcdn.apple.com,REJECT
+DOMAIN,swcdn.apple.com,REJECT
 DOMAIN,swquery.apple.com,REJECT
 DOMAIN,swdownload.apple.com,REJECT
 
