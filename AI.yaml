@@ -1,9 +1,12 @@
 # AI 合集分流规则 包含  Bing Copilot Gemini OpenAI
-# NAME: Bing
 # UPDATED: 2024-07-03 16:18:28
 # DOMAIN-SUFFIX: 9
 # TOTAL: 9
 payload:
+# mixpanel
+- DOMAIN-SUFFIX,mixpanel.com
+
+# NAME: Bing
 - DOMAIN-SUFFIX,bing.com
 - DOMAIN-SUFFIX,bing.com.cn
 - DOMAIN-SUFFIX,bing.net
@@ -138,3 +141,11 @@ payload:
 - IP-ASN,20473,no-resolve
 - IP-CIDR,24.199.123.28/32
 - IP-CIDR,64.23.132.171/32
+
+
+  # Grok-3
+  - DOMAIN,featureassets.org
+  - DOMAIN,grok.com
+  - DOMAIN,assets.grok.com
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-KEYWORD,grok
