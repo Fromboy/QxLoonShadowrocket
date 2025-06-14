@@ -146,3 +146,4 @@ host,featureassets.org
 host,grok.com
 host,assets.grok.com
 host-suffix,x.ai
+host-keyword,grok
