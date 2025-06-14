@@ -1,7 +1,6 @@
 # NAME: mixpanel
 DOMAIN-SUFFIX,mixpanel.com
 
-
 # NAME: Bing
 # URL: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Loon-AI.list
 # UPDATED: 2024-07-03 16:18:28
@@ -147,3 +146,4 @@ DOMAIN,featureassets.org
 DOMAIN,grok.com
 DOMAIN,assets.grok.com
 DOMAIN-SUFFIX,x.ai
+DOMAIN-KEYWORD,grok
