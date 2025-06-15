@@ -8,7 +8,7 @@
 # 2.	🌕 Loon 去广告插件（.plugin）Loon插件中心使用 .plugin 插件導入
 # https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/cmsAdblock.plugin
 # 3.	🌌 Quantumult X 去广告片段（.snippet）Quantumult X配置文件中 snippet在 [rewrite_local] 引入片段或直接粘貼內容到复写
-# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/cms_adblock.snippet
+# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/cms_adblock.js
 
 name = 去广告｜CMS
 desc = 去除插入式广告
