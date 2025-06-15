@@ -26,10 +26,6 @@ desc: 去除插入式廣告 - 多來源支持
 # 致谢: https://github.com/Yswag
 # 注意: Stash 不支持 Loon 的 #!select=彈窗通知,true,false，如需通知需在脚本中实现
 
-rules:
-  # 暴风跑马灯：重写 URL，移除 _z5q.ts 并进行 302 重定向
-  - REDIRECT,^https?:\/\/s\d+\.bfengbf\.com\/video(.+)_z5q\.ts,$1$2.ts,302
-
 http:
   mitm:
     # 需要拦截的域名列表，用于 MITM 处理
