@@ -3,7 +3,7 @@
 # 注意：需搭配 Rewrite 和 Script 模組啟用
 # 腳本支援：cmsAdblock.js
 # 1.	📦 Stash 去广告规则（.stoverride）Stash=Modules → Override將 .stoverride 作為模組載入
-# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/cms_adblock.stoverride
+# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/cms_adblock.yaml
 # 2.	🌕 Loon 去广告插件（.plugin）Loon插件中心使用 .plugin 插件導入
 # https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/cmsAdblock.plugin
 # 3.	🌌 Quantumult X 去广告片段（.snippet）Quantumult X配置文件中 snippet在 [rewrite_local] 引入片段或直接粘貼內容到复写
