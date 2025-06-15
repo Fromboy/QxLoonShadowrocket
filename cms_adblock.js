@@ -1,15 +1,15 @@
-/************
-#功能：在 QX 中攔截 HLS 廣告流（.m3u8）
-# 用法：導入 snippet 模組，可嵌入到主配置中
-# 注意：需搭配 Rewrite 和 Script 模組啟用
-# 腳本支援：cmsAdblock.js
-# 1.	📦 Stash 去广告规则（.stoverride）Stash=Modules → Override將 .stoverride 作為模組載入
-# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/cms_adblock.stoverride
-# 2.	🌕 Loon 去广告插件（.plugin）Loon插件中心使用 .plugin 插件導入
-# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/cmsAdblock.plugin
-# 3.	🌌 Quantumult X 去广告片段（.snippet）Quantumult X配置文件中 snippet在 [rewrite_local] 引入片段或直接粘貼內容到复写
-# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/cms_adblock.js
-
+/*********************
+ 功能：在 QX 中攔截 HLS 廣告流（.m3u8）
+ 用法：導入 snippet 模組，可嵌入到主配置中
+ 注意：需搭配 Rewrite 和 Script 模組啟用
+ 腳本支援：cmsAdblock.js
+ 1.	📦 Stash 去广告规则（.stoverride）Stash=Modules → Override將 .stoverride 作為模組載入
+ https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/cms_adblock.stoverride
+ 2.	🌕 Loon 去广告插件（.plugin）Loon插件中心使用 .plugin 插件導入
+ https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/cmsAdblock.plugin
+ 3.	🌌 Quantumult X 去广告片段（.snippet）Quantumult X配置文件中 snippet在 [rewrite_local] 引入片段或直接粘貼內容到复写
+ https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/cms_adblock.js
+**********************/
 [rewrite_local]
 # 暴風跑馬燈
 ^https?:\/\/s\d+\.bfengbf\.com\/video(.+)_z5q\.ts $1$2.ts
