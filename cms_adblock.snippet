@@ -17,8 +17,6 @@ icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/XPTV.png
 [rewrite_local]
 # 暴風跑馬燈
 ^https?:\/\/s\d+\.bfengbf\.com\/video(.+)_z5q\.ts 302 https://s1.bfengbf.com/video$1.ts
-
-[script-response]
 ^https?:\/\/m3u8\.(hmrvideo|heimuertv)\.com\/play\/.+\.m3u8$ requires-body=1, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/cmsAdblock.js, tag=去廣告｜黑木耳
 ^https?:\/\/((v\.lzcdn|v\.cdnlz|vip.*\.lz[-]?cdn)\d+\.com)\/.+\/hls\/.+\.m3u8$ requires-body=1, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/cmsAdblock.js, tag=去廣告｜量子資源
 ^https?:\/\/(super|svipsvip|vip)\.ffzy[A-Za-z0-9-]+\.com\/.+\/hls\/.+\.m3u8$ requires-body=1, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/cmsAdblock.js, tag=去廣告｜非凡資源
