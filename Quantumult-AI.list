@@ -147,3 +147,6 @@ host,grok.com
 host,assets.grok.com
 host-suffix,x.ai
 host-keyword,grok
+
+host-suffix,manus.im
+host-keyword,manus
