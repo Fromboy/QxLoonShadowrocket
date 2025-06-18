@@ -149,6 +149,7 @@ DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,grok
 
 # Manus.im 服务域名分流到 Proxy
-
+DOMAIN,api.manus.im
+DOMAIN,files.manuscdn.com
 DOMAIN-SUFFIX,manus.im
-DOMAIN-KEYWORD,manus
+
