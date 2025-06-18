@@ -151,3 +151,7 @@ host,api.manus.im
 host,files.manuscdn.com
 host-suffix,manus.im
 host-suffix,manuscdn.com
+
+# cursor.com服务域名分流到 Proxy
+host,cursor.com
+host-suffix,cursor.com
