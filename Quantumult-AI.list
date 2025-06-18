@@ -146,5 +146,8 @@ host,assets.grok.com
 host-suffix,x.ai
 host-keyword,grok
 
+# Manus.im 服务域名分流到 Proxy
+host,api.manus.im
+host,files.manuscdn.com
 host-suffix,manus.im
-host-keyword,manus
+host-suffix,manuscdn.com
