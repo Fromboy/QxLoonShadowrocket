@@ -154,3 +154,8 @@ DOMAIN,files.manuscdn.com
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manuscdn.com
 
+# cursor.com服务域名分流到 Proxy
+DOMAIN,cursor.com
+DOMAIN-SUFFIX,cursor.com
+
+
