@@ -80,19 +80,19 @@ IP-CIDR,64.23.132.171/32
 # host-keyword: 3
 # host-suffix: 7
 # TOTAL: 13
-host,ai.google.dev
-host,alkalimakersuite-pa.clients6.google.com
-host,makersuite.google.com
-host-suffix,bard.google.com
-host-suffix,deepmind.com
-host-suffix,deepmind.google
-host-suffix,gemini.google.com
-host-suffix,generativeai.google
-host-suffix,proactivebackend-pa.googleapis.com
-host-suffix,apis.google.com
-host-keyword,colab
-host-keyword,developerprofiles
-host-keyword,generativelanguage
+HOST,ai.google.dev,Gemini
+HOST,alkalimakersuite-pa.clients6.google.com,Gemini
+HOST,makersuite.google.com,Gemini
+HOST-SUFFIX,bard.google.com,Gemini
+HOST-SUFFIX,deepmind.com,Gemini
+HOST-SUFFIX,deepmind.google,Gemini
+HOST-SUFFIX,gemini.google.com,Gemini
+HOST-SUFFIX,generativeai.google,Gemini
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,Gemini
+HOST-SUFFIX,apis.google.com,Gemini
+HOST-KEYWORD,colab,Gemini
+HOST-KEYWORD,developerprofiles,Gemini
+HOST-KEYWORD,generativelanguage,Gemini
 
 # NAME: OpenAI
 # UPDATED: 2024-07-03 16:18:28
