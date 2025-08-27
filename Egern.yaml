@@ -193,6 +193,9 @@ rules:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Reject.yaml
     policy: REJECT
 - rule_set:
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+- rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/AI.yaml
     policy: AI
 - rule_set:
