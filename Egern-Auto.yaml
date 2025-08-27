@@ -76,7 +76,7 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_Arcade.png
     hidden: false
-- fallback:
+- select:
     name: 𝒀𝒐𝒖𝑻𝒖𝒃𝒆
     policies:
     - 香港节点
@@ -89,7 +89,7 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
     hidden: false
-- fallback:
+- select:
     name: 𝑫𝒊𝒔𝒏𝒆𝒚+
     policies:
     - 手动选择
@@ -116,7 +116,7 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
     hidden: false
-- fallback:
+- select:
     name: 𝑵𝒆𝒕𝒇𝒍𝒊𝒙
     policies:
     - 香港节点
@@ -129,7 +129,7 @@ policy_groups:
     flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
     hidden: false
-- fallback:
+- select:
     name: 𝑻𝒊𝒌𝑻𝒐𝒌
     policies:
     - 香港节点
