@@ -9,12 +9,20 @@
 # 最后更新时间: 2025-08-28 15:00
 #
 # ================
+# IPV6 默认关闭
 ipv6: false
 # TUN模式
 vif_only: true
 # 劫持 DNS 服务器
 hijack_dns:
 - '*:53'
+# http代理端口
+http_port: 3080
+# socks5代理端口
+socks_port: 3090
+allow_external_connections: true
+# 隐藏VPN图标默认关闭
+hide_vpn_icon: false
 # 自定义 MaxMind 数据库
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 # 自定义 ASN 数据库
@@ -23,6 +31,13 @@ asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite
 proxy_latency_test_url: http://1.1.1.1/generate_204
 # 直连延迟测试
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+# 路由配置
+compat_route: false
+include_all_networks: false
+include_apns: false
+include_cellular_services: false
+include_local_networks: false
+#DNS配置
 dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
