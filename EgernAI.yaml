@@ -1,0 +1,134 @@
+# 国外AI合集
+# NAME: Mixpanel
+domain_suffix_set:
+  - mixpanel.com
+
+# NAME: Bing
+domain_suffix_set:
+  - bing.com
+  - bing.com.cn
+  - bing.net
+  - bingads.com
+  - bingagencyawards.com
+  - bingapistatistics.com
+  - bingsandbox.com
+  - bingvisualsearch.com
+  - bingworld.com
+
+# NAME: Copilot
+domain_set:
+  - api.msn.com
+  - api.statsig.com
+  - assets.msn.com
+  - browser-intake-datadoghq.com
+  - chat.openai.com.cdn.cloudflare.net
+  - copilot.microsoft.com
+  - gateway.bingviz.microsoft.net
+  - gateway.bingviz.microsoftapp.net
+  - in.appcenter.ms
+  - location.microsoft.com
+  - odc.officeapps.live.com
+  - openai-api.arkoselabs.com
+  - openaicomproductionae4b.blob.core.windows.net
+  - production-openaicom-storage.azureedge.net
+  - r.bing.com
+  - self.events.data.microsoft.com
+  - services.bingapis.com
+  - static.cloudflareinsights.com
+  - sydney.bing.com
+  - www.bing.com
+domain_suffix_set:
+  - algolia.net
+  - api.microsoftapp.net
+  - auth0.com
+  - bing-shopping.microsoft-falcon.io
+  - challenges.cloudflare.com
+  - chatgpt.com
+  - chatgpt.livekit.cloud
+  - client-api.arkoselabs.com
+  - edgeservices.bing.com
+  - events.statsigapi.net
+  - featuregates.org
+  - host.livekit.cloud
+  - idenTrust.com
+  - intercom.io
+  - intercomcdn.com
+  - launchdarkly.com
+  - oaistatic.com
+  - oaiusercontent.com
+  - observeit.net
+  - openai.com
+  - openaiapi-site.azureedge.net
+  - openaicom.imgix.net
+  - segment.io
+  - sentry.io
+  - stripe.com
+  - turn.livekit.cloud
+domain_keyword_set:
+  - openaicom-api
+
+# NAME: Gemini
+domain_set:
+  - ai.google.dev
+  - alkalimakersuite-pa.clients6.google.com
+  - makersuite.google.com
+domain_suffix_set:
+  - bard.google.com
+  - deepmind.com
+  - deepmind.google
+  - gemini.google.com
+  - generativeai.google
+  - proactivebackend-pa.googleapis.com
+  - apis.google.com
+domain_keyword_set:
+  - colab
+  - developerprofiles
+  - generativelanguage
+
+# NAME: OpenAI
+domain_set:
+  - browser-intake-datadoghq.com
+  - chat.openai.com.cdn.cloudflare.net
+  - gemini.google.com
+  - openai-api.arkoselabs.com
+  - openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - openaicomproductionae4b.blob.core.windows.net
+  - production-openaicom-storage.azureedge.net
+  - static.cloudflareinsights.com
+domain_suffix_set:
+  - ai.com
+  - algolia.net
+  - api.statsig.com
+  - auth0.com
+  - chatgpt.com
+  - chatgpt.livekit.cloud
+  - client-api.arkoselabs.com
+  - events.statsigapi.net
+  - featuregates.org
+  - host.livekit.cloud
+  - idenTrust.com
+  - intercom.io
+  - intercomcdn.com
+  - launchdarkly.com
+  - oaistatic.com
+  - oaiusercontent.com
+  - observeit.net
+  - openai.com
+  - openaiapi-site.azureedge.net
+  - openaicom.imgix.net
+  - segment.io
+  - sentry.io
+  - stripe.com
+  - turn.livekit.cloud
+domain_keyword_set:
+  - openai
+
+# NAME: Grok
+domain_set:
+  - featureassets.org
+  - grok.com
+  - assets.grok.com
+domain_suffix_set:
+  - x.ai
+domain_keyword_set:
+  - grok
