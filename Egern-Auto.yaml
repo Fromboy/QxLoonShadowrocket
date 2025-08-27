@@ -32,6 +32,11 @@ dns:
     Domestic-DNS:
     - 223.5.5.5
     - 119.29.29.29
+    Domestic:
+    - quic://dns.alidns.com:853
+    - https://doh.pub/dns-query
+    Foreign:
+    - https://dns.google/dns-query
  # DNS 转发规则
   forward:
   - wildcard: # 通配符规则
@@ -41,6 +46,10 @@ dns:
     # App Store 下载请求解析 金山CDN
     iosapps.itunes.apple.com:
     - iosapps.itunes.apple.com.download.ks-cdn.com
+    dns.alidns.com: 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
+    doh.pub: 1.12.12.12, 120.53.53.53
+    dns.google: 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+
     # 互联网IP查询
     public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
