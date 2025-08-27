@@ -1,23 +1,3 @@
-# 规则名称: Mixpanel
-# 规则统计: 1
-domain_suffix_set:
-  # Mixpanel 域名
-  - mixpanel.com
-
-# 规则名称: Bing
-# 规则统计: 9
-domain_suffix_set:
-  # Bing 搜索及相关服务
-  - bing.com
-  - bing.com.cn
-  - bing.net
-  - bingads.com
-  - bingagencyawards.com
-  - bingapistatistics.com
-  - bingsandbox.com
-  - bingvisualsearch.com
-  - bingworld.com
-
 # 规则名称: Copilot
 # 规则统计: 51
 domain_set:
