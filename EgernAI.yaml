@@ -1,5 +1,5 @@
-# DATE:2025-08-28 11:00:11
 # NAME: Mixpanel
+# date: 2025-08-28
 domain_suffix_set:
   - mixpanel.com
 
@@ -99,36 +99,3 @@ domain_suffix_set:
   - ai.com
   - algolia.net
   - api.statsig.com
-  - auth0.com
-  - chatgpt.com
-  - chatgpt.livekit.cloud
-  - client-api.arkoselabs.com
-  - events.statsigapi.net
-  - featuregates.org
-  - host.livekit.cloud
-  - idenTrust.com
-  - intercom.io
-  - intercomcdn.com
-  - launchdarkly.com
-  - oaistatic.com
-  - oaiusercontent.com
-  - observeit.net
-  - openai.com
-  - openaiapi-site.azureedge.net
-  - openaicom.imgix.net
-  - segment.io
-  - sentry.io
-  - stripe.com
-  - turn.livekit.cloud
-domain_keyword_set:
-  - openai
-
-# NAME: Grok
-domain_set:
-  - featureassets.org
-  - grok.com
-  - assets.grok.com
-domain_suffix_set:
-  - x.ai
-domain_keyword_set:
-  - grok
