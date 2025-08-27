@@ -41,11 +41,13 @@ include_local_networks: false
 dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
-  - system
+  - Domestic-DNS
+  - Domestic
   upstreams:
     # 国内公共 DNS
     Domestic-DNS:
     - 223.5.5.5
+    - 180.184.1.1
     - 119.29.29.29
     Domestic:
     - quic://dns.alidns.com:853
