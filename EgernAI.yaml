@@ -1,7 +1,5 @@
 # NAME: Mixpanel
 # date: 2025-08-28 12:00:00
-domain_suffix_set:
-  - mixpanel.com
 
 # NAME: Bing
 domain_suffix_set:
