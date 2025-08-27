@@ -1,8 +1,13 @@
-# NAME: Mixpanel 
-# date: 2025-08-28 12:00:00
-
-# NAME: Bing
+# 规则名称: Mixpanel
+# 规则统计: 1
 domain_suffix_set:
+  # Mixpanel 域名
+  - mixpanel.com
+
+# 规则名称: Bing
+# 规则统计: 9
+domain_suffix_set:
+  # Bing 搜索及相关服务
   - bing.com
   - bing.com.cn
   - bing.net
@@ -13,8 +18,10 @@ domain_suffix_set:
   - bingvisualsearch.com
   - bingworld.com
 
-# NAME: Copilot
+# 规则名称: Copilot
+# 规则统计: 51
 domain_set:
+  # Copilot API 与服务
   - api.msn.com
   - api.statsig.com
   - assets.msn.com
@@ -29,6 +36,7 @@ domain_set:
   - openai-api.arkoselabs.com
   - openaicomproductionae4b.blob.core.windows.net
   - production-openaicom-storage.azureedge.net
+  - segment.io
   - r.bing.com
   - self.events.data.microsoft.com
   - services.bingapis.com
@@ -36,6 +44,7 @@ domain_set:
   - sydney.bing.com
   - www.bing.com
 domain_suffix_set:
+  # Copilot 相关域名后缀
   - algolia.net
   - api.microsoftapp.net
   - auth0.com
@@ -58,19 +67,21 @@ domain_suffix_set:
   - openai.com
   - openaiapi-site.azureedge.net
   - openaicom.imgix.net
-  - segment.io
   - sentry.io
   - stripe.com
   - turn.livekit.cloud
 domain_keyword_set:
   - openaicom-api
 
-# NAME: Gemini
+# 规则名称: Gemini
+# 规则统计: 13
 domain_set:
+  # Gemini API 与开发者平台
   - ai.google.dev
   - alkalimakersuite-pa.clients6.google.com
   - makersuite.google.com
 domain_suffix_set:
+  # Gemini 相关后缀
   - bard.google.com
   - deepmind.com
   - deepmind.google
@@ -83,7 +94,8 @@ domain_keyword_set:
   - developerprofiles
   - generativelanguage
 
-# NAME: OpenAI
+# 规则名称: OpenAI
+# 规则统计: 36
 domain_set:
   - browser-intake-datadoghq.com
   - chat.openai.com.cdn.cloudflare.net
@@ -97,3 +109,53 @@ domain_suffix_set:
   - ai.com
   - algolia.net
   - api.statsig.com
+  - auth0.com
+  - chatgpt.com
+  - chatgpt.livekit.cloud
+  - client-api.arkoselabs.com
+  - events.statsigapi.net
+  - featuregates.org
+  - livekit.cloud
+  - idenTrust.com
+  - intercom.io
+  - intercomcdn.com
+  - launchdarkly.com
+  - oaistatic.com
+  - oaiusercontent.com
+  - observeit.net
+  - openai.com
+  - openaiapi-site.azureedge.net
+  - openaicom.imgix.net
+  - segment.io
+  - sentry.io
+  - stripe.com
+  - turn.livekit.cloud
+domain_keyword_set:
+  - openai
+
+# 规则名称: Grok
+# 规则统计: 4
+domain_set:
+  - featureassets.org
+  - grok.com
+  - assets.grok.com
+domain_suffix_set:
+  - x.ai
+domain_keyword_set:
+  - grok
+
+# 规则名称: Manus.im
+# 规则统计: 4
+domain_set:
+  - api.manus.im
+  - files.manuscdn.com
+domain_suffix_set:
+  - manus.im
+  - manuscdn.com
+
+# 规则名称: cursor.com
+# 规则统计: 2
+domain_set:
+  - cursor.com
+domain_suffix_set:
+  - cursor.com
