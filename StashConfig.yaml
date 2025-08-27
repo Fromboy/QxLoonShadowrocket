@@ -515,6 +515,3 @@ rules:
   - RULE-SET,MainlandIP-rules,中国大陆
   - GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
-script:
-  shortcuts:
-    quic: network == 'udp' and dst_port == 443
