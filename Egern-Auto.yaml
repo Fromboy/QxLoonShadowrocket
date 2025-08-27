@@ -1,23 +1,44 @@
+# 官方文档：https://doc.egernapp.com
+#
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
+#
+# Egern Version ≥ v2.0.0(552)
+#
+# 最后更新时间: 2025-08-28 15:00
+#
+# ================
 ipv6: false
+# TUN模式
 vif_only: true
+# 劫持 DNS 服务器
 hijack_dns:
 - '*:53'
+# 自定义 MaxMind 数据库
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+# 自定义 ASN 数据库
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+# 代理延迟测试
 proxy_latency_test_url: http://1.1.1.1/generate_204
+# 直连延迟测试
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
 dns:
+  # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
   - system
   upstreams:
+    # 国内公共 DNS
     Domestic-DNS:
     - 223.5.5.5
     - 119.29.29.29
+ # DNS 转发规则
   forward:
-  - wildcard:
+  - wildcard: # 通配符规则
       match: '*'
       value: Domestic-DNS
   hosts:
+    # App Store 下载请求解析 金山CDN
     iosapps.itunes.apple.com:
     - iosapps.itunes.apple.com.download.ks-cdn.com
 policy_groups:
