@@ -15,6 +15,11 @@ vif_only: true
 # 劫持 DNS 服务器
 hijack_dns:
 - '*:53'
+# http代理端口
+http_port: 3080
+# socks5代理端口
+socks_port: 3090
+allow_external_connections: true
 # 自定义 MaxMind 数据库
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 # 自定义 ASN 数据库
