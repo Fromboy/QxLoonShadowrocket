@@ -25,7 +25,6 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - https://2025.youzizizi.top/api/v1/client/subscribe?token=cd0ba1d39671dc49495c94dce9aed185
     filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|国内|加入)).*
     update_interval: 86400
     icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
