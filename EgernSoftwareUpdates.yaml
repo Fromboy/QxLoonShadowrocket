@@ -1,4 +1,5 @@
 # 规则名称: Apple/macOS & Software Updates
+# 屏蔽IOS和MOS常用软件更新域名
 # 规则统计: 45
 
 domain_set:
