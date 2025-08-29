@@ -75,6 +75,10 @@ DOMAIN,download.parallels.com,REJECT
 # 屏蔽 Boom 3D音频增强App软件更新24-09-20
 DOMAIN,apiboom3.globaldelight.net,REJECT
 
+# 屏蔽bartender5
+DOMAIN,macbartender.com,REJECT
+
+
 
 
 
