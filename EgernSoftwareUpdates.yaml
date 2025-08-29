@@ -66,3 +66,6 @@ domain_suffix_set:
 
   # Aldente 充电管家软件自动更新
   - apphousekitchen.com
+
+  # 屏蔽bartender5
+  - macbartender.com,REJECT
