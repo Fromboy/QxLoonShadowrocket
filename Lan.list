@@ -1,3 +1,8 @@
+# NAME: Lan
+# AUTHOR: 
+# REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Lan.list
+
+
 [Rule]
 # Lan 本地内网直连（精简合并版）
 HOST-SUFFIX,local,DIRECT
