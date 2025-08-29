@@ -76,7 +76,8 @@ DOMAIN,download.parallels.com,REJECT
 DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
-DOMAIN-suffix,macbartender.com,REJECT
+DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
