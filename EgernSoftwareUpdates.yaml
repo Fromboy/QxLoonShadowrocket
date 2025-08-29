@@ -40,6 +40,9 @@ domain_set:
   # Boom 3D 音频增强软件更新
   - apiboom3.globaldelight.net
 
+    # 屏蔽bartender5
+  - macbartender.com,REJECT
+
 domain_suffix_set:
   # One Switch 快捷开关系统更新
   - paddleapi.com
@@ -67,5 +70,4 @@ domain_suffix_set:
   # Aldente 充电管家软件自动更新
   - apphousekitchen.com
 
-  # 屏蔽bartender5
-  - macbartender.com,REJECT
+
