@@ -77,7 +77,8 @@ payload:
  - DOMAIN,apiboom3.globaldelight.net,REJECT
 
  # 屏蔽bartender5
- - DOMAIN,macbartender.com,REJECT
+ - DOMAIN-SUFFIX,macbartender.com,REJECT
 
   
+
 
