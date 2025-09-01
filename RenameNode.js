@@ -3,8 +3,8 @@
 // 该脚本将根据节点名称中的关键词匹配替换相应的国家名称及国旗。
 // 把该脚本写入重写并打开Quantumult X资源解析器
 
-[rewrite_remote]
-https?:\/\/.*\/(subscribe|nodes|getProfile|v2ray|ss|clash|api\/v\d+\/(profile|nodes)|sub|config|link\/[^\/]+)(?:\?.*)?$ url script-response-body https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/RenameNode.js, tag=RenameNode, update-interval=86400, enabled=true
+[rewrite_local]
+^https?:\/\/.*(sub|subscribe|list=quantumultxnode|list=quantumultx|clash|v2ray|ssr|surge|loon).*$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/RenameNode.js
 
 */
 
