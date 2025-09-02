@@ -40,7 +40,7 @@ payload:
   - DOMAIN-SUFFIX,in.appcenter.ms
 
 # 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
-  # DOMAIN-SUFFIX,menubarx.app
+#  - DOMAIN-SUFFIX,menubarx.app
 
 # 屏蔽APP Cleaner卸载软件系统更新 24-02-22
   - DOMAIN-SUFFIX,download.nektony.com
@@ -84,6 +84,7 @@ payload:
  - DOMAIN-SUFFIX,macbartender.com
 
   
+
 
 
 
