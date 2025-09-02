@@ -2,6 +2,9 @@
 #!desc=适配 Loon 的台湾 4GTV 节点分流规则
 #!author=Fromboy
 #!category=Region
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTV.list
+# Loon 
+# Stash 
 
 [Rule]
 IP-CIDR,13.112.0.0/14,Proxy,no-resolve
