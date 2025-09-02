@@ -1,0 +1,11 @@
+# 4GTV 分流规则 合集分流规则  需要台湾节点
+# UPDATED: 2025-09-03 16:18:28
+# DOMAIN-SUFFIX: 4
+# TOTAL: 5
+payload:
+# 4GTV 分流规则
+  - IP-CIDR,13.112.0.0/14,Proxy,no-resolve
+  - DOMAIN-SUFFIX,4gtv.tv,Proxy
+  - DOMAIN-SUFFIX,hinet.net,Proxy
+  - DOMAIN-SUFFIX,livednow.com,Proxy
+  - DOMAIN-SUFFIX,ofiii.com,Proxy
