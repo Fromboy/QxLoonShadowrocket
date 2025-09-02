@@ -1,6 +1,9 @@
 # NAME: 屏蔽系统更新 规则版本
 # AUTHOR: 屏蔽 iOS 系统更新
 # UPDATED: 2024-06-20 13:32:55
+#🔹 1. 如果是 Clash / Stash
+#	•	主配置文件（config.yaml）里写 rules:
+#	•	远程规则集（.yaml 文件）里写 payload:
 # ===================各个屏蔽地址Shadowrocket/Surge通用==========================
 # 只有 IOS 屏蔽地址
 # Shadowrocket url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/BlockUpdate.sgmodule
@@ -80,6 +83,7 @@ payload:
  - DOMAIN-SUFFIX,macbartender.com
 
   
+
 
 
 
