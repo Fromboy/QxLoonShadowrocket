@@ -33,39 +33,39 @@ payload:
   - DOMAIN,swdownload.apple.com
 
 # 屏蔽One Switch快捷开关系统更新 24-02-22
-  - DOMAIN-suffix,paddleapi.com
-  - DOMAIN-suffix,paddle.com
-  - DOMAIN-suffix,paddle.s3.amazonaws.com
-  - DOMAIN-suffix,fireball.studio
-  - DOMAIN-suffix,in.appcenter.ms
+  - DOMAIN-SUFFIX,paddleapi.com
+  - DOMAIN-SUFFIX,paddle.com
+  - DOMAIN-SUFFIX,paddle.s3.amazonaws.com
+  - DOMAIN-SUFFIX,fireball.studio
+  - DOMAIN-SUFFIX,in.appcenter.ms
 
 # 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
-  # DOMAIN-suffix,menubarx.app
+  # DOMAIN-SUFFIX,menubarx.app
 
 # 屏蔽APP Cleaner卸载软件系统更新 24-02-22
-  - DOMAIN-suffix,download.nektony.com
+  - DOMAIN-SUFFIX,download.nektony.com
 
 # 屏蔽CleanMY MAC清理软件系统更新 24-02-22
-  - DOMAIN-suffix,updates.devmate.com
+  - DOMAIN-SUFFIX,updates.devmate.com
 
 # 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
-  - DOMAIN-suffix,ic.adobe.io
-  - DOMAIN-suffix,crs.cr.adobe.com
-  - DOMAIN-suffix,ims-prod06.adobelogin.com
-  - DOMAIN-suffix,lcs-cops.adobe.io.com
-  - DOMAIN-suffix,4vzokhpsbs.adobe.io
+  - DOMAIN-SUFFIX,ic.adobe.io
+  - DOMAIN-SUFFIX,crs.cr.adobe.com
+  - DOMAIN-SUFFIX,ims-prod06.adobelogin.com
+  - DOMAIN-SUFFIX,lcs-cops.adobe.io.com
+  - DOMAIN-SUFFIX,4vzokhpsbs.adobe.io
 
 # 屏蔽BetterMouse软件自动更新
-  - DOMAIN-suffix,api.appcenter.ms
+  - DOMAIN-SUFFIX,api.appcenter.ms
 
 # 屏蔽Aldente充电管家软件自动更新
- - DOMAIN-suffix,apphousekitchen.com
+ - DOMAIN-SUFFIX,apphousekitchen.com
  # 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
- - DOMAINdkys.org
- - DOMAINyoutusoft.com
- - DOMAINhostbuf.com
- - DOMAINtcpspeed.com
- - DOMAINwn1998.com
+ - DOMAIN,dkys.org
+ - DOMAIN,youtusoft.com
+ - DOMAIN,hostbuf.com
+ - DOMAIN,tcpspeed.com
+ - DOMAIN,wn1998.com
  
  # 屏蔽Istat系统监控软件更新
  - DOMAIN,updates.istatmenus.app
@@ -84,6 +84,7 @@ payload:
  - DOMAIN-SUFFIX,macbartender.com
 
   
+
 
 
 
