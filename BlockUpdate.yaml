@@ -10,7 +10,7 @@
 # QuantumultX url=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/quantumult-x/BlockUpdate.list
 # Stash重写屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
-rules:
+payload:
   - DOMAIN,mesu.apple.com
   - DOMAIN,gdmf.apple.com
   - DOMAIN,updates-http.cdn-apple.com
@@ -80,6 +80,7 @@ rules:
  - DOMAIN-SUFFIX,macbartender.com
 
   
+
 
 
 
