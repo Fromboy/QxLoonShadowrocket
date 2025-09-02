@@ -2,6 +2,11 @@
 # UPDATED: 2024-07-03 16:18:28
 # DOMAIN-SUFFIX: 9
 # TOTAL: 9
+# 详细说明看介绍
+#🔹 1. 如果是 Clash / Stash
+#	•	主配置文件（config.yaml）里写 rules:
+#	•	远程规则集（.yaml 文件）里写 payload:
+
 payload:
 # mixpanel
 - DOMAIN-SUFFIX,mixpanel.com
