@@ -4,6 +4,11 @@
 # UPDATED: 2025-09-03 16:18:28
 # DOMAIN-SUFFIX: 4
 # TOTAL: 5
+# 详细说明看介绍
+#🔹 1. 如果是 Clash / Stash
+#	•	主配置文件（config.yaml）里写 rules:
+#	•	远程规则集（.yaml 文件）里写 payload:
+
 payload:
 # 4GTV 分流规则
 - IP-CIDR,13.112.0.0/14,no-resolve
