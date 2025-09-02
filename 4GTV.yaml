@@ -4,8 +4,8 @@
 # TOTAL: 5
 payload:
 # 4GTV 分流规则
-- IP-CIDR,13.112.0.0/14,Proxy,no-resolve
-- DOMAIN-SUFFIX,4gtv.tv,Proxy
-- DOMAIN-SUFFIX,hinet.net,Proxy
-- DOMAIN-SUFFIX,livednow.com,Proxy
-- DOMAIN-SUFFIX,ofiii.com,Proxy
+- IP-CIDR,13.112.0.0/14,台湾节点,no-resolve
+- DOMAIN-SUFFIX,4gtv.tv,台湾节点
+- DOMAIN-SUFFIX,hinet.net,台湾节点
+- DOMAIN-SUFFIX,livednow.com,台湾节点
+- DOMAIN-SUFFIX,ofiii.com,台湾节点
