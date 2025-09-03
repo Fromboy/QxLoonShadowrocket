@@ -4,7 +4,7 @@
 #!category=Region
 # Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTV.list
 # Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
-# Stash 
+# Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
 
 IP-CIDR,13.112.0.0/14,Proxy,no-resolve
 DOMAIN-SUFFIX,4gtv.tv,Proxy
