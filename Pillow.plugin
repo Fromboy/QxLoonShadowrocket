@@ -1,0 +1,10 @@
+#!name=Pillow.module
+#!desc= Pillow 解锁会员
+#!homepage=
+#!icon= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_1.png
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) requires-body=1, script-path=pillow.js, tag=Pillow解锁
+
+[MITM]
+hostname = api.revenuecat.com
