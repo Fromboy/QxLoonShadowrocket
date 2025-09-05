@@ -4,7 +4,7 @@
 #!icon= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_1.png
 
 [Script]
-http-response ^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) requires-body=1, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/pillow.js, tag=Pillow解锁
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) requires-body=1, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/LoonPillow.js, tag=Pillow解锁
 
 [MITM]
 hostname = api.revenuecat.com
