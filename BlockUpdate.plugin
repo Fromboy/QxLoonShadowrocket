@@ -1,5 +1,7 @@
 #!name =  No-Ios and MacOS: 📍❌
 #!desc = 自定义「拒绝ios和MacOS更新」\n通过「基于网络规则」结果始终为用具拒绝更新。
+#!icon = https://images.macrumors.com/article-new/2019/07/ios_location_services-250x250.jpg
+#!tag =  IOS and MacOS
 #!date=2023-09-26 10:52:05
 
 # ===================各个屏蔽地址Shadowrocket/Surge通用==========================
@@ -77,6 +79,7 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
