@@ -1,6 +1,6 @@
-# !name=屏蔽系统更新
-# !desc=屏蔽 iOS 系统更新。
-# !date=2023-09-26 10:52:05
+#!name =  No-Ios and MacOS: 📍❌
+#!desc = 自定义「拒绝ios和MacOS更新」\n通过「基于网络规则」结果始终为用具拒绝更新。
+#!date=2023-09-26 10:52:05
 
 # ===================各个屏蔽地址Shadowrocket/Surge通用==========================
 # 只有 IOS 屏蔽地址
@@ -77,6 +77,7 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
