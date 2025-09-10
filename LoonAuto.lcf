@@ -1,5 +1,5 @@
-# Loon 最小配置
-# Date: 2024-06-02 16:31:21
+# Loon 最新配置
+# Date: 2025-09-10 21:31:21
 [General]
 ip-mode = v4-only
 fast-switch = false
@@ -38,10 +38,8 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # WARP = WireGuard,interface-ip=172.16.0.2,private-key="OIOzNQQyqZq4wNjVGvSlFEIXHV6PEumxgCObGzgyjUY=",mtu=1280,dns=1.1.1.1,dnsv6=2606:4700:4700::1111,keepalive=45,peers=[{public-key="bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",allowed-ips="0.0.0.0/0，::/0",endpoint=162.159.195.153:5279:2408}]
 
 [Remote Proxy]
-youzi500GB = https://23333.youzizizi.top/api/v1/client/subscribe?token=8b95e5fac3fa20a768428a01c0701839,udp=true,block-quic=false,fast-open=true,vmess-aead=true,skip-cert-verify=default,enabled=true,flexible-sni=true,img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BetaHub.png
-Heko400GB = https://subneko.v1999.sbs/study/xuexi/v999/hneko?token=23456aaa73b0a0d816a897f1fe1efe54,udp=true,block-quic=false,fast-open=true,vmess-aead=true,skip-cert-verify=default,enabled=true,flexible-sni=true,img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Sports.png
-mmy300GB = https://s1.ydnail.com/api/v1/client/subscribe?token=e5e95228c4df871cf61e58578b9d5d9b,udp=true,block-quic=false,fast-open=true,vmess-aead=true,skip-cert-verify=default,enabled=true,flexible-sni=true,img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/CaiYun.png
 # 机场远程订阅地址
+
 
 
 
@@ -82,8 +80,6 @@ mmy300GB = https://s1.ydnail.com/api/v1/client/subscribe?token=e5e95228c4df871cf
 [Proxy Chain]
 
 [Rule]
-DOMAIN-SUFFIX,sanhengyishu.xyz,𝑪𝒉𝒊𝒏𝒆𝒔𝒆 🇨🇳
-
 # 国内地址直连、用了订阅链接注掉
 # GEOIP,cn,𝑪𝒉𝒊𝒏𝒆𝒔𝒆 🇨🇳
 # 兜底策略
@@ -103,7 +99,7 @@ https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Shadowrocket/stream
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, policy=𝑪𝒉𝒊𝒏𝒆𝒔𝒆 🇨🇳, tag=𝑪𝒉𝒊𝒏𝒂  🇨🇳, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list, policy=𝑵𝒆𝒕𝒇𝒍𝒊𝒙 🍷, tag=𝑵𝒆𝒕𝒇𝒍𝒊𝒙 🍷, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TIDAL/TIDAL.list, policy=🇺🇸 美国, tag=𝑻𝒊𝒅𝒂𝒍  🎼, parser-enable=true, enabled=true
-https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Loon/Speedtest/Speedtest.list, policy=𝑺𝒑𝒆𝒆𝒅𝒕𝒆𝒔𝒕 🛫, tag=𝑺𝒑𝒆𝒆𝒅𝒕𝒆𝒔𝒕 🛫, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Speedtest/Speedtest.list, policy=𝑺𝒑𝒆𝒆𝒅𝒕𝒆𝒔𝒕 🛫, tag=𝑺𝒑𝒆𝒆𝒅𝒕𝒆𝒔𝒕 🛫, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTubeMusic/YouTubeMusic.list, policy=🇺🇸 美国, tag=𝒀𝒐𝒖𝒕𝒖𝒃𝒆𝑴𝒖𝒔𝒊𝒄 🎷, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Tencent/Tencent.list, policy=𝑪𝒉𝒊𝒏𝒆𝒔𝒆 🇨🇳, tag=𝑻𝒆𝒏𝒄𝒆𝒏𝒕 🇨🇳, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TikTok/TikTok.list, policy=𝑻𝒊𝒌𝑻𝒐𝒌 🔥, tag=𝑻𝒊𝒌𝑻𝒐𝒌 🔥, enabled=true
@@ -125,7 +121,7 @@ https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/RU
 
 [Remote Script]
 https://raw.githubusercontent.com/Fromboy/LoonScripts/refs/heads/main/tools.scripts, tag=脚本检测工具合集, enabled=true
-https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, tag=Zippo会员中心, enabled=false
+
 [Plugin]
 https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/BlockUpdate.plugin, enabled=true
 https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Location.plugin, enabled=true
@@ -141,7 +137,5 @@ https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin, 
 [Mitm]
 ca-p12 = MIIJRQIBAzCCCQ8GCSqGSIb3DQEHAaCCCQAEggj8MIII+DCCA68GCSqGSIb3DQEHBqCCA6AwggOcAgEAMIIDlQYJKoZIhvcNAQcBMBwGCiqGSIb3DQEMAQYwDgQI9U8rwroYo5kCAggAgIIDaFFXwmRSWNVAcUSX1ymht4MgPcYFSMh/1Y/czim3ykmNV60q4UpdgialZYY0sxsDjJ4fmmCodJchlf38++gt0LKqkQ2BTCZRyzGkQhULeNjqA5b30KYJLjXlbfX97fczBNClGH86D6HYcQBMtLquOw2HeLSy5N32Err4llt6zPSjwDQPW428iFkzL/sEgnzVv8/fmS4zvO2Xb058xYXQ5ubyZbQEs+a23C4Ho1CHkkiqw8ihlRLJiadLgz3NRwq6q+NFmAUsq71YYu2tOvH7Kqfus15CHsrjDETBt58yKKcOnj+dsNd7yeAaRCxAZ7oqiOQabFAEvm8m9HabOJfC43SvoEY1cCfyKyAr2/Kclp800cTMs4svSKinhoKC5UThDkFhb4Z21r5HR0cK5hMBoPXQ7RFek2KQKchBTarrQbjTrNzyhNyRaOgWtRGqV0q3bnUtyc/5uQq+UKrxQYKPHbeO5H6LWGOxBCat/apEbIOWC1fLSqd+K3JssDKvG0fSWDan3QSHd1yHFK462ufrAjpLX7xOzMerD97zw//ovjJ+Eh0gmrcgDkXtqwW+Jc35M8mg8ntBUt0S6pxeZ3Y2766fbCU2esKXQuFmqsDe3MDmU6dS7NJjHx1HPEynzA06uIfHH2L4JsZr6gEqsST+83gPb1r273NtNmSAiOImZUK7Bq2JMTys4e91Rmyd8FaPHgd1JL8ctzZREtc/XrYzQFaXirS1bdXDH6n7TusKzm2wQatnDuo7W+ygaynSAXKVcXswJryYU2w1RImfMCNlRsMrJ1kwrB8J8t44hnNrYKveMQFyRlaXBhFAd1JyrTpHBXl7boiXpfeBIyKdDGSo/OpNDnnSJzhAQZ0bNlnQIotQVEbTEYsQQqc75gxCeIvbD2Nm3B+KkE39bg5zefOiDLKEzWW2/RncKE060Y/+lINViRzDO0aXUkX1w3RmHTTz7flxqwKnrqucnHkJ8snqYSAqAuneTz8ha5JYHUQTpbvtJl/O4PMm0hGymqk2W89v1/qIfCjT0IAX/QsuKPhVoJZahro8tfMjzAAikjvPNb1G6Hf+LdAFcjLd7DQ8C4vWSZ+YsSzGa22WN0oI9XShijXbncY+5ik2WPxYnCIPcxxJya4nI45D9lDxP7kx1izl8i5SbnNZGzrhMIIFQQYJKoZIhvcNAQcBoIIFMgSCBS4wggUqMIIFJgYLKoZIhvcNAQwKAQKgggTuMIIE6jAcBgoqhkiG9w0BDAEDMA4ECDZvhG5mwfS4AgIIAASCBMhAyA9WVr0FM+AnNZ1bbwb6lUev/wMJtyTsJI76BRiSUKwi9DafPY9EdwKMoUweDhEBPyWnT+R4U3CwlxaAZwuV9BE0Do+wRr+Tc43wJycT6qfOAxlCDIrGJD0zL/EKuoAs685jQFOGkClS+tww6Oe2uaSVwnB06iLOr1MZqqv3A6QvyEil4Dvs7g9oQ+6KV+8E1rczcQzdrcD94YtBsL+/+2eIYpm/m269JQQhUQ0qSYmy5CUOPsQ+0X68Tjvk+AbDeY5EshAiA4RjodUmhhPZz9f3bumwfi6fqoPdzfSbW2kRqmRecG+o5wIz9MbryvHtn8nWWaoovCwbDMZXETWp5Vk7L57b3Nwep5KQg1vohk+Y3+zZhaWrG9XPmxxwWm84alDcXyx5oDG01tukTCMsTnt4PdZzFGVZJHxuVGqSeDfLK4Ieyo2oUXHwUDNBJkugIb/pwofeAeRPh9QeGHWUI1ZeFnRvbuL5FkuzZWC6EC97ef0xWOTyLKg5It5caVr3tuJNWdb7mdHluw+7IR2ev+tG213qg1fUIhgcDKFsMUFDtU2soFgp/eVDzph1czez+JDE3XYSzPFYLPT3LuqS/n6UNbbEI2QDUng8J4GnQMH+vzBEs9+liEn+xjX5K+eBSv0iUHiLSU9Z6c4yN1rWmPQPWVPtsfB73lOiXhUR0xOa9E3Updby/MRF98G5EK2u0GVs+u7N4Ednhwc1FADA4WVkS/uHf9AIDjBoDahpglzGMwUSCDvu6sFGtcuJnbWTaeg4NQAgjqhTArS/os42chrcoS0/BKtd0rWqf2zHb9/plMjwvoz024ktu/pd6c9YwwvH0phcNImi1Q1kwcx6T8Dxp7+wedQZUG6qjyPSLpZ7J2OVfpWl8M5zgBm+kE72txLerYjBOOV+pLHAhmB821QtYi945jEZ/aMVjHLCoR40W4vZZfgg/ySVzuHinL3p1zrTiWTlu8egUZdQTkYqLyWXp8hU9FNsDiUSfpf9MJnBdzYw9I6ZILYDm9VD0pbzU5YZvCj9fK6i9isu4RaVMLUZOSltUja6HOh2Z1HbaGfXuAFvKUE+BDMp+0q8otZ8qQDjX460sDk+l2ySeLBiysSatoFmpUeEbfBtJTSQ1cm9H4Hg2tvVMuiMrXJHjPVV9V98Wvch9/svbv9jP3XzQ/hNRq4pT7rVK1oopLdAxU9OR0VroqyiWHWvEmKqBmfQRbVAdNa43/LuthlBn4a+8GPU3tSGv1Yw6+gWkl/BcokWF+7hEBvihTYRhbpvkT8fnOdxa21XZupLW+qnKOqhDHDGjtfM+VdiMrLcw2fCtMS5r0mIp9AeElWc4mw6x6c1AxEs04Tuw6rv3wZRkHI4sm+dbi3x0pLf6BEaJ6uxVhmb1u08BpaL8qHd6+iwTEm+WRGOulJzLxO8i7mv0VH6lwXuzhNKPWGImSM2cCOK49cnuz5eyKt5+nUunH7kDlba5MxJCfHEIoz4nRyMP975I9ydoNf6cQIsOXfPJo4ai9I8UpjT2r+6PCLamQ5ISqomHkoRQmzFA3Nq1w5zS4MYm4jxxQ4s16dnSfhrYmnQnSbGF1ZcE2kQcFKElrwFRLUptSn5awOK0TdICJXbhLT3Pw+n5sV1340xJTAjBgkqhkiG9w0BCRUxFgQUFhYq4J7nt0xMwtsFFkDlBNs8edUwLTAhMAkGBSsOAwIaBQAEFIeo0Jsx6fpkuI6zLClgmtRJyLZFBAhkYvpN0XPLGQ==
 ca-passphrase = 37L8EJ31
-hostname = webapi.qmai.cn,*.amap.com,bd-api.kuwo.cn
-ca-p12 = 
-ca-passphrase = 
+hostname = webapi.qmai.cn,*.amap.com,bd-api.kuwo.cn 
 skip-server-cert-verify = false
