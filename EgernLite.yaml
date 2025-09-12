@@ -5,22 +5,32 @@
 # Egern Version ≥ v2.0.0(552)
 # Egern 简洁配置，只有国内🇨🇳和代理🌍 
 # url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# 在手动策略《〈填写你的代理订阅〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
 # ================================
-
+# ipv6 默认关闭
 ipv6: false
+# http 代理端口
 http_port: 3080
+# socks 5代理端口
 socks_port: 3090
+# 外部代理打开
 allow_external_connections: true
-vif_only: false
+ # tun模式默认打开
+vif_only: true
+# 拦截dns
 hijack_dns:
 - '*:53'
+# geoip地址🇨🇳
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+# asn地址🇨🇳
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+# 代理和内网速测试地址
 proxy_latency_test_url: http://www.google.com/generate_204
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+# dns配置
 dns:
   bootstrap:
-  - system
+    - system
   upstreams:
     Domestic-DNS:
     - 223.5.5.5
@@ -35,6 +45,9 @@ dns:
   - wildcard:
       match: '*'
       value: Foreign-DNS
+
+
+# 策略组配置
 policy_groups:
 - select:
     name: 漏网之鱼
@@ -114,7 +127,7 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - https://23333.youzizizi.top/api/v1/client/subscribe?token=8b95e5fac3fa20a768428a01c0701839
+    - 填写你的代理订阅
     filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
     update_interval: 21600
     icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
