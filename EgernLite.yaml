@@ -78,7 +78,7 @@ policy_groups:
     policies:
     - 手动选择
     flatten: true
-    filter: (?i)🇭🇰|HongKong|HK
+    filter: (?i)🇭🇰|香港|(\b(HK|Hong)\b)
     tolerance: 50
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
@@ -88,7 +88,7 @@ policy_groups:
     policies:
     - 手动选择
     flatten: true
-    filter: (?i)🇺🇸|UnitedStates|US|LosAngeles|SanJose
+    filter: (?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)
     tolerance: 50
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
@@ -98,7 +98,7 @@ policy_groups:
     policies:
     - 手动选择
     flatten: true
-    filter: (?i)🇯🇵|Japan|JP|Tokyo
+    filter: (?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)
     tolerance: 50
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
@@ -108,7 +108,7 @@ policy_groups:
     policies:
     - 手动选择
     flatten: true
-    filter: (?i)🇰🇷|Korea|KR|Seoul
+    filter: (?i)🇰🇷|韩国|首尔|(\b(KR|Korea)\b)
     tolerance: 50
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/South_Korea.png
@@ -118,7 +118,7 @@ policy_groups:
     policies:
     - 手动选择
     flatten: true
-    filter: (?i)🇸🇬|Singapore|SG
+    filter: (?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)
     tolerance: 50
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
