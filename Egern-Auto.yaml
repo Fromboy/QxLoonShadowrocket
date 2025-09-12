@@ -41,8 +41,7 @@ include_local_networks: false
 dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
-  - Domestic-DNS
-  - Domestic
+  - system
   upstreams:
     # 国内公共 DNS
     Domestic-DNS:
@@ -69,6 +68,8 @@ dns:
 
     # 互联网IP查询
     public_ip_lookup_url: https://ifconfig.me/ip
+
+# 代理组
 policy_groups:
 - external:
     name: 手动选择
