@@ -57,6 +57,7 @@ policy_groups:
         - 狮城节点
       icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
 
+
   # 香港节点（自动选择符合条件的节点）
   - auto_test:
       name: 香港节点
