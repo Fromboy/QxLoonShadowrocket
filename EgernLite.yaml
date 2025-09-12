@@ -156,12 +156,12 @@ rules:
 
 # MITM 配置（默认禁用，除非需要）
 mitm:
-  enabled: false
+  enabled: true
 
 # 模块（全部禁用，简化配置）
 modules:
   - url: https://github.com/Repcz/Tool/raw/X/Egern/Module/YouTube.yaml
-    enabled: false
+  enabled: false
   - name: SubStore
-    url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
-    enabled: false
+  url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
+  enabled: false
