@@ -118,6 +118,17 @@ policy_groups:
 
 # 分流规则
 rules:
+  - rule_set:
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernAI.yaml
+    policy: 𝑨𝑰人工智能
+    update_interval: 86400
+    disabled: false
+  - rule_set:
+    name: 屏蔽系统更新❌
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
   # 直连规则（国内流量）
   - rule_set:
       match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Direct.yaml
