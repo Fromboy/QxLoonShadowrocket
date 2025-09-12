@@ -58,6 +58,7 @@ policy_groups:
     - 韩国节点
     - 日本节点
     - 香港节点
+    - 台湾节点
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/softlyx/Nijigen1.png
     hidden: false
@@ -66,6 +67,7 @@ policy_groups:
     policies:
     - 手动选择
     - 香港节点
+    - 台湾节点
     - 日本节点
     - 韩国节点
     - 狮称节点
