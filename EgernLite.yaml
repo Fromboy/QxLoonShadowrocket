@@ -6,10 +6,12 @@
 # Egern 简洁配置，只有国内🇨🇳和代理🌍 
 # url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # ================================
+
+ipv6: false
 http_port: 3080
 socks_port: 3090
 allow_external_connections: true
-vif_only: true
+vif_only: false
 hijack_dns:
 - '*:53'
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
@@ -35,20 +37,33 @@ dns:
       value: Foreign-DNS
 policy_groups:
 - select:
-    name: 世界广我心游
+    name: 漏网之鱼
     policies:
-    - 香港节点
+    - DIRECT
     - 美国节点
+    - 狮称节点
+    - 韩国节点
+    - 日本节点
+    - 香港节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/softlyx/Nijigen1.png
+    hidden: false
+- select:
+    name: 出国看看
+    policies:
+    - 手动选择
+    - 香港节点
     - 日本节点
     - 韩国节点
     - 狮称节点
-    flatten: true
+    - 美国节点
+    flatten: false
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
     hidden: false
 - auto_test:
     name: 香港节点
     policies:
-    - Manual
+    - 手动选择
     flatten: true
     filter: (?i)🇭🇰|HongKong|HK
     tolerance: 50
@@ -58,7 +73,7 @@ policy_groups:
 - auto_test:
     name: 美国节点
     policies:
-    - Manual
+    - 手动选择
     flatten: true
     filter: (?i)🇺🇸|UnitedStates|US|LosAngeles|SanJose
     tolerance: 50
@@ -68,7 +83,7 @@ policy_groups:
 - auto_test:
     name: 日本节点
     policies:
-    - Manual
+    - 手动选择
     flatten: true
     filter: (?i)🇯🇵|Japan|JP|Tokyo
     tolerance: 50
@@ -78,7 +93,7 @@ policy_groups:
 - auto_test:
     name: 韩国节点
     policies:
-    - Manual
+    - 手动选择
     flatten: true
     filter: (?i)🇰🇷|Korea|KR|Seoul
     tolerance: 50
@@ -88,7 +103,7 @@ policy_groups:
 - auto_test:
     name: 狮称节点
     policies:
-    - Manual
+    - 手动选择
     flatten: true
     filter: (?i)🇸🇬|Singapore|SG
     tolerance: 50
@@ -96,29 +111,50 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     hidden: true
 - external:
-    name: Manual
+    name: 手动选择
     type: select
     urls:
-    - https://your-vpn-provider.com/subscription
+    - https://23333.youzizizi.top/api/v1/client/subscribe?token=8b95e5fac3fa20a768428a01c0701839
+    filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
+    update_interval: 21600
     icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
     hidden: false
 rules:
-- rule_set:
-    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/Direct.yaml
-    policy: DIRECT
-    update_interval: 21600
 - rule_set:
     match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/Reject.yaml
     policy: REJECT
     update_interval: 21600
 - rule_set:
-    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/ProxyGFW.yaml
-    policy: 世界广我心游
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    name: AI人工智能
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernAI.yaml
+    policy: 手动选择
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/Direct.yaml
+    policy: DIRECT
     update_interval: 21600
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/ProxyGFW.yaml
+    policy: 出国看看
+    update_interval: 21600
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Lan.yaml
+    policy: DIRECT
+    update_interval: 86400
+    disabled: false
 - geoip:
     match: CN
     policy: DIRECT
 - default:
-    policy: 世界广我心游
+    policy: 漏网之鱼
 mitm:
-  enabled: false
+  enabled: true
+  ca_p12: 
+  ca_passphrase: egern
