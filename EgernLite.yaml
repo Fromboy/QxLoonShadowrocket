@@ -164,4 +164,4 @@ modules:
     enabled: false
   - name: SubStore
     url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
-    enabled: false有错误吗
+    enabled: false
