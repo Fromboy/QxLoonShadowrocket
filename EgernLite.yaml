@@ -84,12 +84,22 @@ policy_groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     hidden: true
 - auto_test:
+    name: 台湾节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)
+    tolerance: 0
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    hidden: true
+- auto_test:
     name: 美国节点
     policies:
     - 手动选择
     flatten: true
     filter: (?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)
-    tolerance: 50
+    tolerance: 0
     timeout: 3
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     hidden: true
