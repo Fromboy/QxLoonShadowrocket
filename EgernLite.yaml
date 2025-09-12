@@ -5,7 +5,7 @@
 # Egern Version ≥ v2.0.0(552)
 # Egern 简洁配置，只有国内🇨🇳和代理🌍
 # url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
-# ================
+# ================================
 # IPV6 默认关闭
 ipv6: false
 # TUN模式
