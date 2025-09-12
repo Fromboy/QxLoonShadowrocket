@@ -45,7 +45,7 @@ dns:
   - wildcard:
       match: '*'
       value: Foreign-DNS
- hosts:
+  hosts:
     # App Store 下载请求解析 金山CDN
     iosapps.itunes.apple.com:
     - iosapps.itunes.apple.com.download.ks-cdn.com
