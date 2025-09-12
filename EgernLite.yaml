@@ -139,7 +139,7 @@ policy_groups:
     name: 手动选择
     type: select
     urls:
-    - 填写你的代理订阅
+    - 填写⏰这里写✍️你的代理订阅-把这行字全部删掉在写
     filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
     update_interval: 21600
     icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
