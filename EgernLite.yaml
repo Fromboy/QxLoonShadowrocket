@@ -11,7 +11,7 @@ vif_only: true
 
 # 劫持 DNS 服务器（捕获所有 DNS 请求）
 hijack_dns:
-  - '*:53'
+- '*:53'
 
 # HTTP 和 Socks5 代理端口
 http_port: 3080
