@@ -120,7 +120,7 @@ policy_groups:
 rules:
   - rule_set:
     match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernAI.yaml
-    policy: 𝑨𝑰人工智能
+    policy: 全球节点
     update_interval: 86400
     disabled: false
   - rule_set:
