@@ -1,14 +1,17 @@
 # 官方文档：https://doc.egernapp.com
-#
-# Author:https://github.com/Repcz
-# TG:https://t.me/QVQ_Channel
-# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
-#
+# Author: https://github.com/Repcz
+# TG: https://t.me/QVQ_Channel
+# 最后更新时间: 2025-09-11
 # Egern Version ≥ v2.0.0(552)
-#
-# 最后更新时间: 2025-08-28 15:00
-#
-# ================
+# Egern 简洁配置，只有国内🇨🇳和代理🌍 
+# 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
+# Egern url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
+# Egernsmall url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egernsmall.yaml
+# Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
+# ================================
+
 # IPV6 默认关闭
 ipv6: false
 # TUN模式
