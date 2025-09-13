@@ -1,0 +1,99 @@
+# 官方文档：https://doc.egernapp.com
+# Author: https://github.com/Repcz
+# TG: https://t.me/QVQ_Channel
+# 最后更新时间: 2025-09-11
+# Egern Version ≥ v2.0.0(552)
+# Egern 简洁配置，只有国内🇨🇳和代理🌍 
+# url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
+# ================================
+ipv6: false
+http_port: 3080
+socks_port: 3090
+allow_external_connections: true
+vif_only: true
+
+geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
+asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+
+proxy_latency_test_url: http://1.1.1.1/generate_204
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+
+compat_route: false
+
+dns:
+  bootstrap:
+    - system
+
+policy_groups:
+- select:
+    name: PROXY
+    policies:
+      - 订阅
+    flatten: true
+    hidden: false
+- external:
+    name: 订阅
+    type: fallback
+    urls:
+      - 这里填你的机场订阅地址 然后在点右上角保存
+    filter: '^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*'
+    hidden: false
+
+rules:
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
+    policy: REJECT-DROP
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
+    policy: PROXY
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
+- ip_cidr:
+    match: 192.168.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 10.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 127.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 172.16.0.0/12
+    policy: DIRECT
+- ip_cidr:
+    match: 192.128.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 224.0.0.0/24
+    policy: DIRECT
+- geoip:
+    match: CN
+    policy: DIRECT
+    no_resolve: false
+    disabled: false
+- default:
+    policy: PROXY
+
+scriptings: []
+
+mitm:
+  enabled: true
+  ca_passphrase: egern
+
+modules:
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
+  enabled: false
