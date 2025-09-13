@@ -40,11 +40,8 @@ dns:
 
   hosts:
     # App Store 下载请求解析 金山CDN
-    iosapps.itunes.apple.com:
+    iosapps.itunes.apple.com: 
     - iosapps.itunes.apple.com.download.ks-cdn.com
-    dns.alidns.com: 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
-    doh.pub: 1.12.12.12, 120.53.53.53
-    dns.google: 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
 
     # 互联网IP查询
     public_ip_lookup_url: https://ifconfig.me/ip
