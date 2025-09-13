@@ -9,38 +9,43 @@
 # Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
 # ================================
-ipv6: false
+ipv6: true
 http_port: 3080
 socks_port: 3090
 allow_external_connections: true
 vif_only: true
-
 geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
 asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
-
 proxy_latency_test_url: http://1.1.1.1/generate_204
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
-
 compat_route: false
-
 dns:
   bootstrap:
-    - system
-
+  - system
 policy_groups:
-- select:
-    name: PROXY
+- auto_test:
+    name: 最优选择
     policies:
-      - 订阅
+    - 远程订阅
     flatten: true
+    filter: ^(?=.*(美国|新加坡|日本))(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|国内|加入)).*
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    hidden: true
+- select:
+    name: 环游世界
+    policies:
+    - 最优选择
+    - 远程订阅
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/xqcloud.jpeg
     hidden: false
 - external:
-    name: 订阅
-    type: fallback
-    urls: 
-    filter: '^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*'
+    name: 远程订阅
+    type: select
+    urls:
+    filter: ^(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Bigairport.png
     hidden: false
-
 rules:
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
@@ -48,7 +53,7 @@ rules:
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
-    policy: PROXY
+    policy: 环游世界
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
@@ -84,14 +89,10 @@ rules:
     no_resolve: false
     disabled: false
 - default:
-    policy: PROXY
-
-scriptings: []
-
+    policy: 环游世界
 mitm:
   enabled: true
   ca_passphrase: egern
-
 modules:
 - url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
   enabled: false
