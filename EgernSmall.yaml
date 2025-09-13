@@ -48,7 +48,7 @@ dns:
     public_ip_lookup_url: https://ifconfig.me/ip
     
 # > < 代理组
-policy_groups:
+  policy_groups:
   - select:
       name: PROXY
       policies:
