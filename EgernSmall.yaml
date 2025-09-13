@@ -11,14 +11,6 @@
 # > < Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # > < Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
 # > < ================================
-# > < ipv6 默认关闭
-ipv6: false
-# > < http 代理端口
-http_port: 3080
-# > < socks 5代理端口
-socks_port: 3090
-# > < 本地代理开关
-allow_external_connections: true
 # TUN模式
 vif_only: true
 # > < geoip 地址
