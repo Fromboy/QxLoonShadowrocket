@@ -55,6 +55,12 @@ rules:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
     policy: DIRECT
     disabled: false
+- rule_set:
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
 - ip_cidr:
     match: 192.168.0.0/16
     policy: DIRECT
