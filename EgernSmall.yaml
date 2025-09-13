@@ -15,7 +15,7 @@
 # ipv6 默认关闭
 ipv6: false
 # http 代理端口
-#http_port: 3080
+http_port: 3080
 # socks5 代理端口
 socks_port: 3090
 # 外部连接（注释掉以测试是否为必需）
