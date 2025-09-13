@@ -57,60 +57,60 @@ policy_groups:
       hidden: true
 
 # 规则配置
-  rules:
-  - rule_set:
+rules:
+- rule_set:
       match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
       policy: REJECT-DROP
       disabled: false
-  - rule_set:
+- rule_set:
       match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
       policy: PROXY
       disabled: false
-  - rule_set:
+- rule_set:
       match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
       policy: DIRECT
       disabled: false
-  - rule_set:
+- rule_set:
       name: 拒绝IOS更新
       match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
       policy: REJECT
       update_interval: 86400
       disabled: false
-  - ip_cidr:
+- ip_cidr:
       match: 192.168.0.0/16
       policy: DIRECT
-  - ip_cidr:
+- ip_cidr:
       match: 10.0.0.0/8
       policy: DIRECT
-  - ip_cidr:
+- ip_cidr:
       match: 127.0.0.0/8
       policy: DIRECT
-  - ip_cidr:
+- ip_cidr:
       match: 172.16.0.0/12
       policy: DIRECT
-  - ip_cidr:
+- ip_cidr:
       match: 192.128.0.0/16
       policy: DIRECT
-  - ip_cidr:
+- ip_cidr:
       match: 224.0.0.0/24
       policy: DIRECT
-  - geoip:
+- geoip:
       match: CN
       policy: DIRECT
       no_resolve: false
       disabled: false
-  - default:
+- default:
       policy: PROXY
 
-  scriptings:
-  - schedule: {}
+scriptings:
+- schedule: {}
 
-  mitm:
+mitm:
   enabled: true
   ca_passphrase: egern
 
-  modules:
-  - url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
+modules:
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
     enabled: false
-  - url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
+- url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
     enabled: false
