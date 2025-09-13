@@ -11,8 +11,6 @@
 # > < Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # > < Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
 # > < ================================
-# IPV6 默认关闭
-ipv6: false
 # TUN模式
 vif_only: true
 # > < geoip 地址
