@@ -13,7 +13,7 @@
 # > < ================================
 # IPV6 默认关闭
 ipv6: false
-# TUN模式 默认打开
+# TUN模式
 vif_only: true
 # > < geoip 地址
 geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
