@@ -29,9 +29,6 @@ dns:
   bootstrap:
     - system
 
-# 互联网IP查询
-   public_ip_lookup_url: https://ifconfig.me/ip
-
 policy_groups:
 - select:
     name: PROXY
