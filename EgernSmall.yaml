@@ -5,15 +5,23 @@
 # Egern Version ≥ v2.0.0(552)
 # Egern 简洁配置，只有国内和代理
 # 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
-# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里填写自己的机场订阅地址开始愉快的冲浪吧
 # Egern url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
 # Egernsmall url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egernsmall.yaml
 # Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # Egern-Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
 # ================================
 
-# TUN模式
-vif_only: true
+# ipv6 默认关闭
+ipv6: false
+# http 代理端口
+http_port: 3080
+# socks5 代理端口
+socks_port: 3090
+# 外部连接（注释掉以测试是否为必需）
+# allow_external_connections: true
+# TUN 模式（注释掉以测试是否为错误来源）
+# vif_only: true
 
 # geoip 地址
 geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
