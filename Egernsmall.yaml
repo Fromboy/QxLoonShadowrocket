@@ -17,7 +17,7 @@ ipv6: false
 http_port: 3080
 # > < socks 5代理端口
 socks_port: 3090
-# > < 代理开关
+# > < 本地代理开关
 allow_external_connections: true
 # TUN模式
 vif_only: true
