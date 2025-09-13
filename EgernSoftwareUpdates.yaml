@@ -1,0 +1,73 @@
+# 规则名称: Apple/macOS & Software Updates
+# 屏蔽IOS和MOS常用软件更新域名
+# 规则统计: 45
+
+domain_set:
+  # mac系统更新
+  - mesu.apple.com
+  - gdmf.apple.com
+  - updates-http.cdn-apple.com
+  - xp.apple.com
+  - gdmf.apple.com.akadns.net
+  - mesu-cdn.apple.com.akadns.net
+  - mesu-cdn.origin-apple.com.akadns.net
+  - mesu.g.aaplimg.com
+  - appldnld.apple.com
+  - appldnld.apple.com.akadns.net
+  - swscan.apple.com
+  - swdist.apple.com
+  - swcdn.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+
+  # FinalShell 离线更新
+  - dkys.org
+  - youtusoft.com
+  - hostbuf.com
+  - tcpspeed.com
+  - wn1998.com
+
+  # Istat 系统监控软件更新
+  - updates.istatmenus.app
+
+  # Folder Colorizer 软件更新
+  - api.softorino.com
+
+  # Parallels Desktop 软件更新
+  - update.parallels.com
+  - download.parallels.com
+
+  # Boom 3D 音频增强软件更新
+  - apiboom3.globaldelight.net
+
+    # 屏蔽bartender5
+  - macbartender.com,REJECT
+
+domain_suffix_set:
+  # One Switch 快捷开关系统更新
+  - paddleapi.com
+  - paddle.com
+  - paddle.s3.amazonaws.com
+  - fireball.studio
+  - in.appcenter.ms
+
+  # APP Cleaner 卸载软件系统更新
+  - download.nektony.com
+
+  # CleanMY MAC 清理软件系统更新
+  - updates.devmate.com
+
+  # Adobe Acrobat Pro DC 软件系统更新
+  - ic.adobe.io
+  - crs.cr.adobe.com
+  - ims-prod06.adobelogin.com
+  - lcs-cops.adobe.io.com
+  - 4vzokhpsbs.adobe.io
+
+  # BetterMouse 软件自动更新
+  - api.appcenter.ms
+
+  # Aldente 充电管家软件自动更新
+  - apphousekitchen.com
+
+
