@@ -19,10 +19,10 @@ geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.cou
 # > < asn 地址
 asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 # > < 代理和连通性测试地址
-proxy_latency_test_url: http://1.1.1.1/cdn-cgi/trace
+proxy_latency_test_url: http://1.1.1.1/generate_204
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
-
-compat_route: true
+# > < 路由兼容模式默认关闭,效率更高,如遇分流问题请打开
+compat_route: false
 # > < dns 配置
 dns:
   bootstrap:
