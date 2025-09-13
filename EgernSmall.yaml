@@ -111,6 +111,6 @@ mitm:
 
 modules:
 - url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
-    enabled: false
+  enabled: false
 - url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
-    enabled: false
+  enabled: false
