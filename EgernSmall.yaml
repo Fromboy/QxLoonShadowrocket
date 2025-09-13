@@ -1,36 +1,54 @@
-# 官方文档: https://doc.egernapp.com
-# 作者: https://github.com/Repcz
+# 官方文档：https://doc.egernapp.com
+# Author: https://github.com/Repcz
 # TG: https://t.me/QVQ_Channel
 # 最后更新时间: 2025-09-11
-# Egern 版本: >= v2.0.0(552)
-# 说明: 简洁配置，仅包含国内和代理分流
-# 分流库: https://github.com/Repcz/Tool/tree/X/Egern/Rules
-# 提示: 在手动策略的添加 URL 处填写你的机场订阅地址
-# Egern url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
-# Egernsmall url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egernsmall.yaml
-# Egern Lite url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
-# Egern-Auto url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
+# Egern Version ≥ v2.0.0(552)
+# Egern 简洁配置，只有国内和代理
+# 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里填写自己的机场订阅地址开始愉快的冲浪吧
+# Egern url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
+# Egernsmall url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egernsmall.yaml
+# Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# Egern-Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
+# ================================
 
+# ipv6 默认关闭
 ipv6: false
-http_port: 3080
+# http 代理端口
+#http_port: 3080
+# socks5 代理端口
 socks_port: 3090
+# 外部连接（注释掉以测试是否为必需）
 allow_external_connections: true
+# TUN 模式（注释掉以测试是否为错误来源）
 vif_only: true
+
+# geoip 地址
 geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
+
+# asn 地址
 asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+
+# 代理和连通性测试地址
 proxy_latency_test_url: http://1.1.1.1/generate_204
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
-compat_route: false
-public_ip_lookup_url: https://ifconfig.me/ip
 
+# 路由兼容模式默认关闭,效率更高,如遇分流问题请打开
+compat_route: false
+
+# dns 配置
 dns:
   bootstrap:
     - system
 
-hosts:
-  - iosapps.itunes.apple.com: iosapps.itunes.apple.com.download.ks-cdn.com
+  hosts:
+    # App Store 下载请求解析 金山CDN
+    iosapps.itunes.apple.com:
+    - iosapps.itunes.apple.com.download.ks-cdn.com
+        # 互联网IP查询
+    public_ip_lookup_url: https://ifconfig.me/ip
 
-policy_groups:
+  policy_groups:
   - select:
       name: PROXY
       policies:
@@ -41,11 +59,12 @@ policy_groups:
       name: 订阅
       type: fallback
       urls:
-        - 这里填你的机场订阅地址 然后点击右上角保存
+        - 这里填你的机场订阅地址 然后在点右上角保存
       filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
       hidden: true
 
-rules:
+# 规则配置
+  rules:
   - rule_set:
       match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
       policy: REJECT-DROP
@@ -90,14 +109,14 @@ rules:
   - default:
       policy: PROXY
 
-scriptings:
-  - schedule: {}
+  scriptings:
+  - schedule:
 
-mitm:
+  mitm:
   enabled: true
   ca_passphrase: egern
 
-modules:
+  modules:
   - url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
     enabled: false
   - url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
