@@ -1,5 +1,7 @@
 # 规则名称: GEOIPCN
 # 规则统计: 1
+# GeoIP uel = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/GEOIPCN.yaml
+# Lan url = 
 
 geoip_set:
   - CN
