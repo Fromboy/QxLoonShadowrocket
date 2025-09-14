@@ -397,7 +397,7 @@ rules:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Apple.yaml
     policy: DIRECT
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Lan.yaml
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
     policy: DIRECT
 - geoip:
     match: CN
