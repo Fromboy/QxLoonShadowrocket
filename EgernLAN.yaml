@@ -1,5 +1,7 @@
 # 规则名称: LAN
 # 规则统计: 19
+# GeoIP uel = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/GEOIPCN.yaml
+# Lan url = https://github.com/Fromboy/QxLoonShadowrocket/blob/Egern/EgernLAN.yaml
 
 domain_suffix_set:
   - local
