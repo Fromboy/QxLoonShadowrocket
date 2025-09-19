@@ -29,7 +29,7 @@ DOMAIN,swquery.apple.com,REJECT
 DOMAIN,swdownload.apple.com,REJECT
 
 # 屏蔽One Switch快捷开关系统更新 24-02-22
-DOMAIN-suffix,paddleapi.com,REJECT
+
 DOMAIN-suffix,paddle.com,REJECT
 DOMAIN-suffix,paddle.s3.amazonaws.com,REJECT
 DOMAIN-suffix,fireball.studio,REJECT
@@ -79,6 +79,7 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
