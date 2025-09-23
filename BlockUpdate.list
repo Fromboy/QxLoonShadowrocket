@@ -88,6 +88,10 @@ host,apiboom3.globaldelight.net,REJECT
 # 屏蔽bartender5
 host-suffix,macbartender.com,REJECT
 
+# 屏蔽 PopClip 更新
+host,softwareupdate.pilotmoon.com,REJECT
+
+
 
 
 
