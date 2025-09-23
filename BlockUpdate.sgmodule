@@ -12,14 +12,22 @@
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
 [Rule]
+# iOS 系统更新
 DOMAIN,mesu.apple.com,REJECT
+DOMAIN,mesu-cdn.apple.com.akadns.net,REJECT
+DOMAIN,mesu-cdn.origin-apple.com.akadns.net,REJECT
+DOMAIN,mesu.g.aaplimg.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,gdmf.apple.com.akadns.net,REJECT
+DOMAIN,appldnld.apple.com,REJECT
+DOMAIN,appldnld.apple.com.akadns.net,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
 
-# 屏蔽mac系统更新
-DOMAIN,swscan.apple.com,REJECT
-DOMAIN,swdist.apple.com,REJECT
-DOMAIN,swcdn.apple.com,REJECT
-DOMAIN,swquery.apple.com,REJECT
-DOMAIN,swdownload.apple.com,REJECT
+# macOS 系统更新
+DOMAIN-SUFFIX,swscan.apple.com,REJECT
+DOMAIN-SUFFIX,swdist.apple.com,REJECT
+DOMAIN-SUFFIX,swcdn.apple.com,REJECT
+DOMAIN-SUFFIX,swquery.apple.com,REJECT
+DOMAIN-SUFFIX,swdownload.apple.com,REJECT
+
