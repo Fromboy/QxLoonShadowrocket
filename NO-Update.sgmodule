@@ -80,6 +80,10 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 # 屏蔽 Final App软件更新24-09-30
 DOMAIN,hostbuf.com,REJECT
 
+# 屏蔽 PopClip软件更新24-09-30
+DOMAIN,softwareupdate.pilotmoon.com,REJECT
+
+
 
 
 
