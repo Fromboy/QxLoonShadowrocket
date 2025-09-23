@@ -89,6 +89,10 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
 
+# 屏蔽 PopClip 更新
+DOMAIN,softwareupdate.pilotmoon.com,REJECT
+
+
 
 
 
