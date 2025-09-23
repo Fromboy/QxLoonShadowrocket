@@ -13,17 +13,28 @@
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
 # [Rule]
+# 🍎 核心更新检查
 host,mesu.apple.com,REJECT
+# 配置文件 / 描述文件
 host,gdmf.apple.com,REJECT
+# 🍎 系统更新 CDN
 host,updates-http.cdn-apple.com,REJECT
+# 🍎 诊断 & 更新反馈
 host,xp.apple.com,REJECT
+# 🍎 常用下载域名
+host-suffix,appldnld.apple.com,REJECT
 
 # 屏蔽mac系统更新
-host,swscan.apple.com,REJECT
-host,swdist.apple.com,REJECT
-host,swcdn.apple.com,REJECT
-host,swquery.apple.com,REJECT
-host,swdownload.apple.com,REJECT
+# 🍎 iOS 和 macOS 都会用到，主要是下载 更新镜像 / 固件
+host-suffix,appldnld.apple.com,REJECT
+# 🍎 主要用于 macOS 更新内容分发。
+host-suffix,swcdn.apple.com,REJECT
+# 🍎 macOS 系统更新下载。
+host-suffix,swdownload.apple.com,REJECT
+# 🍎 系统更新查询。
+host-suffix,swquery.apple.com,REJECT
+# 🍎 软件更新扫描（非常关键）。
+host-suffix,swscan.apple.com,REJECT
 
 # 屏蔽One Switch快捷开关系统更新 24-02-22
 host-suffix,paddleapi.com,REJECT
@@ -76,6 +87,7 @@ host,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 host-suffix,macbartender.com,REJECT
+
 
 
 
