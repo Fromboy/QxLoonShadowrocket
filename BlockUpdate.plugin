@@ -1,6 +1,6 @@
 #!name =  No-Ios and MacOS: 📍❌
-#!desc = 自定义「拒绝ios和MacOS更新」\n通过「基于网络规则」结果始终为用户拒绝更新,\n如果需要请自行关闭.
-#!icon = https://images.macrumors.com/article-new/2019/07/ios_location_services-250x250.jpg
+#!desc = 自定义「拒绝ios和MacOS更新」\n通过「基于网络规则」结果始终为用户拒绝更新,\n如果需要请自行关闭.\n⚠️ 注意事项：屏蔽这些域名后，你的设备可能无法检查/下载系统更新。
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Reject.png
 #!tag =  IOS and MacOS
 #!date=2023-09-26 10:52:05
 
@@ -15,11 +15,13 @@
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
 [Rule]
-
+# 统更新检查 的核心域名
 DOMAIN,mesu.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
+# 也常用于下载更新内容。
+DOMAIN,appldnld.apple.com,REJECT
 
 # 屏蔽mac系统更新
 DOMAIN,swscan.apple.com,REJECT
@@ -79,6 +81,7 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
