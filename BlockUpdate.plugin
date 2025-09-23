@@ -15,19 +15,26 @@
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
 [Rule]
-# 统更新检查 的核心域名
+# 🍎 统更新检查 的核心域名
 DOMAIN,mesu.apple.com,REJECT
+# 🍎 配置文件 / 描述文件
 DOMAIN,gdmf.apple.com,REJECT
+# 🍎 系统更新 CDN
 DOMAIN,updates-http.cdn-apple.com,REJECT
+# 🍎 诊断 & 更新反馈
 DOMAIN,xp.apple.com,REJECT
-# 也常用于下载更新内容。
+# 🍎 也常用于下载更新内容。
 DOMAIN,appldnld.apple.com,REJECT
 
-# 屏蔽mac系统更新
+# 🍎 屏蔽mac系统更新
+# 🍎iOS 和 macOS 都会用到，主要是下载 更新镜像 / 固件。
 DOMAIN,swscan.apple.com,REJECT
+# 🍎主要用于 macOS 更新内容分发。
 DOMAIN,swdist.apple.com,REJECT
 DOMAIN,swcdn.apple.com,REJECT
+# 🍎 macOS 系统更新查询。
 DOMAIN,swquery.apple.com,REJECT
+# 🍎 软件更新扫描（非常关键）。
 DOMAIN,swdownload.apple.com,REJECT
 
 # 屏蔽One Switch快捷开关系统更新 24-02-22
@@ -81,6 +88,7 @@ DOMAIN,apiboom3.globaldelight.net,REJECT
 
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
