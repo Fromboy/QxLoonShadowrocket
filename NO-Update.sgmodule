@@ -83,6 +83,12 @@ DOMAIN,hostbuf.com,REJECT
 # 屏蔽 PopClip软件更新24-09-30
 DOMAIN,softwareupdate.pilotmoon.com,REJECT
 
+# 屏蔽WPS更新域名
+DOMAIN,drive.wps.cn,REJECT
+DOMAIN,account.wps.cn,REJECT
+DOMAIN,docteamapi.wps.cn,REJECT
+
+
 
 
 
