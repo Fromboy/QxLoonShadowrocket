@@ -1,6 +1,6 @@
 #!name=🍎DNSPod
 #!desc=Apple🍎下载解析加速。
-
+#!ulr=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/Apple-DNS-Pod.sgmodule
 [Host]
 *.itunes.apple.com = script:Dnspod
 [Script]
