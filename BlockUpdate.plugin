@@ -86,11 +86,37 @@ DOMAIN,download.parallels.com,REJECT
 # 屏蔽 Boom 3D音频增强App软件更新24-09-20
 DOMAIN,apiboom3.globaldelight.net,REJECT
 
+# 屏蔽 Final App软件更新24-09-30
+DOMAIN,hostbuf.com,REJECT
+
 # 屏蔽bartender5
 DOMAIN-SUFFIX,macbartender.com,REJECT
 
 # 屏蔽 PopClip 更新
 DOMAIN,softwareupdate.pilotmoon.com,REJECT
+
+# 屏蔽 WPS 广告与联网验证
+DOMAIN-SUFFIX,wps.cn,REJECT
+DOMAIN-SUFFIX,wpscdn.cn,REJECT
+DOMAIN-SUFFIX,ksord.com,REJECT
+DOMAIN-SUFFIX,kingsoft-office-service.com,REJECT
+DOMAIN,account.wps.cn,REJECT
+DOMAIN,drive.wps.cn,REJECT
+DOMAIN,docteamapi.wps.cn,REJECT
+DOMAIN,honeycomb.wps.cn,REJECT
+DOMAIN,ic.wps.cn,REJECT
+DOMAIN,store1.wps.cn,REJECT
+DOMAIN,ups.wps.cn,REJECT
+DOMAIN,notify.wps.cn,REJECT
+DOMAIN,android.wps.cn,REJECT
+DOMAIN,mac.wpscdn.cn,REJECT
+DOMAIN,push.wps.cn,REJECT
+DOMAIN,api.kingsoft-office-service.com,REJECT
+DOMAIN,shuc-other.ksord.com,REJECT
+DOMAIN,shuc-normal.ksord.com,REJECT
+DOMAIN,shuc-api.ksord.com,REJECT
+DOMAIN,cloudservice19.kingsoft-office-service.com,REJECT
+
 
 
 
