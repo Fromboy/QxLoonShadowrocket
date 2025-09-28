@@ -64,26 +64,27 @@ rules:
   - DOMAIN-suffix,apphousekitchen.com,REJECT
 
 # 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
- - DOMAIN,dkys.org,REJECT
- - DOMAIN,youtusoft.com,REJECT
- - DOMAIN,hostbuf.com,REJECT
- - DOMAIN,tcpspeed.com,REJECT
- - DOMAIN,wn1998.com,REJECT
+  - DOMAIN,dkys.org,REJECT
+  - DOMAIN,youtusoft.com,REJECT
+  - DOMAIN,hostbuf.com,REJECT
+  - DOMAIN,tcpspeed.com,REJECT
+  - DOMAIN,wn1998.com,REJECT
 
 # 屏蔽Istat系统监控软件更新
- - DOMAIN,updates.istatmenus.app,REJECT
+  - DOMAIN,updates.istatmenus.app,REJECT
 
 # 屏蔽Folder Colorizer软件更新
- - DOMAIN,api.softorino.com,REJECT
+  - DOMAIN,api.softorino.com,REJECT
 
 # 屏蔽Parallels Desktop软件更新 24-09-08
- - DOMAIN,update.parallels.com,REJECT
- - DOMAIN,download.parallels.com,REJECT
+  - DOMAIN,update.parallels.com,REJECT
+  - DOMAIN,download.parallels.com,REJECT
 
 # 屏蔽 Boom 3D音频增强App软件更新24-09-20
- - DOMAIN,apiboom3.globaldelight.net,REJECT
+  - DOMAIN,apiboom3.globaldelight.net,REJECT
 # 屏蔽bartender5
- - DOMAIN-SUFFIX,macbartender.com,REJECT
+  - DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
