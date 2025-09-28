@@ -14,9 +14,15 @@
 # Stash重写屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.stoverride
 # Stash规则屏蔽🍎IOS https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/Stash/BlockUpdate.yaml
 
+# 配置文件名称: 屏蔽系统更新
 name: 屏蔽系统更新
+
+# 配置文件描述: 用于屏蔽 iOS 系统更新及相关软件的更新
 desc: 屏蔽 iOS 系统更新。
+
+# 规则列表
 rules:
+  # 屏蔽 iOS 系统更新相关域名
   - DOMAIN,mesu.apple.com,REJECT
   - DOMAIN,gdmf.apple.com,REJECT
   - DOMAIN,updates-http.cdn-apple.com,REJECT
@@ -27,65 +33,62 @@ rules:
   - DOMAIN,mesu.g.aaplimg.com,REJECT
   - DOMAIN,appldnld.apple.com,REJECT
   - DOMAIN,appldnld.apple.com.akadns.net,REJECT
-# 屏蔽mac系统更新
+
+  # 屏蔽 macOS 系统更新相关域名
   - DOMAIN,swscan.apple.com,REJECT
   - DOMAIN,swdist.apple.com,REJECT
   - DOMAIN,swcdn.apple.com,REJECT
   - DOMAIN,swquery.apple.com,REJECT
   - DOMAIN,swdownload.apple.com,REJECT
 
-# 屏蔽One Switch快捷开关系统更新 24-02-22
-  - DOMAIN-suffix,paddleapi.com,REJECT
-  - DOMAIN-suffix,paddle.com,REJECT
-  - DOMAIN-suffix,paddle.s3.amazonaws.com,REJECT
-  - DOMAIN-suffix,fireball.studio,REJECT
-  - DOMAIN-suffix,in.appcenter.ms,REJECT
+  # 屏蔽 One Switch 快捷开关系统更新 (更新日期: 2024-02-22)
+  - DOMAIN-SUFFIX,paddleapi.com,REJECT
+  - DOMAIN-SUFFIX,paddle.com,REJECT
+  - DOMAIN-SUFFIX,paddle.s3.amazonaws.com,REJECT
+  - DOMAIN-SUFFIX,fireball.studio,REJECT
+  - DOMAIN-SUFFIX,in.appcenter.ms,REJECT
 
-# 屏蔽MenubarX Pro快捷开关系统更新 24-04-2
-  # DOMAIN-suffix,menubarx.app,REJECT
+  # 屏蔽 APP Cleaner 卸载软件系统更新 (更新日期: 2024-02-22)
+  - DOMAIN-SUFFIX,download.nektony.com,REJECT
 
-# 屏蔽APP Cleaner卸载软件系统更新 24-02-22
-  - DOMAIN-suffix,download.nektony.com,REJECT
+  # 屏蔽 CleanMyMac 清理软件系统更新 (更新日期: 2024-02-22)
+  - DOMAIN-SUFFIX,updates.devmate.com,REJECT
 
-# 屏蔽CleanMY MAC清理软件系统更新 24-02-22
-  - DOMAIN-suffix,updates.devmate.com,REJECT
+  # 屏蔽 Adobe Acrobat Pro DC 23.006.20320 软件系统更新 (更新日期: 2024-03-28)
+  - DOMAIN-SUFFIX,ic.adobe.io,REJECT
+  - DOMAIN-SUFFIX,crs.cr.adobe.com,REJECT
+  - DOMAIN-SUFFIX,ims-prod06.adobelogin.com,REJECT
+  - DOMAIN-SUFFIX,lcs-cops.adobe.io,REJECT
+  - DOMAIN-SUFFIX,4vzokhpsbs.adobe.io,REJECT
 
-# 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
-  - DOMAIN-suffix,ic.adobe.io,REJECT
-  - DOMAIN-suffix,crs.cr.adobe.com,REJECT
-  - DOMAIN-suffix,ims-prod06.adobelogin.com,REJECT
-  - DOMAIN-suffix,lcs-cops.adobe.io.com,REJECT
-  - DOMAIN-suffix,4vzokhpsbs.adobe.io,REJECT
+  # 屏蔽 BetterMouse 软件自动更新
+  - DOMAIN-SUFFIX,api.appcenter.ms,REJECT
 
-# 屏蔽BetterMouse软件自动更新
-  - DOMAIN-suffix,api.appcenter.ms,REJECT
+  # 屏蔽 AlDente 充电管家软件自动更新
+  - DOMAIN-SUFFIX,apphousekitchen.com,REJECT
 
-# 屏蔽Aldente充电管家软件自动更新
-  - DOMAIN-suffix,apphousekitchen.com,REJECT
-
-# 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
+  # 屏蔽 FinalShell 离线更新地址域名 (更新日期: 2024-09-03)
   - DOMAIN,dkys.org,REJECT
   - DOMAIN,youtusoft.com,REJECT
   - DOMAIN,hostbuf.com,REJECT
   - DOMAIN,tcpspeed.com,REJECT
   - DOMAIN,wn1998.com,REJECT
 
-# 屏蔽Istat系统监控软件更新
+  # 屏蔽 iStat Menus 系统监控软件更新
   - DOMAIN,updates.istatmenus.app,REJECT
 
-# 屏蔽Folder Colorizer软件更新
+  # 屏蔽 Folder Colorizer 软件更新
   - DOMAIN,api.softorino.com,REJECT
 
-# 屏蔽Parallels Desktop软件更新 24-09-08
+  # 屏蔽 Parallels Desktop 软件更新 (更新日期: 2024-09-08)
   - DOMAIN,update.parallels.com,REJECT
   - DOMAIN,download.parallels.com,REJECT
 
-# 屏蔽 Boom 3D音频增强App软件更新24-09-20
+  # 屏蔽 Boom 3D 音频增强 App 软件更新 (更新日期: 2024-09-20)
   - DOMAIN,apiboom3.globaldelight.net,REJECT
-# 屏蔽bartender5
+
+  # 屏蔽 Bartender 5 软件更新
   - DOMAIN-SUFFIX,macbartender.com,REJECT
-
-
 
 
 
