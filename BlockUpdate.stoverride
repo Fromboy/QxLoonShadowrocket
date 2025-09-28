@@ -61,7 +61,7 @@ rules:
   - DOMAIN-suffix,api.appcenter.ms,REJECT
 
 # 屏蔽Aldente充电管家软件自动更新
- - DOMAIN-suffix,apphousekitchen.com,REJECT
+  - DOMAIN-suffix,apphousekitchen.com,REJECT
 
 # 屏蔽finalshell离线更新地址域名240903可以⏰直接使用直装版解决激活码问题入口:FinalShell.callmy.cn
  - DOMAIN,dkys.org,REJECT
@@ -84,6 +84,7 @@ rules:
  - DOMAIN,apiboom3.globaldelight.net,REJECT
 # 屏蔽bartender5
  - DOMAIN-SUFFIX,macbartender.com,REJECT
+
 
 
 
