@@ -3,6 +3,7 @@
 # 其它 69yun 
 DOMAIN-KEYWORD,69yun69
 DOMAIN-SUFFIX,69yun69.com
+URL-REGEX,"https?://.*69yun69\..*"
 
 # > < 播放器域名
 DOMAIN-SUFFIX,conflux.one
