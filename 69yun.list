@@ -1,7 +1,7 @@
 # > < 69 机场✈️服务器地址 域名规则
 # Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
 # 其它 69yun 子域名走 Direct
-DOMAIN-KEYWORD,69yun69
+DOMAIN-KEYWORD,69yun69.*
 
 # > < 播放器域名
 DOMAIN-SUFFIX,conflux.one
