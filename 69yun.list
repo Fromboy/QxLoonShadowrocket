@@ -1,6 +1,9 @@
 # > < 69 机场✈️服务器地址
 # Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
-DOMAIN-REGEX,^([a-z0-9-]+\.)?69yun69\.[a-z]+$
+# emby 开头优先
 DOMAIN-REGEX,^emby[0-9a-zA-Z]+\.(69yun69\.[a-z]+)$
+
+# 其它 69yun69 域名
+DOMAIN-REGEX,^([a-z0-9-]+\.)?69yun69\.[a-z]+$
 # > < 播放器域名
 DOMAIN-SUFFIX,conflux.one
