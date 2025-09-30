@@ -1,4 +1,4 @@
-# > < 69 机场✈️服务器地址
+# > < 69 机场✈️服务器地址 域名规则
 # Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
 # emby 开头优先
 DOMAIN-REGEX,^emby[0-9a-zA-Z]+\.69yun69\.[a-z]+$
