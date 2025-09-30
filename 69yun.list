@@ -3,12 +3,8 @@
 
 # 匹配所有包含 69yun69 的域名（任意子域名和后缀）
 DOMAIN-KEYWORD,69yun69
-
-# 可选：严格匹配 .com 后缀
-DOMAIN-SUFFIX,69yun69.com
-
 # 可选：匹配完整 URL，包括端口和路径
-URL-REGEX,https?://.*69yun69\..*
+URL-REGEX,https?://.*69yun\..*
 
 # > < 播放器域名
 DOMAIN-SUFFIX,conflux.one
