@@ -1,5 +1,3 @@
 # 69云Emby 服务器域名匹配规则
 # emby 开头优先 全匹配
-DOMAIN-REGEX,^emby[0-9a-zA-Z]+\.69yun69\.[a-z]+$
-# 其它 69yun69 域名 全匹配
-DOMAIN-REGEX,^([a-z0-9-]+\.)?69yun69\.[a-z]+$
+HOST-KEYWORD,69yun69
