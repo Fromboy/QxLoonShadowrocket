@@ -83,7 +83,12 @@ payload:
  # 屏蔽bartender5
  - DOMAIN-SUFFIX,macbartender.com
 
+   # 抖音追踪屏蔽规则
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,bytegs.com
+
   
+
 
 
 
