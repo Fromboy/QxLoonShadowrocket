@@ -89,6 +89,11 @@ rules:
 
   # 屏蔽 Bartender 5 软件更新
   - DOMAIN-SUFFIX,macbartender.com,REJECT
+  
+  # 抖音追踪屏蔽规则
+  - DOMAIN-SUFFIX,snssdk.com,REJECT
+  - DOMAIN-SUFFIX,bytegs.com,REJECT
+
 
 
 
