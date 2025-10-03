@@ -117,6 +117,10 @@ DOMAIN,shuc-normal.ksord.com,REJECT
 DOMAIN,shuc-api.ksord.com,REJECT
 DOMAIN,cloudservice19.kingsoft-office-service.com,REJECT
 
+# 抖音追踪屏蔽规则
+DOMAIN-SUFFIX,snssdk.com,REJECT
+DOMAIN-SUFFIX,bytegs.com,REJECT
+
 
 
 
