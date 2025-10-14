@@ -1,0 +1,159 @@
+# ==================== 国内常用直连规则 ====================
+# ==================== 2025-10-15 ====================
+# ===== 支付类 =====
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,alipay.hk,DIRECT
+DOMAIN-SUFFIX,alipayhk.com,DIRECT
+DOMAIN-SUFFIX,alipayobjects.com,DIRECT
+DOMAIN-SUFFIX,alicdn.com,DIRECT
+DOMAIN-SUFFIX,aliyun.com,DIRECT
+DOMAIN-SUFFIX,unionpay.cn,DIRECT
+DOMAIN-SUFFIX,tenpay.com,DIRECT
+
+# ===== 腾讯系 =====
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,gtimg.com,DIRECT
+DOMAIN-SUFFIX,tencent.com,DIRECT
+DOMAIN-SUFFIX,tencentvideo.com,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,qlogo.cn,DIRECT
+
+# ===== 阿里系电商 =====
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,etao.com,DIRECT
+DOMAIN-SUFFIX,xiami.com,DIRECT
+DOMAIN-SUFFIX,1688.com,DIRECT
+DOMAIN-SUFFIX,fliggy.com,DIRECT
+DOMAIN-SUFFIX,juhuasuan.com,DIRECT
+
+# ===== 京东系 =====
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,jdcdn.com,DIRECT
+DOMAIN-SUFFIX,360buyimg.com,DIRECT
+
+# ===== 字节跳动系 =====
+DOMAIN-SUFFIX,douyin.com,DIRECT
+DOMAIN-SUFFIX,ixigua.com,DIRECT
+DOMAIN-SUFFIX,pstatp.com,DIRECT
+DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+DOMAIN-SUFFIX,bytedance.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,DIRECT
+
+# ===== 百度系 =====
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,bdstatic.com,DIRECT
+DOMAIN-SUFFIX,baidubcr.com,DIRECT
+DOMAIN-SUFFIX,baidupcs.com,DIRECT
+DOMAIN-SUFFIX,bcebos.com,DIRECT
+
+# ===== 网易系 =====
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,126.net,DIRECT
+DOMAIN-SUFFIX,netease.com,DIRECT
+DOMAIN-SUFFIX,music.163.com,DIRECT
+DOMAIN-SUFFIX,ydstatic.com,DIRECT
+
+# ===== 视频音乐类 =====
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,iqiyi.com,DIRECT
+DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+DOMAIN-SUFFIX,kugou.com,DIRECT
+DOMAIN-SUFFIX,kuwo.cn,DIRECT
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+DOMAIN-SUFFIX,acgvideo.com,DIRECT
+
+# ===== 新闻与门户类 =====
+DOMAIN-SUFFIX,sina.com,DIRECT
+DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+DOMAIN-SUFFIX,ifeng.com,DIRECT
+DOMAIN-SUFFIX,sohu.com,DIRECT
+DOMAIN-SUFFIX,people.com.cn,DIRECT
+DOMAIN-SUFFIX,chinadaily.com.cn,DIRECT
+DOMAIN-SUFFIX,58.com,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+
+# ===== 地图与导航类 =====
+DOMAIN-SUFFIX,amap.com,DIRECT
+DOMAIN-SUFFIX,autonavi.com,DIRECT
+DOMAIN-SUFFIX,map.baidu.com,DIRECT
+
+# ===== 云存储与办公 =====
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,qcloud.com,DIRECT
+DOMAIN-SUFFIX,myqcloud.com,DIRECT
+DOMAIN-SUFFIX,hicloud.com,DIRECT
+DOMAIN-SUFFIX,kingsoft.com,DIRECT
+DOMAIN-SUFFIX,wps.cn,DIRECT
+DOMAIN-SUFFIX,docer.wps.cn,DIRECT
+
+# ===== 外卖、出行、生活服务 =====
+DOMAIN-SUFFIX,meituan.com,DIRECT
+DOMAIN-SUFFIX,dianping.com,DIRECT
+DOMAIN-SUFFIX,ele.me,DIRECT
+DOMAIN-SUFFIX,sf-express.com,DIRECT
+DOMAIN-SUFFIX,ctrip.com,DIRECT
+DOMAIN-SUFFIX,qunar.com,DIRECT
+DOMAIN-SUFFIX,didi.cn,DIRECT
+DOMAIN-SUFFIX,hellobike.com,DIRECT
+
+# ===== 游戏与社交 =====
+DOMAIN-SUFFIX,steampowered.com,DIRECT
+DOMAIN-SUFFIX,ea.com,DIRECT
+DOMAIN-SUFFIX,blizzard.com,DIRECT
+DOMAIN-SUFFIX,4399.com,DIRECT
+DOMAIN-SUFFIX,taptap.cn,DIRECT
+
+# ===== 苹果服务（建议直连） =====
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+DOMAIN-SUFFIX,akadns.net,DIRECT
+
+# ===== 系统与统计类 =====
+DOMAIN-SUFFIX,umeng.com,DIRECT
+DOMAIN-SUFFIX,cnzz.com,DIRECT
+DOMAIN-SUFFIX,qhimg.com,DIRECT
+DOMAIN-SUFFIX,baidustatic.com,DIRECT
+
+# ===== 补充云服务与 API 接口 =====
+DOMAIN-SUFFIX,api.aliyun.com,DIRECT
+DOMAIN-SUFFIX,oss-cn-hangzhou.aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,storage.googleapis.cn,DIRECT
+DOMAIN-SUFFIX,cloud.tencent.com,DIRECT
+DOMAIN-SUFFIX,sls.cn-hangzhou.aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,open.lingyang.aliyun.com,DIRECT
+
+# ===== 安全 / 反欺诈 / 日志监控 =====
+DOMAIN-SUFFIX,security.tencent.com,DIRECT
+DOMAIN-SUFFIX,bugly.tencent.com,DIRECT
+DOMAIN-SUFFIX,log.aliyun.com,DIRECT
+DOMAIN-SUFFIX,stats.growingio.com,DIRECT
+
+# ===== 广告 / 推送服务 =====
+DOMAIN-SUFFIX,adservice.google.com.cn,DIRECT
+DOMAIN-SUFFIX,push.geekbang.org,DIRECT
+DOMAIN-SUFFIX,push.xiaomi.net,DIRECT
+DOMAIN-SUFFIX,mipush.xiaomi.com,DIRECT
+DOMAIN-SUFFIX,gdt.qq.com,DIRECT
+
+# ===== 游戏 / SDK / 更新 =====
+DOMAIN-SUFFIX,unity.com.cn,DIRECT
+DOMAIN-SUFFIX,dl.platform.steam-api.com,DIRECT
+DOMAIN-SUFFIX,update.miui.com,DIRECT
+DOMAIN-SUFFIX,ota.txp.co,DIRECT
+
+# ===== 广泛后备规则 =====
+DOMAIN-KEYWORD,cn,DIRECT
+DOMAIN-KEYWORD,baidu,DIRECT
+DOMAIN-KEYWORD,qq,DIRECT
+DOMAIN-KEYWORD,tencent,DIRECT
+DOMAIN-KEYWORD,alibaba,DIRECT
+
+# ===== 最终规则 =====
+
+
+这份规则已覆盖支付、电商、系统更新、视频音乐、地图导航、社交、云服务、广告与安全、游戏等大部分国内常用域名，直连范围非常全面。
