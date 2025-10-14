@@ -1,5 +1,6 @@
 # ==================== 国内常用直连规则 ====================
 # ==================== 2025-10-15 ====================
+# https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/CN_Full_Direct.list
 # ===== 支付类 =====
 DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,alipay.hk,DIRECT
