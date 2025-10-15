@@ -19,8 +19,6 @@ host,mesu.apple.com,REJECT
 host,gdmf.apple.com,REJECT
 # 🍎 系统更新 CDN
 host,updates-http.cdn-apple.com,REJECT
-# 🍎 诊断 & 更新反馈
-host,xp.apple.com,REJECT
 # 🍎 常用下载域名
 host-suffix,appldnld.apple.com,REJECT
 
@@ -90,6 +88,7 @@ host-suffix,macbartender.com,REJECT
 
 # 屏蔽 PopClip 更新
 host,softwareupdate.pilotmoon.com,REJECT
+
 
 
 
