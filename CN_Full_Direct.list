@@ -11,6 +11,10 @@ DOMAIN-SUFFIX,aliyun.com,DIRECT
 DOMAIN-SUFFIX,unionpay.cn,DIRECT
 DOMAIN-SUFFIX,tenpay.com,DIRECT
 
+# # ===== 解决微信转圈 =====
+DOMAIN,dns.weixin.qq.com.cn,direct
+DOMAIN,dns.weixin.qq.com,direct
+
 # ===== 腾讯系 =====
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
