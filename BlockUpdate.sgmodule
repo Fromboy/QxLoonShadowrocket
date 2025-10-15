@@ -22,7 +22,6 @@ DOMAIN,gdmf.apple.com.akadns.net,REJECT
 DOMAIN,appldnld.apple.com,REJECT
 DOMAIN,appldnld.apple.com.akadns.net,REJECT
 DOMAIN,updates-http.cdn-apple.com,REJECT
-DOMAIN,xp.apple.com,REJECT
 
 # macOS 系统更新
 DOMAIN-SUFFIX,swscan.apple.com,REJECT
@@ -30,4 +29,5 @@ DOMAIN-SUFFIX,swdist.apple.com,REJECT
 DOMAIN-SUFFIX,swcdn.apple.com,REJECT
 DOMAIN-SUFFIX,swquery.apple.com,REJECT
 DOMAIN-SUFFIX,swdownload.apple.com,REJECT
+
 
