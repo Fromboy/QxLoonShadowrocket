@@ -2,8 +2,7 @@
 # >< Author：怎么肥事
 # >< 使用方法：打开重写进软件恢复购买
 # >< https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/xTerm256.snippet
-[rewrite_local]
 # >xTerm256 会员调试 
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url jsonjq-response-body '.receipt.in_app[].expires_date_ms = "4092599349000" | .latest_receipt_info[].expires_date_ms = "4092599349000" | .pending_renewal_info[].auto_renew_status = "1"'
-[mitm]
+
 hostname = buy.itunes.apple.com
