@@ -1,0 +1,18 @@
+# > < 69 机场✈️服务器地址 域名规则
+# Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
+# 云幕Emby = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/yunmuemby.list
+# ⏰ 云幕域名国内服务器在香港可以国内直链
+# 详细说明看介绍
+#🔹 1. 如果是 Clash / Stash
+#	•	主配置文件（config.yaml）里写 rules:
+#	•	远程规则集（.yaml 文件）里写 payload:
+
+payload:
+# 匹配所有包含 69yun69 的域名（任意子域名和后缀）69的需要代理
+- DOMAIN-KEYWORD,69yun69
+- DOMAIN-KEYWORD,69yun
+- DOMAIN-KEYWORD,yun69
+
+# 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
+- DOMAIN-SUFFIX,nubebelle.vip
+- DOMAIN-SUFFIX,nubebelle.cn
