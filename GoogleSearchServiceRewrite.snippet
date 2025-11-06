@@ -1,0 +1,14 @@
+# Redirect Google Search Service
+# date : 2025-09-23
+# url : https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/GoogleSearchServiceRewrite.snippet
+# 匹配范围更广，除了 g.cn、google.cn 外，还包括 google.com.hk。
+[URL Rewrite]
+# 把 g.cn / google.cn（含 www）重定向到 www.google.com，保留路径与查询
+^https?:\/\/(?:www\.)?(?:g|google)\.cn(\/.*)?$ https://www.google.com$1 307
+
+[MITM]
+# 建议列出裸域与 www，或用泛域名
+hostname = g.cn, www.g.cn, google.cn, www.google.cn, *.google.cn
+
+
+
