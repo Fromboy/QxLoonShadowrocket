@@ -110,17 +110,18 @@ IP-CIDR,51.10.0.0/15,OpenAI
 IP-CIDR,52.224.0.0/12,OpenAI
 IP-CIDR,104.146.0.0/15,OpenAI
 IP-CIDR,104.208.0.0/13,OpenAI
+
 # =========================================================
-# ASN 匹配（用于识别 OpenAI / Azure 网络）
+# ASN 匹配（用于识别 OpenAI / Azure 网络）Quantumult不支持故注释
 # =========================================================
 
-# OpenAI, L.L.C.
-ASN,396982,OpenAI 
+# > OpenAI, L.L.C.
+# >ASN,396982,OpenAI 
 # Microsoft Corporation (Azure)
-ASN,8075,OpenAI  
+# >ASN,8075,OpenAI  
 # Amazon AWS
-ASN,14618,OpenAI  
+# >ASN,14618,OpenAI  
 # Amazon.com, Inc.
-ASN,16509,OpenAI   
+# >ASN,16509,OpenAI   
 # Google LLC
-ASN,15169,OpenAI 
+# >ASN,15169,OpenAI 
