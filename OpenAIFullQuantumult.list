@@ -115,12 +115,12 @@ IP-CIDR,104.208.0.0/13,OpenAI
 # =========================================================
 
 # OpenAI, L.L.C.
-ASN,396982   
+ASN,396982,OpenAI 
 # Microsoft Corporation (Azure)
-ASN,8075     
+ASN,8075,OpenAI  
 # Amazon AWS
-ASN,14618   
+ASN,14618,OpenAI  
 # Amazon.com, Inc.
-ASN,16509    
+ASN,16509,OpenAI   
 # Google LLC
-ASN,15169    
+ASN,15169,OpenAI 
