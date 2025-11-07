@@ -1,0 +1,98 @@
+# =========================================================
+# OpenAI 全量增强分流规则 Quantumult X 版
+# 更新时间：2025-11-07
+# url = 
+# OpenAI 官方 + Azure + 实测补充
+# =========================================================
+
+# --- 核心匹配 ---
+HOST-KEYWORD,openai
+HOST-SUFFIX,openai.com
+HOST-KEYWORD,chatgpt
+HOST-KEYWORD,gpt-4
+HOST-KEYWORD,gpt-3
+HOST-KEYWORD,gpt
+HOST-KEYWORD,oai
+HOST-KEYWORD,oaistatic
+HOST-KEYWORD,oaiusercontent
+HOST-SUFFIX,chat.openai.com
+HOST-SUFFIX,api.openai.com
+HOST-SUFFIX,platform.openai.com
+HOST-SUFFIX,status.openai.com
+HOST-SUFFIX,cdn.openai.com
+HOST-SUFFIX,auth.openai.com
+HOST-SUFFIX,assets.openai.com
+HOST-SUFFIX,upload.openai.com
+HOST-SUFFIX,images.openai.com
+HOST-SUFFIX,oaistatic.com
+HOST-SUFFIX,oaiusercontent.com
+HOST-SUFFIX,files.oaiusercontent.com
+
+# --- ChatGPT 域名 ---
+HOST-SUFFIX,chatgpt.com
+HOST-SUFFIX,cdn.chatgpt.com
+HOST-SUFFIX,login.chatgpt.com
+HOST-SUFFIX,auth.chatgpt.com
+HOST-SUFFIX,assets.chatgpt.com
+HOST-SUFFIX,images.chatgpt.com
+
+# --- Azure 托管相关 ---
+HOST-SUFFIX,openai.azure.com
+HOST-SUFFIX,openai.azureedge.net
+HOST-SUFFIX,openai.blob.core.windows.net
+HOST-SUFFIX,openai.azure-api.net
+HOST-SUFFIX,openai.api.cognitive.microsoft.com
+HOST-SUFFIX,azureedge.net
+HOST-SUFFIX,blob.core.windows.net
+HOST-KEYWORD,azureopenai
+
+# --- 静态资源 / CDN ---
+HOST-SUFFIX,imgix.net
+HOST-SUFFIX,cloudflare.com
+HOST-SUFFIX,fastly.net
+HOST-SUFFIX,oaistatic.net
+HOST-SUFFIX,oai-cdn.net
+HOST-SUFFIX,cdn.oaistatic.com
+HOST-SUFFIX,cdn.openai-cdn.com
+
+# --- DALL·E / Whisper / 语音等子服务 ---
+HOST-SUFFIX,whisper.openai.com
+HOST-SUFFIX,dalle.openai.com
+HOST-SUFFIX,vision.openai.com
+HOST-SUFFIX,speech.openai.com
+HOST-SUFFIX,audio.openai.com
+
+# --- 官方站点 / 支持 / 社区 ---
+HOST-SUFFIX,help.openai.com
+HOST-SUFFIX,community.openai.com
+HOST-SUFFIX,blog.openai.com
+HOST-SUFFIX,research.openai.com
+HOST-SUFFIX,support.openai.com
+
+# --- 第三方 ChatGPT 服务（可能用到官方接口） ---
+HOST-SUFFIX,chatgptplus.com
+HOST-SUFFIX,chatgptai.com
+HOST-SUFFIX,chatgptplugin.net
+HOST-SUFFIX,gptcdn.net
+HOST-SUFFIX,gptassets.net
+
+# --- IP-CIDR (常见 Azure / OpenAI 段，仅供参考) ---
+IP-CIDR,20.190.128.0/18
+IP-CIDR,40.64.0.0/10
+IP-CIDR,52.96.0.0/12
+IP-CIDR,13.64.0.0/11
+IP-CIDR,13.104.0.0/14
+IP-CIDR,23.96.0.0/13
+IP-CIDR,40.112.0.0/13
+IP-CIDR,51.10.0.0/15
+IP-CIDR,52.224.0.0/12
+IP-CIDR,104.146.0.0/15
+IP-CIDR,104.208.0.0/13
+
+# --- ASN 匹配 ---
+ASN,8075     # Microsoft Corporation (Azure)
+ASN,396982   # OpenAI, L.L.C.
+ASN,14618    # Amazon AWS
+ASN,16509    # Amazon.com, Inc.
+ASN,15169    # Google LLC
+
