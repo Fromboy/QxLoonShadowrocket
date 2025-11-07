@@ -4,6 +4,7 @@
 # url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/OpenAIFullQuantumult.list
 # OpenAI 官方 + Azure + 实测补充
 # =========================================================
+
 # --- 主域名 ---
 HOST-SUFFIX,openai.com
 HOST-SUFFIX,chat.openai.com
