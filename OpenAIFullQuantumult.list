@@ -1,7 +1,7 @@
 # =========================================================
 # OpenAI 全量增强分流规则 Quantumult X 版
 # 更新时间：2025-11-07
-# url = 
+# url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/OpenAIFullQuantumult.list
 # OpenAI 官方 + Azure + 实测补充
 # =========================================================
 
@@ -90,9 +90,9 @@ IP-CIDR,104.146.0.0/15
 IP-CIDR,104.208.0.0/13
 
 # --- ASN 匹配 ---
-ASN,8075     # Microsoft Corporation (Azure)
-ASN,396982   # OpenAI, L.L.C.
-ASN,14618    # Amazon AWS
-ASN,16509    # Amazon.com, Inc.
-ASN,15169    # Google LLC
+ASN,8075     
+ASN,396982   
+ASN,14618   
+ASN,16509   
+ASN,15169  
 
