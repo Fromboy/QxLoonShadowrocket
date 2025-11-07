@@ -5,16 +5,13 @@
 # OpenAI 官方 + Azure + 实测补充
 # =========================================================
 
-# --- 核心匹配 ---
-HOST-KEYWORD,openai
+# =========================================================
+# OpenAI 全量分流规则 Quantumult X 版（兼容无错误）
+# 更新时间：2025-11-07
+# =========================================================
+
+# --- 主域名 ---
 HOST-SUFFIX,openai.com
-HOST-KEYWORD,chatgpt
-HOST-KEYWORD,gpt-4
-HOST-KEYWORD,gpt-3
-HOST-KEYWORD,gpt
-HOST-KEYWORD,oai
-HOST-KEYWORD,oaistatic
-HOST-KEYWORD,oaiusercontent
 HOST-SUFFIX,chat.openai.com
 HOST-SUFFIX,api.openai.com
 HOST-SUFFIX,platform.openai.com
@@ -24,17 +21,23 @@ HOST-SUFFIX,auth.openai.com
 HOST-SUFFIX,assets.openai.com
 HOST-SUFFIX,upload.openai.com
 HOST-SUFFIX,images.openai.com
-HOST-SUFFIX,oaistatic.com
-HOST-SUFFIX,oaiusercontent.com
-HOST-SUFFIX,files.oaiusercontent.com
 
-# --- ChatGPT 域名 ---
+# --- ChatGPT 主站域名 ---
 HOST-SUFFIX,chatgpt.com
 HOST-SUFFIX,cdn.chatgpt.com
 HOST-SUFFIX,login.chatgpt.com
 HOST-SUFFIX,auth.chatgpt.com
 HOST-SUFFIX,assets.chatgpt.com
 HOST-SUFFIX,images.chatgpt.com
+
+# --- 文件与静态资源 ---
+HOST-SUFFIX,oaistatic.com
+HOST-SUFFIX,cdn.oaistatic.com
+HOST-SUFFIX,oaiusercontent.com
+HOST-SUFFIX,files.oaiusercontent.com
+HOST-SUFFIX,imgix.net
+HOST-SUFFIX,cloudflare.com
+HOST-SUFFIX,fastly.net
 
 # --- Azure 托管相关 ---
 HOST-SUFFIX,openai.azure.com
@@ -44,39 +47,31 @@ HOST-SUFFIX,openai.azure-api.net
 HOST-SUFFIX,openai.api.cognitive.microsoft.com
 HOST-SUFFIX,azureedge.net
 HOST-SUFFIX,blob.core.windows.net
-HOST-KEYWORD,azureopenai
 
-# --- 静态资源 / CDN ---
-HOST-SUFFIX,imgix.net
-HOST-SUFFIX,cloudflare.com
-HOST-SUFFIX,fastly.net
-HOST-SUFFIX,oaistatic.net
-HOST-SUFFIX,oai-cdn.net
-HOST-SUFFIX,cdn.oaistatic.com
-HOST-SUFFIX,cdn.openai-cdn.com
-
-# --- DALL·E / Whisper / 语音等子服务 ---
+# --- 多媒体子服务 ---
 HOST-SUFFIX,whisper.openai.com
 HOST-SUFFIX,dalle.openai.com
 HOST-SUFFIX,vision.openai.com
 HOST-SUFFIX,speech.openai.com
 HOST-SUFFIX,audio.openai.com
 
-# --- 官方站点 / 支持 / 社区 ---
+# --- 官方站点 / 社区 ---
 HOST-SUFFIX,help.openai.com
 HOST-SUFFIX,community.openai.com
 HOST-SUFFIX,blog.openai.com
 HOST-SUFFIX,research.openai.com
 HOST-SUFFIX,support.openai.com
 
-# --- 第三方 ChatGPT 服务（可能用到官方接口） ---
+# --- 第三方 ChatGPT 服务（部分调用 OpenAI 接口） ---
 HOST-SUFFIX,chatgptplus.com
 HOST-SUFFIX,chatgptai.com
 HOST-SUFFIX,chatgptplugin.net
 HOST-SUFFIX,gptcdn.net
 HOST-SUFFIX,gptassets.net
 
-# --- IP-CIDR (常见 Azure / OpenAI 段，仅供参考) ---
+# =========================================================
+# IP-CIDR (Azure / OpenAI 常用 IP 段)
+# =========================================================
 IP-CIDR,20.190.128.0/18
 IP-CIDR,40.64.0.0/10
 IP-CIDR,52.96.0.0/12
@@ -89,10 +84,16 @@ IP-CIDR,52.224.0.0/12
 IP-CIDR,104.146.0.0/15
 IP-CIDR,104.208.0.0/13
 
-# --- ASN 匹配 ---
-ASN,8075     
+# =========================================================
+# ASN 匹配（用于识别 OpenAI / Azure 网络）
+# =========================================================
+# OpenAI, L.L.C.
 ASN,396982   
+# Microsoft Corporation (Azure)
+ASN,8075     
+ # Amazon AWS
 ASN,14618   
-ASN,16509   
-ASN,15169  
-
+# Amazon.com, Inc.
+ASN,16509    
+# Google LLC
+ASN,15169    
