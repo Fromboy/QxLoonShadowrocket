@@ -5,83 +5,115 @@
 # OpenAI 官方 + Azure + 实测补充
 # =========================================================
 
-# --- 主域名 ---
-HOST-SUFFIX,openai.com
-HOST-SUFFIX,chat.openai.com
-HOST-SUFFIX,api.openai.com
-HOST-SUFFIX,platform.openai.com
-HOST-SUFFIX,status.openai.com
-HOST-SUFFIX,cdn.openai.com
-HOST-SUFFIX,auth.openai.com
-HOST-SUFFIX,assets.openai.com
-HOST-SUFFIX,upload.openai.com
-HOST-SUFFIX,images.openai.com
-
-# --- ChatGPT 主站域名 ---
-HOST-SUFFIX,chatgpt.com
-HOST-SUFFIX,cdn.chatgpt.com
-HOST-SUFFIX,login.chatgpt.com
-HOST-SUFFIX,auth.chatgpt.com
-HOST-SUFFIX,assets.chatgpt.com
-HOST-SUFFIX,images.chatgpt.com
+# --- 主服务 ---
+HOST,api.openai.com,OpenAI
+HOST,platform.openai.com,OpenAI
+HOST,chat.openai.com,OpenAI
+HOST-SUFFIX,openai.com,OpenAI
 
 # --- 文件与静态资源 ---
-HOST-SUFFIX,oaistatic.com
-HOST-SUFFIX,cdn.oaistatic.com
-HOST-SUFFIX,oaiusercontent.com
-HOST-SUFFIX,files.oaiusercontent.com
-HOST-SUFFIX,imgix.net
-HOST-SUFFIX,cloudflare.com
-HOST-SUFFIX,fastly.net
+HOST-SUFFIX,oaistatic.com,OpenAI
+HOST-SUFFIX,cdn.oaistatic.com,OpenAI
+HOST-SUFFIX,oaiusercontent.com,OpenAI
+HOST-SUFFIX,files.oaiusercontent.com,OpenAI
+HOST-SUFFIX,cdn.openai.com,OpenAI
+HOST-SUFFIX,images.openai.com,OpenAI
+HOST-SUFFIX,assets.openai.com,OpenAI
+HOST-SUFFIX,upload.openai.com,OpenAI
+HOST-SUFFIX,files.openai.com,OpenAI
+HOST-SUFFIX,oaicloud.net,OpenAI
+HOST-SUFFIX,oaipublic.net,OpenAI
 
-# --- Azure 托管相关 ---
-HOST-SUFFIX,openai.azure.com
-HOST-SUFFIX,openai.azureedge.net
-HOST-SUFFIX,openai.blob.core.windows.net
-HOST-SUFFIX,openai.azure-api.net
-HOST-SUFFIX,openai.api.cognitive.microsoft.com
-HOST-SUFFIX,azureedge.net
-HOST-SUFFIX,blob.core.windows.net
+# --- ChatGPT 相关 ---
+HOST-SUFFIX,chatgpt.com,OpenAI
+HOST-SUFFIX,cdn.chatgpt.com,OpenAI
+HOST-SUFFIX,login.chatgpt.com,OpenAI
+HOST-SUFFIX,auth.chatgpt.com,OpenAI
+HOST-SUFFIX,assets.chatgpt.com,OpenAI
+HOST-SUFFIX,images.chatgpt.com,OpenAI
+HOST-SUFFIX,chatgptplus.com,OpenAI
+HOST-SUFFIX,chatgptai.com,OpenAI
+HOST-SUFFIX,chatgptplugin.net,OpenAI
+HOST-SUFFIX,gptcdn.net,OpenAI
+HOST-SUFFIX,gptassets.net,OpenAI
+
+# --- Azure 托管（OpenAI 官方基础设施）---
+HOST-SUFFIX,openai.azure.com,OpenAI
+HOST-SUFFIX,openai.azureedge.net,OpenAI
+HOST-SUFFIX,openai.blob.core.windows.net,OpenAI
+HOST-SUFFIX,openai.azure-api.net,OpenAI
+HOST-SUFFIX,openai.api.cognitive.microsoft.com,OpenAI
+HOST-SUFFIX,azureedge.net,OpenAI
+HOST-SUFFIX,blob.core.windows.net,OpenAI
+HOST-SUFFIX,openai.microsoft.com,OpenAI
+HOST-SUFFIX,openai.azure-api.net,OpenAI
 
 # --- 多媒体子服务 ---
-HOST-SUFFIX,whisper.openai.com
-HOST-SUFFIX,dalle.openai.com
-HOST-SUFFIX,vision.openai.com
-HOST-SUFFIX,speech.openai.com
-HOST-SUFFIX,audio.openai.com
+HOST-SUFFIX,whisper.openai.com,OpenAI
+HOST-SUFFIX,dalle.openai.com,OpenAI
+HOST-SUFFIX,vision.openai.com,OpenAI
+HOST-SUFFIX,speech.openai.com,OpenAI
+HOST-SUFFIX,audio.openai.com,OpenAI
+HOST-SUFFIX,notebooks.openai.com,OpenAI
+HOST-SUFFIX,telemetry.openai.com,OpenAI
+HOST-SUFFIX,analytics.openai.com,OpenAI
 
-# --- 官方站点 / 社区 ---
-HOST-SUFFIX,help.openai.com
-HOST-SUFFIX,community.openai.com
-HOST-SUFFIX,blog.openai.com
-HOST-SUFFIX,research.openai.com
-HOST-SUFFIX,support.openai.com
+# --- 官方社区 / 支持 / 文档 ---
+HOST-SUFFIX,help.openai.com,OpenAI
+HOST-SUFFIX,community.openai.com,OpenAI
+HOST-SUFFIX,blog.openai.com,OpenAI
+HOST-SUFFIX,research.openai.com,OpenAI
+HOST-SUFFIX,support.openai.com,OpenAI
+HOST-SUFFIX,cdn.openai.net,OpenAI
 
-# --- 第三方 ChatGPT 服务（部分调用 OpenAI 接口） ---
-HOST-SUFFIX,chatgptplus.com
-HOST-SUFFIX,chatgptai.com
-HOST-SUFFIX,chatgptplugin.net
-HOST-SUFFIX,gptcdn.net
-HOST-SUFFIX,gptassets.net
+# --- 第三方 / 依赖服务（OpenAI 平台常调用） ---
+HOST-SUFFIX,api.segment.io,OpenAI
+HOST-SUFFIX,sentry.io,OpenAI
+HOST-SUFFIX,auth0.com,OpenAI
+HOST-SUFFIX,stripe.com,OpenAI
+HOST-SUFFIX,intercom.io,OpenAI
+HOST-SUFFIX,intercomcdn.com,OpenAI
+HOST-SUFFIX,launchdarkly.com,OpenAI
+HOST-SUFFIX,algolia.net,OpenAI
+HOST-SUFFIX,observeit.net,OpenAI
+HOST-SUFFIX,featuregates.org,OpenAI
+HOST-SUFFIX,events.statsigapi.net,OpenAI
+HOST-SUFFIX,api.statsig.com,OpenAI
 
-# =========================================================
-# IP-CIDR (Azure / OpenAI 常用 IP 段)
-# =========================================================
-IP-CIDR,20.190.128.0/18
-IP-CIDR,40.64.0.0/10
-IP-CIDR,52.96.0.0/12
-IP-CIDR,13.64.0.0/11
-IP-CIDR,13.104.0.0/14
-IP-CIDR,23.96.0.0/13
-IP-CIDR,40.112.0.0/13
-IP-CIDR,51.10.0.0/15
-IP-CIDR,52.224.0.0/12
-IP-CIDR,104.146.0.0/15
-IP-CIDR,104.208.0.0/13
+# --- CDN / 静态 / 托管网络 ---
+HOST-SUFFIX,cloudflare.com,OpenAI
+HOST-SUFFIX,fastly.net,OpenAI
+HOST-SUFFIX,imgix.net,OpenAI
+HOST-SUFFIX,oaistatic.net,OpenAI
+HOST-SUFFIX,oai-cdn.net,OpenAI
+HOST-SUFFIX,cdn.oaistatic.com,OpenAI
+HOST-SUFFIX,cdn.openai-cdn.com,OpenAI
+HOST-SUFFIX,openaiapi-site.azureedge.net,OpenAI
+HOST-SUFFIX,openaicom.imgix.net,OpenAI
 
+# --- 备用 / 潜在新域 ---
+HOST-SUFFIX,openaiapi.com,OpenAI
+HOST-SUFFIX,openaiapi.net,OpenAI
+HOST-SUFFIX,openaiapis.com,OpenAI
+HOST-SUFFIX,chatgptapi.com,OpenAI
+HOST-SUFFIX,gpt.openai.com,OpenAI
+
+# --- IP CIDR （可选，如果你想兜底 OpenAI IP 段）---
+IP-CIDR,20.190.128.0/18,OpenAI
+IP-CIDR,40.64.0.0/10,OpenAI
+IP-CIDR,52.96.0.0/12,OpenAI
+IP-CIDR,13.64.0.0/11,OpenAI
+IP-CIDR,13.104.0.0/14,OpenAI
+IP-CIDR,23.96.0.0/13,OpenAI
+IP-CIDR,40.112.0.0/13,OpenAI
+IP-CIDR,51.10.0.0/15,OpenAI
+IP-CIDR,52.224.0.0/12,OpenAI
+IP-CIDR,104.146.0.0/15,OpenAI
+IP-CIDR,104.208.0.0/13,OpenAI
 # =========================================================
 # ASN 匹配（用于识别 OpenAI / Azure 网络）
 # =========================================================
+
 # OpenAI, L.L.C.
 ASN,396982   
 # Microsoft Corporation (Azure)
