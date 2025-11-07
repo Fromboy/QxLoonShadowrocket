@@ -4,12 +4,6 @@
 # url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/OpenAIFullQuantumult.list
 # OpenAI 官方 + Azure + 实测补充
 # =========================================================
-
-# =========================================================
-# OpenAI 全量分流规则 Quantumult X 版（兼容无错误）
-# 更新时间：2025-11-07
-# =========================================================
-
 # --- 主域名 ---
 HOST-SUFFIX,openai.com
 HOST-SUFFIX,chat.openai.com
@@ -91,7 +85,7 @@ IP-CIDR,104.208.0.0/13
 ASN,396982   
 # Microsoft Corporation (Azure)
 ASN,8075     
- # Amazon AWS
+# Amazon AWS
 ASN,14618   
 # Amazon.com, Inc.
 ASN,16509    
