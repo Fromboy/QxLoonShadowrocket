@@ -6,7 +6,7 @@
 # Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
 # Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
 
-IP-CIDR,13.112.0.0/14,Proxy,no-resolve
+IP-CIDR,13.112.0.0/14,Proxy
 DOMAIN-SUFFIX,4gtv.tv,Proxy
 DOMAIN-SUFFIX,hinet.net,Proxy
 DOMAIN-SUFFIX,livednow.com,Proxy
