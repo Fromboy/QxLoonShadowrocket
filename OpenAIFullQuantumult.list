@@ -1,0 +1,112 @@
+# =========================================================
+# OpenAI / ChatGPT 全量规则 for Loon
+# 策略名：OpenAI
+# 文件路径：https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/OpenAIFullQuantumult.list
+# 更新时间：2025-11-07
+# =========================================================
+
+# --- 主服务 ---
+DOMAIN,api.openai.com,OpenAI
+DOMAIN,platform.openai.com,OpenAI
+DOMAIN,chat.openai.com,OpenAI
+DOMAIN-SUFFIX,openai.com,OpenAI
+
+# --- 文件与静态资源 ---
+DOMAIN-SUFFIX,oaistatic.com,OpenAI
+DOMAIN-SUFFIX,cdn.oaistatic.com,OpenAI
+DOMAIN-SUFFIX,oaiusercontent.com,OpenAI
+DOMAIN-SUFFIX,files.oaiusercontent.com,OpenAI
+DOMAIN-SUFFIX,cdn.openai.com,OpenAI
+DOMAIN-SUFFIX,images.openai.com,OpenAI
+DOMAIN-SUFFIX,assets.openai.com,OpenAI
+DOMAIN-SUFFIX,upload.openai.com,OpenAI
+DOMAIN-SUFFIX,files.openai.com,OpenAI
+DOMAIN-SUFFIX,oaicloud.net,OpenAI
+DOMAIN-SUFFIX,oaipublic.net,OpenAI
+
+# --- ChatGPT 相关 ---
+DOMAIN-SUFFIX,chatgpt.com,OpenAI
+DOMAIN-SUFFIX,cdn.chatgpt.com,OpenAI
+DOMAIN-SUFFIX,login.chatgpt.com,OpenAI
+DOMAIN-SUFFIX,auth.chatgpt.com,OpenAI
+DOMAIN-SUFFIX,assets.chatgpt.com,OpenAI
+DOMAIN-SUFFIX,images.chatgpt.com,OpenAI
+DOMAIN-SUFFIX,chatgptplus.com,OpenAI
+DOMAIN-SUFFIX,chatgptai.com,OpenAI
+DOMAIN-SUFFIX,chatgptplugin.net,OpenAI
+DOMAIN-SUFFIX,gptcdn.net,OpenAI
+DOMAIN-SUFFIX,gptassets.net,OpenAI
+
+# --- Azure 托管（OpenAI 官方基础设施）---
+DOMAIN-SUFFIX,openai.azure.com,OpenAI
+DOMAIN-SUFFIX,openai.azureedge.net,OpenAI
+DOMAIN-SUFFIX,openai.blob.core.windows.net,OpenAI
+DOMAIN-SUFFIX,openai.azure-api.net,OpenAI
+DOMAIN-SUFFIX,openai.api.cognitive.microsoft.com,OpenAI
+DOMAIN-SUFFIX,azureedge.net,OpenAI
+DOMAIN-SUFFIX,blob.core.windows.net,OpenAI
+DOMAIN-SUFFIX,openai.microsoft.com,OpenAI
+DOMAIN-SUFFIX,openai.azure-api.net,OpenAI
+
+# --- 多媒体子服务 ---
+DOMAIN-SUFFIX,whisper.openai.com,OpenAI
+DOMAIN-SUFFIX,dalle.openai.com,OpenAI
+DOMAIN-SUFFIX,vision.openai.com,OpenAI
+DOMAIN-SUFFIX,speech.openai.com,OpenAI
+DOMAIN-SUFFIX,audio.openai.com,OpenAI
+DOMAIN-SUFFIX,notebooks.openai.com,OpenAI
+DOMAIN-SUFFIX,telemetry.openai.com,OpenAI
+DOMAIN-SUFFIX,analytics.openai.com,OpenAI
+
+# --- 官方社区 / 支持 / 文档 ---
+DOMAIN-SUFFIX,help.openai.com,OpenAI
+DOMAIN-SUFFIX,community.openai.com,OpenAI
+DOMAIN-SUFFIX,blog.openai.com,OpenAI
+DOMAIN-SUFFIX,research.openai.com,OpenAI
+DOMAIN-SUFFIX,support.openai.com,OpenAI
+DOMAIN-SUFFIX,cdn.openai.net,OpenAI
+
+# --- 第三方 / 依赖服务（OpenAI 平台常调用） ---
+DOMAIN-SUFFIX,api.segment.io,OpenAI
+DOMAIN-SUFFIX,sentry.io,OpenAI
+DOMAIN-SUFFIX,auth0.com,OpenAI
+DOMAIN-SUFFIX,stripe.com,OpenAI
+DOMAIN-SUFFIX,intercom.io,OpenAI
+DOMAIN-SUFFIX,intercomcdn.com,OpenAI
+DOMAIN-SUFFIX,launchdarkly.com,OpenAI
+DOMAIN-SUFFIX,algolia.net,OpenAI
+DOMAIN-SUFFIX,observeit.net,OpenAI
+DOMAIN-SUFFIX,featuregates.org,OpenAI
+DOMAIN-SUFFIX,events.statsigapi.net,OpenAI
+DOMAIN-SUFFIX,api.statsig.com,OpenAI
+
+# --- CDN / 静态 / 托管网络 ---
+DOMAIN-SUFFIX,cloudflare.com,OpenAI
+DOMAIN-SUFFIX,fastly.net,OpenAI
+DOMAIN-SUFFIX,imgix.net,OpenAI
+DOMAIN-SUFFIX,oaistatic.net,OpenAI
+DOMAIN-SUFFIX,oai-cdn.net,OpenAI
+DOMAIN-SUFFIX,cdn.oaistatic.com,OpenAI
+DOMAIN-SUFFIX,cdn.openai-cdn.com,OpenAI
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,OpenAI
+DOMAIN-SUFFIX,openaicom.imgix.net,OpenAI
+
+# --- 备用 / 潜在新域 ---
+DOMAIN-SUFFIX,openaiapi.com,OpenAI
+DOMAIN-SUFFIX,openaiapi.net,OpenAI
+DOMAIN-SUFFIX,openaiapis.com,OpenAI
+DOMAIN-SUFFIX,chatgptapi.com,OpenAI
+DOMAIN-SUFFIX,gpt.openai.com,OpenAI
+
+# --- IP CIDR （可选，如果你想兜底 OpenAI IP 段）---
+IP-CIDR,20.190.128.0/18,OpenAI
+IP-CIDR,40.64.0.0/10,OpenAI
+IP-CIDR,52.96.0.0/12,OpenAI
+IP-CIDR,13.64.0.0/11,OpenAI
+IP-CIDR,13.104.0.0/14,OpenAI
+IP-CIDR,23.96.0.0/13,OpenAI
+IP-CIDR,40.112.0.0/13,OpenAI
+IP-CIDR,51.10.0.0/15,OpenAI
+IP-CIDR,52.224.0.0/12,OpenAI
+IP-CIDR,104.146.0.0/15,OpenAI
+IP-CIDR,104.208.0.0/13,OpenAI
