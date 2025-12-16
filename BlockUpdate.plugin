@@ -22,7 +22,7 @@ DOMAIN,gdmf.apple.com,REJECT
 # 🍎 系统更新 CDN
 DOMAIN,updates-http.cdn-apple.com,REJECT
 # 🍎 诊断 & 更新反馈
-DOMAIN,xp.apple.com,REJECT
+# DOMAIN,xp.apple.com,REJECT
 # 🍎 也常用于下载更新内容。
 DOMAIN,appldnld.apple.com,REJECT
 
@@ -120,6 +120,7 @@ DOMAIN,cloudservice19.kingsoft-office-service.com,REJECT
 # 抖音追踪屏蔽规则
 DOMAIN-SUFFIX,snssdk.com,REJECT
 DOMAIN-SUFFIX,bytegs.com,REJECT
+
 
 
 
