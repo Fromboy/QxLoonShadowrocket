@@ -1,3 +1,15 @@
+#!name=4GTV 分流规则
+#!desc=适配 Loon 的台湾 4GTV 节点分流规则
+#!author=Fromboy
+#!category=Region
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTV.list
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTVHK.list
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTVSG.list
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTVUSA.list
+# Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
+# Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
+
+
 # ===== 美国节点 =====
 DOMAIN-SUFFIX,z2u.com,🇺🇲 美国节点
 DOMAIN-SUFFIX,amazonaws.com,🇺🇲 美国节点
