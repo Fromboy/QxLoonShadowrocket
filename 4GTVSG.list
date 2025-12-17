@@ -1,0 +1,13 @@
+#!name=4GTV 分流规则
+#!desc=适配 Loon 的台湾 4GTV 节点分流规则
+#!author=Fromboy
+#!category=Region
+# Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTV.list
+# Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
+# Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
+
+# ===== 新加坡节点 =====
+DOMAIN-KEYWORD,astro,🇸🇬 狮城节点
+DOMAIN-KEYWORD,wavve,🇸🇬 狮城节点
+DOMAIN-SUFFIX,starhubgo.com,🇸🇬 狮城节点
+DOMAIN-SUFFIX,stream-link.org,🇸🇬 狮城节点
