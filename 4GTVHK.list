@@ -1,3 +1,4 @@
+# 典型：TVB / 港区 CDN，必须精准，不走泛代
 # ===== 香港节点 =====
 DOMAIN-SUFFIX,tvb.com,🇭🇰 香港节点
 DOMAIN-SUFFIX,edgeware.tvb.com,🇭🇰 香港节点
