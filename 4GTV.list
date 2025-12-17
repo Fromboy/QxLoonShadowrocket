@@ -6,8 +6,14 @@
 # Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
 # Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
 
-IP-CIDR,13.112.0.0/14,Proxy
-DOMAIN-SUFFIX,4gtv.tv,Proxy
-DOMAIN-SUFFIX,hinet.net,Proxy
-DOMAIN-SUFFIX,livednow.com,Proxy
-DOMAIN-SUFFIX,ofiii.com,Proxy
+# ===== 台湾节点 =====
+IP-CIDR,13.112.0.0/14,🇹🇼 台湾节点
+DOMAIN-SUFFIX,4gtv.tv,🇹🇼 台湾节点
+DOMAIN-SUFFIX,hinet.net,🇹🇼 台湾节点
+DOMAIN-SUFFIX,livednow.com,🇹🇼 台湾节点
+DOMAIN-SUFFIX,ofiii.com,🇹🇼 台湾节点
+DOMAIN-SUFFIX,cdn.hinet.net,🇹🇼 台湾节点
+DOMAIN-SUFFIX,hinet.net,🇹🇼 台湾节点
+DOMAIN-SUFFIX,4gtv.tv,🇹🇼 台湾节点
+DOMAIN-SUFFIX,api2.4gtv.tv,🇹🇼 台湾节点
+DOMAIN-SUFFIX,infini.money,🇹🇼 台湾节点
