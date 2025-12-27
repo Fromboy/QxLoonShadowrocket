@@ -80,19 +80,61 @@ IP-CIDR,64.23.132.171/32
 # host-keyword: 3
 # host-suffix: 7
 # TOTAL: 13
-HOST,ai.google.dev,Gemini
-HOST,alkalimakersuite-pa.clients6.google.com,Gemini
-HOST,makersuite.google.com,Gemini
-HOST-SUFFIX,bard.google.com,Gemini
-HOST-SUFFIX,deepmind.com,Gemini
-HOST-SUFFIX,deepmind.google,Gemini
-HOST-SUFFIX,gemini.google.com,Gemini
-HOST-SUFFIX,generativeai.google,Gemini
-HOST-SUFFIX,proactivebackend-pa.googleapis.com,Gemini
-HOST-SUFFIX,apis.google.com,Gemini
-HOST-KEYWORD,colab,Gemini
-HOST-KEYWORD,developerprofiles,Gemini
-HOST-KEYWORD,generativelanguage,Gemini
+# --- Gemini & Google AI 终极全量规则 (手动指定版) ---
+
+# [核心对话与 AI 模型后端]
+HOST, gemini.google.com
+HOST, aistudio.google.com
+HOST, makersuite.google.com
+HOST, alkalimakersuite-pa.clients6.google.com
+HOST, alkalimelt-pa.googleapis.com
+HOST, proactivebackend-pa.googleapis.com
+HOST, contents-pa.googleapis.com
+HOST, speech-pa.googleapis.com
+HOST, ai.google.dev
+HOST-KEYWORD, gemini
+HOST-KEYWORD, alkalimelt
+HOST-KEYWORD, proactivebackend
+HOST-KEYWORD, generativelanguage
+HOST-KEYWORD, colab
+
+# [Google 基础架构与身份验证]
+HOST-SUFFIX, google.com
+HOST-SUFFIX, googleapis.com
+HOST-SUFFIX, gstatic.com
+HOST-SUFFIX, googleusercontent.com
+HOST-SUFFIX, ggpht.com
+HOST-SUFFIX, g.co
+HOST-SUFFIX, o7n.google.com
+HOST-SUFFIX, services.google.com
+HOST-SUFFIX, bard.google.com
+HOST-SUFFIX, deepmind.com
+HOST-SUFFIX, deepmind.google
+HOST-SUFFIX, generativeai.google
+HOST, clients3.google.com
+HOST, clients4.google.com
+
+# [Firebase 与 App 环境 (解决 app-analytics 报错)]
+HOST-SUFFIX, firebase.io
+HOST-SUFFIX, firebaseio.com
+HOST-SUFFIX, app-analytics-services.com
+HOST-SUFFIX, app-measurement.com
+HOST-SUFFIX, firebaselogging-pa.googleapis.com
+HOST-SUFFIX, firebaseremoteconfig.googleapis.com
+
+# [多媒体与辅助资源]
+HOST-SUFFIX, googlevideo.com
+HOST-SUFFIX, gvt1.com
+HOST-SUFFIX, gvt2.com
+HOST-SUFFIX, google-analytics.com
+
+# [补丁：Google 全球 IP 段]
+IP-CIDR, 172.217.0.0/16
+IP-CIDR, 142.250.0.0/15
+IP-CIDR, 108.177.0.0/17
+IP-CIDR, 74.125.0.0/16
+IP-CIDR, 199.223.232.0/21
+IP-CIDR, 216.58.192.0/19
 
 # NAME: OpenAI
 # UPDATED: 2024-07-03 16:18:28
