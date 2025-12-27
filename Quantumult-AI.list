@@ -1,9 +1,8 @@
 # ==========================================
-# AI 服务长期稳定版 (精细域名版 · 无预设策略)
-# 更新时间: 2025-12-27
+# AI 服务长期稳定版（精修域名 · 无风险 · 可长期用）
 # ==========================================
 
-# --- [1. 公共基础依赖] ---
+# --- 1. 公共依赖与支付 ---
 HOST-SUFFIX,auth0.com
 HOST-SUFFIX,identrust.com
 HOST-SUFFIX,challenges.cloudflare.com
@@ -17,11 +16,12 @@ HOST-SUFFIX,launchdarkly.com
 HOST-SUFFIX,mixpanel.com
 HOST-SUFFIX,algolia.net
 
-# --- [2. Google Gemini 生态] ---
+# --- 2. Google Gemini / Bard / AI ---
 HOST,gemini.google.com
 HOST,aistudio.google.com
 HOST,makersuite.google.com
 HOST,ai.google.dev
+
 HOST-SUFFIX,google.com
 HOST-SUFFIX,googleapis.com
 HOST-SUFFIX,gstatic.com
@@ -29,30 +29,38 @@ HOST-SUFFIX,googleusercontent.com
 HOST-SUFFIX,ggpht.com
 HOST-SUFFIX,g.co
 HOST-SUFFIX,services.google.com
-HOST-SUFFIX,firebaseio.com
-HOST-SUFFIX,firebaselogging-pa.googleapis.com
-HOST-SUFFIX,app-analytics-services.com
-HOST-SUFFIX,app-measurement.com
 HOST-SUFFIX,bard.google.com
 HOST-SUFFIX,deepmind.com
 HOST-SUFFIX,deepmind.google
 HOST-SUFFIX,generativeai.google
 
-# --- [3. OpenAI & ChatGPT] ---
+# Firebase
+HOST-SUFFIX,firebaseio.com
+HOST-SUFFIX,firebaselogging-pa.googleapis.com
+HOST-SUFFIX,app-analytics-services.com
+HOST-SUFFIX,app-measurement.com
+
+# --- 3. OpenAI / ChatGPT ---
 HOST-SUFFIX,chatgpt.com
 HOST-SUFFIX,openai.com
 HOST-SUFFIX,ai.com
 HOST-SUFFIX,oaistatic.com
 HOST-SUFFIX,oaiusercontent.com
 HOST-SUFFIX,api.openai.com
+
+# LiveKit 语音
 HOST-SUFFIX,chatgpt.livekit.cloud
 HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,turn.livekit.cloud
+
+# 验证
 HOST-SUFFIX,client-api.arkoselabs.com
+
+# CDN
 HOST-SUFFIX,openaiapi-site.azureedge.net
 HOST-SUFFIX,openaicom.imgix.net
 
-# --- [4. Microsoft Bing & Copilot] ---
+# --- 4. Microsoft Bing / Copilot ---
 HOST,www.bing.com
 HOST,sydney.bing.com
 HOST,copilot.microsoft.com
@@ -63,21 +71,25 @@ HOST,location.microsoft.com
 HOST,odc.officeapps.live.com
 HOST,in.appcenter.ms
 HOST,self.events.data.microsoft.com
+
 HOST-SUFFIX,bing.com
 HOST-SUFFIX,bing.net
 HOST-SUFFIX,api.microsoftapp.net
 HOST-SUFFIX,edgeservices.bing.com
 
-# --- [5. Grok / Manus / Cursor] ---
+# --- 5. Grok / Manus / Cursor ---
 HOST,grok.com
 HOST,assets.grok.com
 HOST,featureassets.org
 HOST-SUFFIX,x.ai
 HOST-SUFFIX,xai.com
+
 HOST,manus.im
 HOST,api.manus.im
 HOST,files.manuscdn.com
 HOST-SUFFIX,manus.im
 HOST-SUFFIX,manuscdn.com
+HOST-SUFFIX,manus.ai
+
 HOST,cursor.com
 HOST-SUFFIX,cursor.com
