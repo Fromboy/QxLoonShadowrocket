@@ -1,199 +1,83 @@
-# NAME: mixpanel
-host-suffix,mixpanel.com
-# NAME: Bing
-# UPDATED: 2024-07-03 16:18:28
-# host-suffix: 9
-# TOTAL: 9
-host-suffix,bing.com
-host-suffix,bing.com.cn
-host-suffix,bing.net
-host-suffix,bingads.com
-host-suffix,bingagencyawards.com
-host-suffix,bingapistatistics.com
-host-suffix,bingsandbox.com
-host-suffix,bingvisualsearch.com
-host-suffix,bingworld.com
+# ==========================================
+# AI 服务长期稳定版 (精细域名版 · 无预设策略)
+# 更新时间: 2025-12-27
+# ==========================================
 
-# NAME: Copilot
-# UPDATED: 2024-07-03 16:18:30
-# host: 20
-# host-keyword: 1
-# host-suffix: 26
-# IP-ASN: 2
-# IP-CIDR: 2
-# TOTAL: 51
-host,api.msn.com
-host,api.statsig.com
-host,assets.msn.com
-host,browser-intake-datadoghq.com
-host,chat.openai.com.cdn.cloudflare.net
-host,copilot.microsoft.com
-host,gateway.bingviz.microsoft.net
-host,gateway.bingviz.microsoftapp.net
-host,in.appcenter.ms
-host,location.microsoft.com
-host,odc.officeapps.live.com
-host,openai-api.arkoselabs.com
-host,openaicomproductionae4b.blob.core.windows.net
-host,production-openaicom-storage.azureedge.net
-host,r.bing.com
-host,self.events.data.microsoft.com
-host,services.bingapis.com
-host,static.cloudflareinsights.com
-host,sydney.bing.com
-host,www.bing.com
-host-suffix,algolia.net
-host-suffix,api.microsoftapp.net
-host-suffix,auth0.com
-host-suffix,bing-shopping.microsoft-falcon.io
-host-suffix,challenges.cloudflare.com
-host-suffix,chatgpt.com
-host-suffix,chatgpt.livekit.cloud
-host-suffix,client-api.arkoselabs.com
-host-suffix,edgeservices.bing.com
-host-suffix,events.statsigapi.net
-host-suffix,featuregates.org
-host-suffix,host.livekit.cloud
-host-suffix,identrust.com
-host-suffix,intercom.io
-host-suffix,intercomcdn.com
-host-suffix,launchdarkly.com
-host-suffix,oaistatic.com
-host-suffix,oaiusercontent.com
-host-suffix,observeit.net
-host-suffix,openai.com
-host-suffix,openaiapi-site.azureedge.net
-host-suffix,openaicom.imgix.net
-host-suffix,segment.io
-host-suffix,sentry.io
-host-suffix,stripe.com
-host-suffix,turn.livekit.cloud
-host-keyword,openaicom-api
-IP-ASN,14061,no-resolve
-IP-ASN,20473,no-resolve
-IP-CIDR,24.199.123.28/32
-IP-CIDR,64.23.132.171/32
+# --- [1. 公共基础依赖] ---
+HOST-SUFFIX,auth0.com
+HOST-SUFFIX,identrust.com
+HOST-SUFFIX,challenges.cloudflare.com
+HOST-SUFFIX,static.cloudflareinsights.com
+HOST-SUFFIX,stripe.com
+HOST-SUFFIX,intercom.io
+HOST-SUFFIX,intercomcdn.com
+HOST-SUFFIX,sentry.io
+HOST-SUFFIX,segment.io
+HOST-SUFFIX,launchdarkly.com
+HOST-SUFFIX,mixpanel.com
+HOST-SUFFIX,algolia.net
 
-# NAME: Gemini
-# UPDATED: 2024-07-03 16:18:30
-# host: 3
-# host-keyword: 3
-# host-suffix: 7
-# TOTAL: 13
-# --- Gemini & Google AI 终极全量规则 (手动指定版) ---
+# --- [2. Google Gemini 生态] ---
+HOST,gemini.google.com
+HOST,aistudio.google.com
+HOST,makersuite.google.com
+HOST,ai.google.dev
+HOST-SUFFIX,google.com
+HOST-SUFFIX,googleapis.com
+HOST-SUFFIX,gstatic.com
+HOST-SUFFIX,googleusercontent.com
+HOST-SUFFIX,ggpht.com
+HOST-SUFFIX,g.co
+HOST-SUFFIX,services.google.com
+HOST-SUFFIX,firebaseio.com
+HOST-SUFFIX,firebaselogging-pa.googleapis.com
+HOST-SUFFIX,app-analytics-services.com
+HOST-SUFFIX,app-measurement.com
+HOST-SUFFIX,bard.google.com
+HOST-SUFFIX,deepmind.com
+HOST-SUFFIX,deepmind.google
+HOST-SUFFIX,generativeai.google
 
-# [核心对话与 AI 模型后端]
-HOST, gemini.google.com
-HOST, aistudio.google.com
-HOST, makersuite.google.com
-HOST, alkalimakersuite-pa.clients6.google.com
-HOST, alkalimelt-pa.googleapis.com
-HOST, proactivebackend-pa.googleapis.com
-HOST, contents-pa.googleapis.com
-HOST, speech-pa.googleapis.com
-HOST, ai.google.dev
-HOST-KEYWORD, gemini
-HOST-KEYWORD, alkalimelt
-HOST-KEYWORD, proactivebackend
-HOST-KEYWORD, generativelanguage
-HOST-KEYWORD, colab
+# --- [3. OpenAI & ChatGPT] ---
+HOST-SUFFIX,chatgpt.com
+HOST-SUFFIX,openai.com
+HOST-SUFFIX,ai.com
+HOST-SUFFIX,oaistatic.com
+HOST-SUFFIX,oaiusercontent.com
+HOST-SUFFIX,api.openai.com
+HOST-SUFFIX,chatgpt.livekit.cloud
+HOST-SUFFIX,host.livekit.cloud
+HOST-SUFFIX,turn.livekit.cloud
+HOST-SUFFIX,client-api.arkoselabs.com
+HOST-SUFFIX,openaiapi-site.azureedge.net
+HOST-SUFFIX,openaicom.imgix.net
 
-# [Google 基础架构与身份验证]
-HOST-SUFFIX, google.com
-HOST-SUFFIX, googleapis.com
-HOST-SUFFIX, gstatic.com
-HOST-SUFFIX, googleusercontent.com
-HOST-SUFFIX, ggpht.com
-HOST-SUFFIX, g.co
-HOST-SUFFIX, o7n.google.com
-HOST-SUFFIX, services.google.com
-HOST-SUFFIX, bard.google.com
-HOST-SUFFIX, deepmind.com
-HOST-SUFFIX, deepmind.google
-HOST-SUFFIX, generativeai.google
-HOST, clients3.google.com
-HOST, clients4.google.com
+# --- [4. Microsoft Bing & Copilot] ---
+HOST,www.bing.com
+HOST,sydney.bing.com
+HOST,copilot.microsoft.com
+HOST,services.bingapis.com
+HOST,api.msn.com
+HOST,assets.msn.com
+HOST,location.microsoft.com
+HOST,odc.officeapps.live.com
+HOST,in.appcenter.ms
+HOST,self.events.data.microsoft.com
+HOST-SUFFIX,bing.com
+HOST-SUFFIX,bing.net
+HOST-SUFFIX,api.microsoftapp.net
+HOST-SUFFIX,edgeservices.bing.com
 
-# [Firebase 与 App 环境 (解决 app-analytics 报错)]
-HOST-SUFFIX, firebase.io
-HOST-SUFFIX, firebaseio.com
-HOST-SUFFIX, app-analytics-services.com
-HOST-SUFFIX, app-measurement.com
-HOST-SUFFIX, firebaselogging-pa.googleapis.com
-HOST-SUFFIX, firebaseremoteconfig.googleapis.com
-
-# [多媒体与辅助资源]
-HOST-SUFFIX, googlevideo.com
-HOST-SUFFIX, gvt1.com
-HOST-SUFFIX, gvt2.com
-HOST-SUFFIX, google-analytics.com
-
-# [补丁：Google 全球 IP 段]
-IP-CIDR, 172.217.0.0/16
-IP-CIDR, 142.250.0.0/15
-IP-CIDR, 108.177.0.0/17
-IP-CIDR, 74.125.0.0/16
-IP-CIDR, 199.223.232.0/21
-IP-CIDR, 216.58.192.0/19
-
-# NAME: OpenAI
-# UPDATED: 2024-07-03 16:18:28
-# host: 8
-# host-keyword: 1
-# host-suffix: 24
-# IP-ASN: 1
-# IP-CIDR: 2
-# TOTAL: 36
-host,browser-intake-datadoghq.com
-host,chat.openai.com.cdn.cloudflare.net
-host,gemini.google.com
-host,openai-api.arkoselabs.com
-host,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-host,openaicomproductionae4b.blob.core.windows.net
-host,production-openaicom-storage.azureedge.net
-host,static.cloudflareinsights.com
-host-suffix,ai.com
-host-suffix,algolia.net
-host-suffix,api.statsig.com
-host-suffix,auth0.com
-host-suffix,chatgpt.com
-host-suffix,chatgpt.livekit.cloud
-host-suffix,client-api.arkoselabs.com
-host-suffix,events.statsigapi.net
-host-suffix,featuregates.org
-host-suffix,host.livekit.cloud
-host-suffix,identrust.com
-host-suffix,intercom.io
-host-suffix,intercomcdn.com
-host-suffix,launchdarkly.com
-host-suffix,oaistatic.com
-host-suffix,oaiusercontent.com
-host-suffix,observeit.net
-host-suffix,openai.com
-host-suffix,openaiapi-site.azureedge.net
-host-suffix,openaicom.imgix.net
-host-suffix,segment.io
-host-suffix,sentry.io
-host-suffix,stripe.com
-host-suffix,turn.livekit.cloud
-host-keyword,openai
-IP-ASN,20473
-IP-CIDR,24.199.123.28/32
-IP-CIDR,64.23.132.171/32
-
-# Grok-3 服务域名分流到 Proxy
-host,featureassets.org
-host,grok.com
-host,assets.grok.com
-host-suffix,x.ai
-host-keyword,grok
-
-# Manus.im 服务域名分流到 Proxy
-host,api.manus.im
-host,files.manuscdn.com
-host-suffix,manus.im
-host-suffix,manuscdn.com
-
-# cursor.com服务域名分流到 Proxy
-host,cursor.com
-host-suffix,cursor.com
+# --- [5. Grok / Manus / Cursor] ---
+HOST,grok.com
+HOST,assets.grok.com
+HOST,featureassets.org
+HOST-SUFFIX,x.ai
+HOST-SUFFIX,xai.com
+HOST,manus.im
+HOST,api.manus.im
+HOST,files.manuscdn.com
+HOST-SUFFIX,manus.im
+HOST-SUFFIX,manuscdn.com
+HOST,cursor.com
+HOST-SUFFIX,cursor.com
