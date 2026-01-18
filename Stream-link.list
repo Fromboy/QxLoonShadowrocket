@@ -45,6 +45,4 @@ HOST-SUFFIX,hoy.tv,Livednow
 HOST-SUFFIX,akamaized.net,Livednow
 HOST-SUFFIX,tvb.com,Livednow
 
-# CDN加速服务器地址cdn.jsdelivr.net
-Host-suffix, jsdelivr.net, jsdelivr
 
