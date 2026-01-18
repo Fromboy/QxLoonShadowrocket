@@ -5,26 +5,46 @@
 # UPDATED: 2025-06-06 09:17:01
 # ============================
 # Lan 本地内网直连（精简合并）
+# 用途：定义不应经过代理的本地 / 特殊用途网络
+# mDNS 本地域名（.local），用于局域网发现，兜底使用
 HOST-SUFFIX,local,DIRECT
-# IPv4 本地/保留/测试/链路
+# IPv4 本地 / 保留 / 测试 / 链路地址
+# IANA 保留地址（This Network），防止代理误判
 IP-CIDR,0.0.0.0/8,DIRECT
+# RFC1918 私有地址（内网）
 IP-CIDR,10.0.0.0/8,DIRECT
+# 回环地址（本机通信）
 IP-CIDR,127.0.0.0/8,DIRECT
+# 链路本地地址（APIPA，DHCP 失败时使用）
 IP-CIDR,169.254.0.0/16,DIRECT
+# 运营商级 NAT（CGNAT，常见于移动网络）
 IP-CIDR,100.64.0.0/10,DIRECT
+# RFC1918 私有地址（内网）
 IP-CIDR,172.16.0.0/12,DIRECT
+# IETF 协议特殊用途地址
 IP-CIDR,192.0.0.0/24,DIRECT
+# TEST-NET-1（文档 / 示例网络）
 IP-CIDR,192.0.2.0/24,DIRECT
+# 6to4 Anycast（已废弃，保留用途）
 IP-CIDR,192.88.99.0/24,DIRECT
+# RFC1918 私有地址（内网）
 IP-CIDR,192.168.0.0/16,DIRECT
+# 网络性能基准测试地址
 IP-CIDR,198.18.0.0/15,DIRECT
+# TEST-NET-2（文档 / 示例网络）
 IP-CIDR,198.51.100.0/24,DIRECT
+# TEST-NET-3（文档 / 示例网络）
 IP-CIDR,203.0.113.0/24,DIRECT
+# IPv4 组播及高位保留地址（用于局域网发现等）
 IP-CIDR,224.0.0.0/4,DIRECT
-
-# IPv6 本地/保留/链路/组播
+# IPv6 本地 / 保留 / 链路 / 组播地址
+# IPv6 未指定 / 点对点最小地址范围
 IP6-CIDR,::/127,DIRECT
+# IPv6 回环地址（本机）
 IP6-CIDR,::1/128,DIRECT
+# IPv6 私有地址（ULA，等价于 IPv4 内网）
 IP6-CIDR,fc00::/7,DIRECT
+# IPv6 链路本地地址（邻居发现、路由通告）
 IP6-CIDR,fe80::/10,DIRECT
+# IPv6 组播地址
 IP6-CIDR,ff00::/8,DIRECT
