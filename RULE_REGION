@@ -1,6 +1,7 @@
 # GEOIP 分流规则 2024-06-26
 # 可以配合 China 分流
-# https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list
+# URL = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/main/RULE_REGION
+# URL =https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list
 # 请把此条规则放置在分流规则最低下
 # 请注释掉 Filter_local 里面的 geoip cn
 
