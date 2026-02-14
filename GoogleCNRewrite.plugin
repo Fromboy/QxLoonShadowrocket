@@ -1,7 +1,8 @@
 #!name=Google CN Rewrite
 #!desc=将 google.cn 重定向到 google.com
 #!URL=https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/GoogleCNRewrite.plugin
-
+#!icon = https://raw.githubusercontent.com/deezertidal/private/main/icons/google.png
+#!date = 2025-12-18
 [Rewrite]
 ^https?:\/\/(www\.)?(g|google)\.cn https://www.google.com 307
 ^https?:\/\/(www\.)?google\.cn\/search https://www.google.com/search 307
