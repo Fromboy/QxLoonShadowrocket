@@ -1,0 +1,100 @@
+# 官方文档：https://doc.egernapp.com
+# 最后更新时间: 2025-09-11
+# Egern Version ≥ v2.0.0(552)
+# Egern 简洁配置，只有国内🇨🇳和代理🌍 
+# 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
+# Egern url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
+# Egernsmall url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSmall.yaml
+# Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
+# ================================
+ipv6: true
+http_port: 3080
+socks_port: 3090
+allow_external_connections: true
+vif_only: true
+geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
+asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://1.1.1.1/generate_204
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+compat_route: false
+dns:
+  bootstrap:
+  - system
+policy_groups:
+- auto_test:
+    name: 最优选择
+    policies:
+    - 远程订阅
+    flatten: true
+    filter: ^(?=.*(美国|新加坡|日本))(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|国内|加入)).*
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    hidden: true
+- select:
+    name: 环游世界
+    policies:
+    - 最优选择
+    - 远程订阅
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/xqcloud.jpeg
+    hidden: false
+- external:
+    name: 远程订阅
+    type: select
+    urls:
+    filter: ^(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Bigairport.png
+    hidden: false
+rules:
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
+    policy: REJECT-DROP
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
+    policy: 环游世界
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
+- ip_cidr:
+    match: 192.168.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 10.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 127.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 172.16.0.0/12
+    policy: DIRECT
+- ip_cidr:
+    match: 192.128.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 224.0.0.0/24
+    policy: DIRECT
+- geoip:
+    match: CN
+    policy: DIRECT
+    no_resolve: false
+    disabled: false
+- default:
+    policy: 环游世界
+mitm:
+  enabled: true
+  ca_passphrase: egern
+modules:
+- url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.surge.sgmodule
+  enabled: false

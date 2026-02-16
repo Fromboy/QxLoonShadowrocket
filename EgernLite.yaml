@@ -1,0 +1,195 @@
+# 官方文档：https://doc.egernapp.com
+# Author: https://github.com/Repcz
+# TG: https://t.me/QVQ_Channel
+# 最后更新时间: 2025-09-11
+# Egern Version ≥ v2.0.0(552)
+# Egern 简洁配置，只有国内🇨🇳和代理🌍 
+# 分流库 = https://github.com/Repcz/Tool/tree/X/Egern/Rules
+# 在手动策略《〈 添加URL哪里填写自己的订阅 〉》哪里✍️自己的机场订阅地址开始愉快的冲浪吧
+# Egern url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern.yaml
+# Egernsmall url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSmall.yaml
+# Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
+# Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
+# ================================
+
+# ipv6 默认关闭
+ipv6: false
+# http 代理端口
+http_port: 3080
+# socks 5代理端口
+socks_port: 3090
+# 外部代理打开
+allow_external_connections: true
+ # tun模式默认打开
+vif_only: true
+# 拦截dns
+hijack_dns:
+- '*:53'
+# geoip地址🇨🇳
+geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+# asn地址🇨🇳
+asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+# 代理和内网速测试地址
+proxy_latency_test_url: http://www.google.com/generate_204
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+# dns配置
+dns:
+  bootstrap:
+    - system
+  upstreams:
+    Domestic-DNS:
+    - 223.5.5.5
+    - 119.29.29.29
+    Foreign-DNS:
+    - 1.1.1.1
+    - 8.8.8.8
+  forward:
+  - wildcard:
+      match: '*.cn'
+      value: Domestic-DNS
+  - wildcard:
+      match: '*'
+      value: Foreign-DNS
+  hosts:
+    # App Store 下载请求解析 金山CDN
+    iosapps.itunes.apple.com:
+    - iosapps.itunes.apple.com.download.ks-cdn.com
+# 互联网IP查询
+    public_ip_lookup_url: https://ifconfig.me/ip
+
+
+# 策略组配置
+policy_groups:
+- select:
+    name: 漏网之鱼
+    policies:
+    - DIRECT
+    - 美国节点
+    - 狮称节点
+    - 韩国节点
+    - 日本节点
+    - 香港节点
+    - 台湾节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/softlyx/Nijigen1.png
+    hidden: false
+- select:
+    name: 出国看看
+    policies:
+    - 手动选择
+    - 香港节点
+    - 台湾节点
+    - 日本节点
+    - 韩国节点
+    - 狮称节点
+    - 美国节点
+    flatten: false
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+    hidden: false
+- auto_test:
+    name: 香港节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇭🇰|香港|(\b(HK|Hong)\b)
+    tolerance: 50
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    hidden: true
+- auto_test:
+    name: 台湾节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)
+    tolerance: 0
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    hidden: true
+- auto_test:
+    name: 美国节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)
+    tolerance: 0
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    hidden: true
+- auto_test:
+    name: 日本节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)
+    tolerance: 50
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    hidden: true
+- auto_test:
+    name: 韩国节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇰🇷|韩国|首尔|(\b(KR|Korea)\b)
+    tolerance: 50
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/South_Korea.png
+    hidden: true
+- auto_test:
+    name: 狮称节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: (?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)
+    tolerance: 50
+    timeout: 3
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    hidden: true
+- external:
+    name: 手动选择
+    type: select
+    urls:
+    filter: ^(?!.*(邀请|返利|循环|官网|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
+    update_interval: 21600
+    icon: https://github.com/Repcz/Repcz.github.io/raw/main/docs/egern/Photo/Egern.png
+    hidden: false
+rules:
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/Reject.yaml
+    policy: REJECT
+    update_interval: 21600
+- rule_set:
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    name: AI人工智能
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernAI.yaml
+    policy: 手动选择
+    update_interval: 86400
+    disabled: false
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/Direct.yaml
+    policy: DIRECT
+    update_interval: 21600
+- rule_set:
+    match: https://cdn.jsdelivr.net/gh/Repcz/Tool@X/Egern/Rules/ProxyGFW.yaml
+    policy: 出国看看
+    update_interval: 21600
+- rule_set:
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
+    policy: DIRECT
+    update_interval: 86400
+    disabled: false
+- geoip:
+    match: CN
+    policy: DIRECT
+- default:
+    policy: 漏网之鱼
+mitm:
+  enabled: true
+  ca_p12: 
+  ca_passphrase: egern
