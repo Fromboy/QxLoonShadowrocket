@@ -2,11 +2,9 @@
 # Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
 # 云幕Emby = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/yunmuemby.list
 # ⏰ 云幕域名国内服务器在香港可以国内直链
-
 # 匹配所有包含 69yun69 的域名（任意子域名和后缀）69的需要代理
-DOMAIN-KEYWORD,69yun69
-# 可选：匹配完整 URL，包括端口和路径
-URL-REGEX,https?://.*69yun\..*
 
-# > < 播放器域名
-DOMAIN-SUFFIX,conflux.one
+DOMAIN-SUFFIX,69yun69.com
+DOMAIN-KEYWORD,69yun69
+
+
