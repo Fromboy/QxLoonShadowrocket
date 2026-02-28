@@ -2,8 +2,9 @@
 # Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
 # 云幕Emby = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/yunmuemby.list
 # stash的69 https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/69yunmuEMBY.yaml
+# Ok👌emby https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/okemby.yaml
 # ⏰ 69的emby 必须69机场的节点可以排出大陆美国和日本
-# OK的需要柚子
+# OK的需要柚子 okemby和yunmuemby是相同规则
 
 # 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,nubebelle.vip
