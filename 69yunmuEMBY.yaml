@@ -12,7 +12,3 @@ payload:
 - DOMAIN-KEYWORD,69yun69
 - DOMAIN-KEYWORD,69yun
 - DOMAIN-KEYWORD,yun69
-
-# 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
-- DOMAIN-SUFFIX,nubebelle.vip
-- DOMAIN-SUFFIX,nubebelle.cn
