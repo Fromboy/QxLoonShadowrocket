@@ -9,4 +9,7 @@ DOMAIN-KEYWORD,nubebelle
 # 匹配所有包含 柚子OK的EMBY 的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,nice66666.cc
 DOMAIN-KEYWORD,nice66666
+# 匹配所有包含 柚子OK的EMBY 主页的域名（任意子域名和后缀）
+DOMAIN-SUFFIX,okemby.com
+DOMAIN-KEYWORD,okemby
 
