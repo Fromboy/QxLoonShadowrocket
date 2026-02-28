@@ -1,0 +1,18 @@
+# > < youzi 机场✈️服务器地址 Ok=emby 域名规则
+# Loon url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Shadowrocket/69yun.list
+# 云幕Emby = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/yunmuemby.list
+
+#🔹 1. 如果是 Clash / Stash
+#	•	主配置文件（config.yaml）里写 rules:
+#	•	远程规则集（.yaml 文件）里写 payload:
+
+payload:
+# 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
+- DOMAIN-SUFFIX,nubebelle.vip
+- DOMAIN-KEYWORD,nubebelle
+# 匹配所有包含 柚子OK的EMBY 的域名（任意子域名和后缀）
+- DOMAIN-SUFFIX,nice66666.cc
+DOMAIN-KEYWORD,nice66666
+# 匹配所有包含 柚子OK的EMBY 主页的域名（任意子域名和后缀）
+- DOMAIN-SUFFIX,okemby.com
+- DOMAIN-KEYWORD,okemby
