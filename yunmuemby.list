@@ -5,6 +5,8 @@
 
 # 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,nubebelle.vip
-DOMAIN-SUFFIX,nubebelle.cn
-
+DOMAIN-KEYWORD,nubebelle
+# 匹配所有包含 柚子OK的EMBY 的域名（任意子域名和后缀）
+DOMAIN-SUFFIX,nice66666.cc
+DOMAIN-KEYWORD,nice66666
 
