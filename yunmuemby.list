@@ -5,14 +5,16 @@
 # Ok👌emby https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/okemby.yaml
 # ⏰ 69的emby 必须69机场的节点可以排出大陆美国和日本
 # OK的需要柚子 okemby和yunmuemby是相同规则
-
 # 匹配所有包含 云幕Emby 的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,nubebelle.vip
 DOMAIN-KEYWORD,nubebelle
 # 匹配所有包含 柚子OK的EMBY 的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,nice66666.cc
 DOMAIN-KEYWORD,nice66666
+DOMAIN-KEYWORD,nice
 # 匹配所有包含 柚子OK的EMBY 主页的域名（任意子域名和后缀）
 DOMAIN-SUFFIX,okemby.com
 DOMAIN-KEYWORD,okemby
+DOMAIN-SUFFIX,ncemby.com
+DOMAIN-KEYWORD,ncemby
 
