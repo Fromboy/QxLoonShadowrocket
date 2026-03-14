@@ -10,7 +10,7 @@
 # Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
 
 
-# ===== 美国节点 =====
+# ===== 4GTV 的 🇺🇸 美国节点 =====
 DOMAIN-SUFFIX,z2u.com,🇺🇲 美国节点
 DOMAIN-SUFFIX,amazonaws.com,🇺🇲 美国节点
 DOMAIN-SUFFIX,cloudflare.com,🇺🇲 美国节点
@@ -30,3 +30,7 @@ DOMAIN-SUFFIX,vip-tptv.xyz,🇺🇲 美国节点
 DOMAIN-SUFFIX,hudsonvalleyhost.com,🇺🇲 美国节点
 DOMAIN-SUFFIX,r2.hfyrw.com,🇺🇲 美国节点
 DOMAIN-KEYWORD,iill,🇺🇲 美国节点
+
+# ===== Gary的 直播源 🇺🇸 美国节点 =====
+DOMAIN-SUFFIX,sharewithyou.dpdns.org,🇺🇲 美国节点
+DOMAIN-SUFFIX,dpdns.org,🇺🇲 美国节点
