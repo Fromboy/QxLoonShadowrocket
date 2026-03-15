@@ -89,6 +89,10 @@ host-suffix,macbartender.com,REJECT
 # 屏蔽 PopClip 更新
 host,softwareupdate.pilotmoon.com,REJECT
 
+# Screen Studio 屏幕录制软件
+DOMAIN,api.lemonsqueezy.com,REJECT
+DOMAIN,screen.studio,REJECT
+
 
 
 
