@@ -22,10 +22,10 @@ Host-suffix, stream-link.online, stream-link
 Host-suffix, stream-link.org, stream-link
 
 ## 直播节目单地址域名
-Host-suffix, eu.org, stream-link
-Host, 51zmt.top, stream-link
-Host, 112114.zyz, stream-link
-Host, aptvapp.com, stream-link
+# Host-suffix, eu.org, stream-link
+# Host, 51zmt.top, stream-link
+# Host, 112114.zyz, stream-link
+# Host, aptvapp.com, stream-link
 
 ## 动物谷直播域名
 ## URL https://live.hkdvb.com/
@@ -44,5 +44,6 @@ HOST-SUFFIX,hinet.net,Livednow
 HOST-SUFFIX,hoy.tv,Livednow
 HOST-SUFFIX,akamaized.net,Livednow
 HOST-SUFFIX,tvb.com,Livednow
+
 
 
