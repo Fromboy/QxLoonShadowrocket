@@ -88,8 +88,6 @@ host-suffix,macbartender.com,REJECT
 
 # 屏蔽 PopClip 更新 和Bob翻译软件更新
 host,softwareupdate.pilotmoon.com,REJECT
-host,app-measurement.com,REJECT
-host,firebaselogging-pa.googleapis.com,REJECT
 
 # Screen Studio 屏幕录制软件
 DOMAIN,api.lemonsqueezy.com,REJECT
