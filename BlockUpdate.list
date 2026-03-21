@@ -51,11 +51,9 @@ host-suffix,download.nektony.com,REJECT
 host-suffix,updates.devmate.com,REJECT
 
 # 屏蔽Adobe Acrobat Pro DC 23.006.20320 软件系统更新 24-03-28
-host-suffix,ic.adobe.io,REJECT
+host-suffix,adobe.io,REJECT
 host-suffix,crs.cr.adobe.com,REJECT
 host-suffix,ims-prod06.adobelogin.com,REJECT
-host-suffix,lcs-cops.adobe.io.com,REJECT
-host-suffix,4vzokhpsbs.adobe.io,REJECT
 
 # 屏蔽BetterMouse软件自动更新
 host-suffix,api.appcenter.ms,REJECT
