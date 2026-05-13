@@ -7,7 +7,7 @@
 使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
 ***************************
 [rewrite_local]
-^https://api\.tuzhitong\.com/VipManage/User/GetUserVipManage url script-response-body https://raw.githubusercontent.com/liul0ng/quanx/refs/heads/main/tuzhi.js
+^https://api\.tuzhitong\.com/VipManage/User/GetUserVipManage url script-response-body https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/tuzhi.js
 
 [mitm]
 hostname = api.tuzhitong.com
