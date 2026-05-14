@@ -82,6 +82,7 @@ DOMAIN,api.softorino.com,REJECT
 # 屏蔽Parallels Desktop软件更新 24-09-08
 DOMAIN,update.parallels.com,REJECT
 DOMAIN,download.parallels.com,REJECT
+DOMAIN,update.update.parallels.cn,REJECT
 
 # 屏蔽 Boom 3D音频增强App软件更新24-09-20
 DOMAIN,apiboom3.globaldelight.net,REJECT
