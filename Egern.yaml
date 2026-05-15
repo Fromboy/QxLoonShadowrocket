@@ -33,22 +33,43 @@ proxy_latency_test_url: http://1.1.1.1/generate_204
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
 dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
-  bootstrap:
-    - system
   upstreams:
-    # 国内公共 DNS
-    Domestic-DNS:
-    - 223.5.5.5
-    - 119.29.29.29
-  # DNS 转发规则
+    国内-DNS:
+    - h3://223.5.5.5/dns-query
+    - h3://1.12.12.12/dns-query
+    - https://1.12.12.12/dns-query
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    国外-DNS:
+    - h3://1.1.1.1/dns-quer
+    - h3://8.8.8.8/dns-query
+    - https://8.8.4.4/dns-query
+    - https://1.0.0.1/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   forward:
-  - wildcard: # 通配符规则
-      match: "*"
-      value: Domestic-DNS
+  - domain_wildcard:
+      match: '*'
+      value: 国外-DNS
+      disabled: false
+  - domain_wildcard:
+      match: cn
+      value: 国内-DNS
+      disabled: false
+  - domain_wildcard:
+      match: '*.cn'
+      value: 国内-DNS
+      disabled: false
   hosts:
     # App Store 下载请求解析 金山CDN
     iosapps.itunes.apple.com:
     - iosapps.itunes.apple.com.download.ks-cdn.com
+    proxy_nameservers:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 223.5.5.5
+    - 119.29.29.29
+  public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - external:
     name: 手动选择
