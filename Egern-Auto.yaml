@@ -44,7 +44,11 @@ include_local_networks: false
 dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
-  - system
+  - 223.5.5.5
+  - 1.12.12.12
+  - 119.29.29.29
+  - 120.53.53.53
+  - 2400:3200::1
   upstreams:
     # 国内公共 DNS
     Domestic-DNS:
