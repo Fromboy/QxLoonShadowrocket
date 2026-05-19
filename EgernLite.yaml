@@ -35,7 +35,11 @@ direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_
 # dns配置
 dns:
   bootstrap:
-    - system
+  - 223.5.5.5
+  - 1.12.12.12
+  - 119.29.29.29
+  - 120.53.53.53
+  - 2400:3200::1
   upstreams:
     Domestic-DNS:
     - 223.5.5.5
