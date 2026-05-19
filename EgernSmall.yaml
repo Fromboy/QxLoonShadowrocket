@@ -21,7 +21,38 @@ direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_
 compat_route: false
 dns:
   bootstrap:
-  - system
+  - 223.5.5.5
+  - 119.29.29.29
+  - 1.12.12.12
+  - 120.53.53.53
+  - 2400:3200::1
+  upstreams:
+    AdBlack:
+    - quic://dns.adguard-dns.com
+    - https://dns.adguard-dns.com/dns-query
+    Alibaba:
+    - 223.5.5.5
+    - https://dns.alidns.com/dns-query
+    Tencent:
+    - 119.29.29.29
+    - https://doh.pub/dns-query
+    ByteDance:
+    - 180.184.2.2
+    - 180.184.1.1
+    China:
+    - 223.5.5.5
+    - 119.29.29.29
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    Global:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    proxy_nameservers:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - auto_test:
     name: 最优选择
@@ -49,14 +80,17 @@ policy_groups:
 rules:
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
+    value: AdBlack
     policy: REJECT-DROP
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
     policy: 环游世界
+    value: Global
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
+    value: China
     policy: DIRECT
     disabled: false
 - rule_set:
