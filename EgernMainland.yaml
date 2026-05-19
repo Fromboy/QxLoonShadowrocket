@@ -169,6 +169,19 @@ policy_groups:
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/rocket(1).png
     hidden: false
 - select:
+    name: Final
+    policies:
+    - Mainland
+    - Automatic
+    - AllServer
+    - Hong Kong
+    - Taiwan
+    - Singapore
+    - Japan
+    - United States
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/lightning.png
+    hidden: false
+- select:
     name: Apple
     policies:
     - Mainland China
@@ -572,6 +585,8 @@ rules:
     match: CN
     policy: Mainland China
     no_resolve: true
+- default:
+    policy: Final
 
 mitm:
   ca_p12: egern.p12
