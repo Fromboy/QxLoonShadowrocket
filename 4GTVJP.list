@@ -9,7 +9,6 @@
 # Quantumult X https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/4GTVJP.list
 # Loon https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/4GTV.list
 # Stash https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Stash/4GTV.yaml
-
 # ================日本 ======================
 DOMAIN-SUFFIX,final-inc,com, 日本
 DOMAIN-SUFFIX,final,com, 日本
