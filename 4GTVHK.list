@@ -19,8 +19,8 @@ DOMAIN-KEYWORD,hoy.tv,🇭🇰 香港节点
 DOMAIN-KEYWORD,rthktv,🇭🇰 香港节点
 
 # ===== 漏网之鱼 =====
-DOMAIN-SUFFIX,lioncdn.net,🐟 漏网之鱼
-DOMAIN-SUFFIX,passwdword.xyz,🐟 漏网之鱼
+DOMAIN-SUFFIX,lioncdn.net, 香港节点
+DOMAIN-SUFFIX,passwdword.xyz, 香港节点
 
 # ===== 默认代理 =====
-DOMAIN-SUFFIX,qichiyu.com,proxy
+DOMAIN-SUFFIX,qichiyu.com, 香港节点
