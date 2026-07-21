@@ -1,0 +1,16 @@
+/* 
+name = Final Rewrite
+desc = Safari final重定向
+ url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/Final_rewrite.snippet
+system = ios 🍎
+date = 2024-03-30
+*/
+
+
+[MITM]
+hostname = final.com, www.final.com, final-inc.com
+
+
+[rewrite_local]
+^https?://(www\.)?final\.com url 302 https://final-inc.com
+^https?://(www\.)?final\.com(.*) url 302 https://final-inc.com$2
