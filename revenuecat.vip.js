@@ -2,12 +2,6 @@
 
 > ScriptName        𝐑𝐞𝐯𝐞𝐧𝐮𝐞𝐂𝐚𝐭多合一脚本
 > UpdateTime        2024-07-08
-> Suitable          自行观看“# > ”注释内容，解锁是暂时的，购买也不是永久的[订阅、跑路]
-> Attention         📣个别失效的APP请相关需求者自行降级、或寻找替代品、或购买支持
-> Attention         如需引用请注明出处，谢谢合作！
-> ScriptURL         https://ddgksf2013.top/scripts/revenuecat.vip.js
-
-
 # ========解锁列表======== #
 https://appraven.net/collection/77299969
 
