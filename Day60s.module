@@ -1,0 +1,71 @@
+# 每日60S — Egern 模块
+# 作者: @Nullwhy
+# 更新: 2026-07-24
+# 签到时间：只在 Template Arguments 里改 MINUTE / HOUR
+name: "每日60S"
+description: "每天定时推送60秒新闻"
+author: "Nullwhy"
+icon: "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MoeGirlWiki.png"
+
+compat_arguments:
+  MINUTE: "15"
+  HOUR: "8"
+  MAX_NEWS: "5"
+  MULTI_NOTIFY: "false"
+  CHUNK_SIZE: "5"
+  OPEN_URL: "image"
+  ALLOW_REPEAT: "false"
+
+compat_arguments_desc: |
+  MINUTE=分
+  HOUR=时
+  MAX_NEWS=新闻条数（0=全部）
+  MULTI_NOTIFY=多条通知（true/false）
+  CHUNK_SIZE=每条通知条数
+  OPEN_URL=点击通知（image/none）
+  ALLOW_REPEAT=同日可重复推送（true/false）
+
+# 时间不放 env_schema，避免生成「设定 cron」输入框；只认 Template Arguments
+env_schema:
+  MAX_NEWS:
+    name: 新闻条数
+    description: 单条默认 5；0=全部。开启多条通知时自动用全部新闻拆分
+    default_value: "5"
+  MULTI_NOTIFY:
+    name: 多条通知
+    description: 开启后按「每条通知条数」拆分；默认关闭
+    default_value: "false"
+    options:
+      - "false"
+      - "true"
+  CHUNK_SIZE:
+    name: 每条通知条数
+    description: 仅多条通知开启时生效，默认 5
+    default_value: "5"
+  OPEN_URL:
+    name: 点击通知
+    description: none=不跳转 / image=打开海报
+    default_value: "image"
+    options:
+      - image
+      - none
+  ALLOW_REPEAT:
+    name: 推送
+    description: 默认关闭（同日只推送一次）/开启后同日可推送多次
+    default_value: "false"
+    options:
+      - "false"
+      - "true"
+
+scriptings:
+  - schedule:
+      name: "每日60S"
+      cron: "{{{MINUTE}}} {{{HOUR}}} * * *"
+      timeout: 60
+      script_url: "https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/EgernScript/Day60s.js"
+      env:
+        MAX_NEWS: "{{{MAX_NEWS}}}"
+        MULTI_NOTIFY: "{{{MULTI_NOTIFY}}}"
+        CHUNK_SIZE: "{{{CHUNK_SIZE}}}"
+        OPEN_URL: "{{{OPEN_URL}}}"
+        ALLOW_REPEAT: "{{{ALLOW_REPEAT}}}"
