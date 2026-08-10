@@ -9,14 +9,14 @@
 # Egern Lite url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLite.yaml
 # Egern- Auto url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/Egern-Auto.yaml
 # ================================
-ipv6: true
+ipv6: false
 http_port: 3080
 socks_port: 3090
 allow_external_connections: true
-hijack_dns:
-- '*:53'
 vif_only: true
 close_connections_on_policy_change: false
+hijack_dns:
+- '*:53'
 geoip_db_url: https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb
 asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 proxy_latency_test_url: http://1.1.1.1/generate_204
@@ -56,18 +56,18 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt
       value: AdBlack
-      disabled: false
       update_interval: 86400
+      disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list
       value: China
-      disabled: false
       update_interval: 86400
+      disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list
       value: China
-      disabled: false
       update_interval: 86400
+      disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DouYin/DouYin.list
       value: ByteDance
@@ -81,13 +81,13 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Alibaba/Alibaba.list
       value: Alibaba
-      disabled: false
       update_interval: 86400
+      disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list
       value: Global
-      disabled: false
       update_interval: 86400
+      disabled: false
   - domain_wildcard:
       match: '*.cn'
       value: China
@@ -105,25 +105,45 @@ dns:
 policy_groups:
 - auto_test:
     name: 最优选择
-    policies:
-    - 远程订阅
+    policies: []
     flatten: true
-    filter: ^(?=.*(美国|新加坡|日本))(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|国内|加入)).*
+    filter: (?!.*(邀请|返利|循环|剩余|流量|到期时间|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|国内|加入)).*
+    urls:
+    - 远程订阅
+    interval: 60
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
-    hidden: true
-- select:
+    hidden: false
+- smart:
     name: 环游世界
     policies:
-    - 最优选择
-    - 远程订阅
+    - 狮城节点
+    - 日本节点
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/xqcloud.jpeg
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/quanqiu(3).png
     hidden: false
-- external:
-    name: 远程订阅
-    type: select
-    filter: ^(?!.*(邀请|返利|循环|官网|域名|秒|客服|网站|网址|获取|订阅|防失联|流量|到期|机场|下次|版本|官址|备用|到期|过期|已用|联系|邮箱|工单|群|贩卖|通知|倒卖|假|延迟|无法使用|软件内更新订阅|在官网查看问题|防止|请|更新|秒|国内|加入)).*
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Bigairport.png
+- smart:
+    name: 香港节点
+    policies:
+    - 最优选择
+    flatten: true
+    filter: 🇭🇰|港|香港|Hong\s*Kong|HongKong
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/HK_01.png
+    hidden: false
+- smart:
+    name: 日本节点
+    policies:
+    - 最优选择
+    flatten: true
+    filter: 🇯🇵|日本|Japan|JP|JPN
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/JP_01.png
+    hidden: false
+- smart:
+    name: 狮城节点
+    policies:
+    - 最优选择
+    flatten: true
+    filter: 🇸🇬|SG|新加坡|狮城|Singapore|SGP
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/SG_01.png
     hidden: false
 rules:
 - rule_set:
@@ -131,8 +151,10 @@ rules:
     policy: REJECT-DROP
     disabled: false
 - rule_set:
-    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
-    policy: DIRECT
+    name: 拒绝IOS更新
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
+    policy: REJECT
+    update_interval: 86400
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
@@ -142,13 +164,34 @@ rules:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
     policy: 环游世界
     disabled: false
-- rule_set:
-    name: 拒绝IOS更新
-    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernSoftwareUpdates.yaml
-    policy: REJECT
-    update_interval: 86400
+- domain_suffix:
+    match: appstorrent.ru
+    policy: DIRECT
     disabled: false
-    
+- rule_set:
+    match: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax.list
+    policy: DIRECT
+    disabled: false
+- url_regex:
+    match: (Subject|HELO|SMTP)
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: smtp
+    policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: cn
+    policy: DIRECT
+    disabled: false
 - geoip:
     match: CN
     policy: DIRECT
@@ -156,8 +199,12 @@ rules:
     disabled: false
 - default:
     policy: 环游世界
+scriptings:
+- generic:
+    name: 老黄历小组件
+    script_url: https://raw.githubusercontent.com/xcgtb/Egern-Widgets/main/HL.js
 mitm:
   ca_passphrase: egern
-modules:
-- url: https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.yaml
-  enabled: true
+widgets:
+- name: 老黄历
+  script_name: 老黄历小组件
