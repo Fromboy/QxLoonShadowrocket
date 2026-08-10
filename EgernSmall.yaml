@@ -49,9 +49,6 @@ dns:
     - https://8.8.8.8/dns-query
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
-    proxy_nameservers:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
   public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - auto_test:
