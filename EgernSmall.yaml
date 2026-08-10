@@ -131,12 +131,16 @@ rules:
     policy: REJECT-DROP
     disabled: false
 - rule_set:
-    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
-    policy: 环游世界
+    match: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
+    policy: DIRECT
     disabled: false
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_direct_list.module
     policy: DIRECT
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_proxy_list.module
+    policy: 环游世界
     disabled: false
 - rule_set:
     name: 拒绝IOS更新
@@ -144,24 +148,7 @@ rules:
     policy: REJECT
     update_interval: 86400
     disabled: false
-- ip_cidr:
-    match: 192.168.0.0/16
-    policy: DIRECT
-- ip_cidr:
-    match: 10.0.0.0/8
-    policy: DIRECT
-- ip_cidr:
-    match: 127.0.0.0/8
-    policy: DIRECT
-- ip_cidr:
-    match: 172.16.0.0/12
-    policy: DIRECT
-- ip_cidr:
-    match: 192.128.0.0/16
-    policy: DIRECT
-- ip_cidr:
-    match: 224.0.0.0/24
-    policy: DIRECT
+    
 - geoip:
     match: CN
     policy: DIRECT
