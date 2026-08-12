@@ -1,5 +1,6 @@
-name: RevenueCat Pillow
+name: Pillow 解锁会员
 description: RevenueCat Pillow 解锁模块
+icon: https://raw.githubusercontent.com/Fromboy/Icon/blob/main/pillow1.png
 scriptings:
   - http_response:
       name: RevenueCatPillow
