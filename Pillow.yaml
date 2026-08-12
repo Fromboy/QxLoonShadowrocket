@@ -1,0 +1,11 @@
+name: RevenueCat Pillow
+description: RevenueCat Pillow 解锁模块
+scriptings:
+  - http_response:
+      name: RevenueCatPillow
+      match: ^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts)
+      script_url: https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/PillowAuto.js
+      body_required: true
+mitm:
+  hostnames:
+    - api.revenuecat.com
