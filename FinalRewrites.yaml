@@ -9,6 +9,7 @@ url_rewrites:
     location: https://final-inc.com$2
     status_code: 302
 
+
 mitm:
   hostnames:
     - final.com
