@@ -1,5 +1,5 @@
-name: 株式会社 Final 重定向
-description: "株式会社 Final 重定向规则"
+name: Google and Final 重定向
+description: "GooGle and Final 重定向规则"
 
 url_rewrites:
   - match: ^https?://(www\.)?final\.com
@@ -8,6 +8,19 @@ url_rewrites:
   - match: ^https?://(www\.)?final\.com(.*)
     location: https://final-inc.com$2
     status_code: 302
+  
+  - match: ^https?://(www\.)?g\.cn
+    location: https://www.google.com
+    status_code: 302
+  - match: ^https?://(www\.)?google\.cn
+    location: https://www.google.com
+    status_code: 302
+  - match: ^https?://(www\.)?google\.cn/search
+    location: https://www.google.com/search
+    status_code: 302
+  - match: ^(http|https):\/\/(www.)?(g|google)\.cn
+    location: https://www.google.com
+    status_code: 307
 
 
 mitm:
@@ -15,3 +28,9 @@ mitm:
     - final.com
     - www.final.com
     - final-inc.com
+    
+    - g.cn
+    - www.g.cn
+    - google.cn
+    - www.google.cn
+    - '*.google.cn'
