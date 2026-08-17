@@ -1,5 +1,5 @@
-name: 株式会社 final 重定向
-description: "株式会社 final 重定向规则"
+name: 株式会社 Final 重定向
+description: "株式会社 Final 重定向规则"
 
 url_rewrites:
   - match: ^https?://(www\.)?final\.com
