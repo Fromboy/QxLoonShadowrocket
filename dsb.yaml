@@ -1,5 +1,6 @@
 name: 读手表-insight
 description: "读手表脚本重写规则"
+icon: https://raw.githubusercontent.com/xushier/HD-Icons/main/border-radius/handbrake-2.png
 
 scriptings:
   - http_response:
