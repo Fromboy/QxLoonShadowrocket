@@ -1,0 +1,13 @@
+name: 读手表-insight
+description: "读手表脚本重写规则"
+
+scriptings:
+  - http_response:
+      name: 读手表-insight
+      match: ^https:\/\/watch\.taotiangou\.cn\/prod-api\/watch\/insight\/userInfo\/getUserMemberInfo
+      script_url: https://raw.githubusercontent.com/WeiGiegie/666/main/dsb.js
+      body_required: true
+
+mitm:
+  hostnames:
+    - watch.taotiangou.cn
