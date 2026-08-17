@@ -1,0 +1,12 @@
+name: PDF Expert 订阅刷新
+description: "Documents脚本重写永久会员规则"
+
+scriptings:
+  - http_request:
+      name: PDF Expert 订阅刷新
+      match: ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh
+      script_url: https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Documents.js
+
+mitm:
+  hostnames:
+    - license.pdfexpert.com
