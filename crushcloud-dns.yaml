@@ -1,5 +1,5 @@
 name: Crush Cloud DNS
-description: Crush Cloud DNS v1.0.1
+description: Crush 机场 Cloud DNS v1.0.1
 dns:
   forward:
     - domain_suffix:
