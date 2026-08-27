@@ -52,6 +52,12 @@ dns:
     - https://8.8.8.8/dns-query
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
+    ProxyDNS:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    
   forward:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt
@@ -94,13 +100,8 @@ dns:
       disabled: false
   - domain_wildcard:
       match: '*'
-      value: Global
+      value: ProxyDNS
       disabled: false
-  proxy_nameservers:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  - https://dns.google/dns-query
-  - https://cloudflare-dns.com/dns-query
   public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - auto_test:
