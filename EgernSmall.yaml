@@ -114,15 +114,18 @@ policy_groups:
     interval: 60
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     hidden: false
-- smart:
+- select:
     name: 环游世界
     policies:
+    - 香港节点
+    - 台湾节点
     - 狮城节点
     - 日本节点
+    - 美国节点
     flatten: false
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/quanqiu(3).png
     hidden: false
-- smart:
+- auto_test:
     name: 香港节点
     policies:
     - 最优选择
@@ -130,7 +133,16 @@ policy_groups:
     filter: 🇭🇰|港|香港|Hong\s*Kong|HongKong
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/HK_01.png
     hidden: false
-- smart:
+- auto_test:
+    name: 台湾节点
+    policies:
+    - 最优选择
+    flatten: true
+    filter: 🇹🇼|TW|台湾|中华台北|Taiwan|TWN
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/TW_01.png
+    hidden: false
+    
+- auto_test:
     name: 日本节点
     policies:
     - 最优选择
@@ -138,7 +150,7 @@ policy_groups:
     filter: 🇯🇵|日本|Japan|JP|JPN
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/JP_01.png
     hidden: false
-- smart:
+- auto_test:
     name: 狮城节点
     policies:
     - 最优选择
@@ -146,6 +158,16 @@ policy_groups:
     filter: 🇸🇬|SG|新加坡|狮城|Singapore|SGP
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/SG_01.png
     hidden: false
+- auto_test:
+    name: 美国节点
+    policies:
+    - 最优选择
+    flatten: true
+    filter: 🇺🇸|US|美国|美利坚|United States|USA
+    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/flag/US_01.png
+    hidden: false
+
+    
 rules:
 - rule_set:
     match: https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/master/sr_reject_list.module
