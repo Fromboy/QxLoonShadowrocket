@@ -2,7 +2,10 @@ name: Crush Cloud DNS
 description: Crush Cloud DNS v1.0.1
 
 dns:
+  upstreams:
+    CrushCloud:
+      - https://ddhjiadji6959dadaa.daacc.org/dns-query
   forward:
     - domain_suffix:
         match: node.daacc.org
-        value: https://ddhjiadji6959dadaa.daacc.org/dns-query
+        value: CrushCloud
