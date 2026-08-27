@@ -1,2 +1,3 @@
 no_resolve: true
-domain_suffix,node.daacc.org
+domain_suffix_set:
+- node.daacc.org
