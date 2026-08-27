@@ -1,5 +1,6 @@
-no_resolve: true
+# Crush 机场专用dns解析分流
 
+no_resolve: true
 domain_suffix_set
-- node.daacc.org
+  - node.daacc.org
 
