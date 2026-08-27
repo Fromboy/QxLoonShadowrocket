@@ -232,6 +232,10 @@ widgets:
 - name: 老黄历
   script_name: 老黄历小组件
 modules:
+- url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/crushcloud-dns.yaml
+  enabled: true
+- url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/FinalRewrites.yaml
+  enabled: true
 - url: https://github.com/NSRingo/MapKit/releases/latest/download/iRingo.Maps.yaml
   enabled: true
 default_subscription_group: 最优选择
