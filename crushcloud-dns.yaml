@@ -3,6 +3,6 @@ description: Crush Cloud DNS v1.0.1
 
 dns:
   forward:
-    - domain_wildcard:
-        match: "*.node.daacc.org"
+    - domain_suffix:
+        match: node.daacc.org
         value: https://ddhjiadji6959dadaa.daacc.org/dns-query
