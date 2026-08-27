@@ -1,0 +1,12 @@
+name: Crush ✈️ Cloud DNS
+description: Crush 机场 Cloud DNS v1.0.1
+
+dns:
+  upstreams:
+    CrushDNS:
+      - https://ddhjiadji6959dadaa.daacc.org/dns-query
+
+  forward:
+    - domain_suffix:
+        match: node.daacc.org
+        value: CrushDNS
