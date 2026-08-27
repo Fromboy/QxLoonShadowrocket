@@ -1,6 +1,0 @@
-# Crush 机场专用dns解析分流
-# URL https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/crushcloud-dns.list
-no_resolve: true
-domain_suffix_set:
-  - node.daacc.org
-
