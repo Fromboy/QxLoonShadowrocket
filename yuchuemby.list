@@ -1,0 +1,10 @@
+# 予初EMBY官网分流，可以直连
+# Https://aaa.yusen6.ccwu.cc
+# https://emby.yusen.us.ci
+# https://embya.yusen.cyou
+# https://emby.yusen.cc.cd
+
+DOMAIN,aaa.yusen6.ccwu.cc,Proxy
+DOMAIN,emby.yusen.us.ci,Proxy
+DOMAIN,embya.yusen.cyou,Proxy
+DOMAIN,emby.yusen.cc.cd,Proxy
