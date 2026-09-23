@@ -147,10 +147,23 @@ payload:
 - IP-CIDR,24.199.123.28/32
 - IP-CIDR,64.23.132.171/32
 
-
-  # Grok-3
+# NAME: Grok 
+# UPDATED: 2024-07-03 16:18:28
+# DOMAIN: 5
 - DOMAIN,featureassets.org
 - DOMAIN,grok.com
 - DOMAIN,assets.grok.com
 - DOMAIN-SUFFIX,x.ai
 - DOMAIN-KEYWORD,grok
+
+# NAME: Claude (Anthropic)
+# UPDATED: 2024-07-03 16:18:28
+# DOMAIN: 2
+# DOMAIN-SUFFIX: 2
+# DOMAIN-KEYWORD: 2
+- DOMAIN,claude.ai
+- DOMAIN,cdn.usefathom.com
+- DOMAIN-SUFFIX,anthropic.com
+- DOMAIN-SUFFIX,claude.ai
+- DOMAIN-KEYWORD,anthropic
+- DOMAIN-KEYWORD,claude
