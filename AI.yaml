@@ -149,8 +149,8 @@ payload:
 
 
   # Grok-3
-  - DOMAIN,featureassets.org
-  - DOMAIN,grok.com
-  - DOMAIN,assets.grok.com
-  - DOMAIN-SUFFIX,x.ai
-  - DOMAIN-KEYWORD,grok
+- DOMAIN,featureassets.org
+- DOMAIN,grok.com
+- DOMAIN,assets.grok.com
+- DOMAIN-SUFFIX,x.ai
+- DOMAIN-KEYWORD,grok
