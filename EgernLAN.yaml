@@ -21,7 +21,6 @@ domain_set:
 
 domain_suffix_set:
   - lan
-  - home
   - local
   - router
   - internal
