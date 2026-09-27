@@ -4,12 +4,6 @@
 # Loon REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Lan.list
 # UPDATED: 2025-06-06 09:17:01
 # ============================
-# LAN 本地内网直连
-# 用途：本地 / 局域网 / 路由器 / 特殊用途网络 DIRECT
-
-# =========================
-# 本地域名
-# =========================
 
 # mDNS / 本地域名
 HOST-SUFFIX,local,DIRECT
