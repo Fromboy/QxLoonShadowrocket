@@ -2,7 +2,9 @@
 # 局域网、路由器、本地域名、私有及特殊地址
 # 规则统计: 19
 # GeoIP uel = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/GEOIPCN.yaml
-# Lan url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
+# QX REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/Lan.list
+# Loon REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Lan.list
+# Egern: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
 no_resolve: true
 
 domain_set:
