@@ -1,0 +1,131 @@
+name: "Apple & Software Updates 屏蔽"
+description: "屏蔽 iOS/macOS 及常用软件更新域名（原 QX/Loon/Shadowrocket 规则转换）"
+author: "Fromboy → Grok 转换"
+homepage: "https://github.com/Fromboy/QxLoonShadowrocket"
+icon: "arrow.down.circle"
+
+rules:
+  # macOS 系统更新
+  - domain_suffix:
+      match: mesu.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: gdmf.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: updates-http.cdn-apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: xp.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: mesu-cdn.apple.com.akadns.net
+      policy: REJECT
+  - domain_suffix:
+      match: mesu-cdn.origin-apple.com.akadns.net
+      policy: REJECT
+  - domain_suffix:
+      match: mesu.g.aaplimg.com
+      policy: REJECT
+  - domain_suffix:
+      match: appldnld.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: appldnld.apple.com.akadns.net
+      policy: REJECT
+  - domain_suffix:
+      match: swscan.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: swdist.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: swcdn.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: swquery.apple.com
+      policy: REJECT
+  - domain_suffix:
+      match: swdownload.apple.com
+      policy: REJECT
+
+  # FinalShell 离线更新
+  - domain_suffix:
+      match: dkys.org
+      policy: REJECT
+  - domain_suffix:
+      match: youtusoft.com
+      policy: REJECT
+  - domain_suffix:
+      match: hostbuf.com
+      policy: REJECT
+  - domain_suffix:
+      match: tcpspeed.com
+      policy: REJECT
+  - domain_suffix:
+      match: wn1998.com
+      policy: REJECT
+
+  # 其他软件更新
+  - domain_suffix:
+      match: updates.istatmenus.app
+      policy: REJECT
+  - domain_suffix:
+      match: api.softorino.com
+      policy: REJECT
+  - domain_suffix:
+      match: update.parallels.com
+      policy: REJECT
+  - domain_suffix:
+      match: download.parallels.com
+      policy: REJECT
+  - domain_suffix:
+      match: apiboom3.globaldelight.net
+      policy: REJECT
+  - domain:
+      match: macbartender.com
+      policy: REJECT
+
+  # domain_suffix_set 部分
+  - domain_suffix:
+      match: paddleapi.com
+      policy: REJECT
+  - domain_suffix:
+      match: paddle.com
+      policy: REJECT
+  - domain_suffix:
+      match: paddle.s3.amazonaws.com
+      policy: REJECT
+  - domain_suffix:
+      match: fireball.studio
+      policy: REJECT
+  - domain_suffix:
+      match: in.appcenter.ms
+      policy: REJECT
+  - domain_suffix:
+      match: download.nektony.com
+      policy: REJECT
+  - domain_suffix:
+      match: updates.devmate.com
+      policy: REJECT
+  - domain_suffix:
+      match: ic.adobe.io
+      policy: REJECT
+  - domain_suffix:
+      match: crs.cr.adobe.com
+      policy: REJECT
+  - domain_suffix:
+      match: ims-prod06.adobelogin.com
+      policy: REJECT
+  - domain_suffix:
+      match: lcs-cops.adobe.io.com
+      policy: REJECT
+  - domain_suffix:
+      match: 4vzokhpsbs.adobe.io
+      policy: REJECT
+  - domain_suffix:
+      match: api.appcenter.ms
+      policy: REJECT
+  - domain_suffix:
+      match: apphousekitchen.com
+      policy: REJECT
