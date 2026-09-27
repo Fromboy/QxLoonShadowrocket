@@ -4,6 +4,9 @@
 # Lan url = https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
 domain_suffix_set:
   - local
+  - lan
+  - home.arpa
+  
 ip_cidr_set:
   - 0.0.0.0/8
   - 10.0.0.0/8
@@ -19,6 +22,7 @@ ip_cidr_set:
   - 198.51.100.0/24
   - 203.0.113.0/24
   - 224.0.0.0/3
+  - 255.255.255.255/32
 ip_cidr6_set:
   - ::1/128
   - fc00::/7
