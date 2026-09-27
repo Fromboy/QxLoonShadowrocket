@@ -1,18 +1,58 @@
-# NAME: Lan
-# AUTHOR: 
-# QX REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Lan.list
+# =========================
+# LAN 本地内网直连
+# =========================
+
+# QX REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/Lan.list
 # Loon REPO: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Loon/Lan.list
+# Egern: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/EgernLAN.yaml
 
 [Rule]
-# Lan 本地内网直连（精简合并版）
-HOST-SUFFIX,local,DIRECT
 
-# IPv4 本地/保留/测试/链路
+# 本地域名
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,home.arpa,DIRECT
+DOMAIN-SUFFIX,lan,DIRECT
+DOMAIN-SUFFIX,router,DIRECT
+DOMAIN-SUFFIX,internal,DIRECT
+DOMAIN-SUFFIX,localdomain,DIRECT
+
+# 常见路由器 / 网络设备域名
+DOMAIN-SUFFIX,ui.direct,DIRECT
+DOMAIN-SUFFIX,tplogin.cn,DIRECT
+DOMAIN-SUFFIX,plex.direct,DIRECT
+DOMAIN-SUFFIX,tplinkap.net,DIRECT
+DOMAIN-SUFFIX,asusrouter.com,DIRECT
+DOMAIN-SUFFIX,tplinkwifi.net,DIRECT
+DOMAIN-SUFFIX,routerlogin.com,DIRECT
+DOMAIN-SUFFIX,routerlogin.net,DIRECT
+DOMAIN-SUFFIX,tplinkmodem.net,DIRECT
+DOMAIN-SUFFIX,tplinkplclogin.net,DIRECT
+DOMAIN-SUFFIX,tplinkrepeater.net,DIRECT
+DOMAIN-SUFFIX,huaweimobilewifi.com,DIRECT
+
+# 特定本地 / 网络设备域名
+DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,DIRECT
+DOMAIN,unifi,DIRECT
+DOMAIN,pi.hole,DIRECT
+DOMAIN,aterm.me,DIRECT
+DOMAIN,ntt.setup,DIRECT
+DOMAIN,homerouter.cpe,DIRECT
+DOMAIN,mobile.hotspot,DIRECT
+DOMAIN,router.asus.com,DIRECT
+DOMAIN,repeater.asus.com,DIRECT
+DOMAIN,console.gl-inet.com,DIRECT
+DOMAIN,instant.arubanetworks.com,DIRECT
+DOMAIN,setmeup.arubanetworks.com,DIRECT
+
+# =========================
+# IPv4 本地 / 保留 / 特殊地址
+# =========================
+
 IP-CIDR,0.0.0.0/8,DIRECT
 IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
 IP-CIDR,127.0.0.0/8,DIRECT
 IP-CIDR,169.254.0.0/16,DIRECT
-IP-CIDR,100.64.0.0/10,DIRECT
 IP-CIDR,172.16.0.0/12,DIRECT
 IP-CIDR,192.0.0.0/24,DIRECT
 IP-CIDR,192.0.2.0/24,DIRECT
@@ -21,10 +61,14 @@ IP-CIDR,192.168.0.0/16,DIRECT
 IP-CIDR,198.18.0.0/15,DIRECT
 IP-CIDR,198.51.100.0/24,DIRECT
 IP-CIDR,203.0.113.0/24,DIRECT
-IP-CIDR,224.0.0.0/3,DIRECT
+IP-CIDR,224.0.0.0/4,DIRECT
+IP-CIDR,255.255.255.255/32,DIRECT
 
-# IPv6 本地/保留/链路/组播
-IP6-CIDR,::/127,DIRECT
+# =========================
+# IPv6 本地 / 保留 / 链路 / 组播
+# =========================
+
+IP6-CIDR,::/128,DIRECT
 IP6-CIDR,::1/128,DIRECT
 IP6-CIDR,fc00::/7,DIRECT
 IP6-CIDR,fe80::/10,DIRECT
