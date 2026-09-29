@@ -6,12 +6,11 @@ system = ios 🍎
 date = 2024-03-30
 */
 
-
 [MITM]
 hostname = g.cn, www.g.cn, google.cn, www.google.cn, *.google.cn
 
-[URL Rewrite]
+[rewrite_local]
 ^https?://(www\.)?g\.cn url 302 https://www.google.com
 ^https?://(www\.)?google\.cn url 302 https://www.google.com
 ^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
-^https?://(www\.)?(g|google)\.cn$ https://www.google.com 307
+^https?://(www\.)?(g|google)\.cn$ url 307 https://www.google.com
