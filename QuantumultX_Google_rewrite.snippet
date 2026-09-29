@@ -10,6 +10,7 @@ date = 2024-03-30
 hostname = g.cn, www.g.cn, google.cn, www.google.cn, *.google.cn
 
 [rewrite_local]
+
 ^https?://(www\.)?g\.cn url 302 https://www.google.com
 ^https?://(www\.)?google\.cn url 302 https://www.google.com
 ^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
