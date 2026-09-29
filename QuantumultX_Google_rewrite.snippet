@@ -15,3 +15,5 @@ hostname = g.cn, www.g.cn, google.cn, www.google.cn, *.google.cn
 ^https?://(www\.)?google\.cn url 302 https://www.google.com
 ^https?://(www\.)?google\.cn/search url 302 https://www.google.com/search
 ^https?://(www\.)?(g|google)\.cn$ url 307 https://www.google.com
+^https?://(www\.)?final\.com url 302 https://final-inc.com
+^https?://(www\.)?final\.com(.*) url 302 https://final-inc.com$2
