@@ -1,5 +1,5 @@
 /**
- * Egern IP 信息与风险评估小组件脚本 (精致天气卡片风格)
+ * Egern IP 信息与风险评估小组件脚本 (高级天气卡片风格 - 自适应明暗模式)
  */
 
 const API_URL = "http://ip-api.com/json/?lang=zh-CN";
@@ -103,12 +103,14 @@ export default async function(ctx) {
 
   return {
     type: 'widget',
+    // 整体背景自适应系统明暗
     backgroundColor: { light: '#F2F2F7', dark: '#000000' },
     padding: 8,
     children: [
       {
         type: 'stack',
         direction: 'vertical',
+        // 卡片背景：白天纯白，夜间深灰（对应你截图中的质感）
         backgroundColor: { light: '#FFFFFF', dark: '#1C1C1E' },
         cornerRadius: 20,
         padding: 14,
@@ -125,7 +127,7 @@ export default async function(ctx) {
                 type: 'text',
                 text: 'IP 评估详情',
                 font: { size: 'caption1', weight: 'bold' },
-                textColor: { light: '#8E8E93', dark: '#98989D' }
+                textColor: { light: '#8E8E93', dark: '#8E8E93' }
               },
               {
                 type: 'text',
@@ -135,14 +137,14 @@ export default async function(ctx) {
               }
             ]
           },
-          // 第二行：大号核心 IP 数据
+          // 第二行：大号核心 IP 数据（自适应字色）
           {
             type: 'text',
             text: ip,
             font: { size: 'title2', weight: 'bold' },
             textColor: { light: '#000000', dark: '#FFFFFF' }
           },
-          // 第三行：位置与 ASN
+          // 第三行：位置与 ASN（自适应浅灰/深灰文字）
           {
             type: 'stack',
             direction: 'vertical',
@@ -159,7 +161,7 @@ export default async function(ctx) {
                 type: 'text',
                 text: `🌐 ${asn}`,
                 font: { size: 'caption1' },
-                textColor: { light: '#8E8E93', dark: '#98989D' },
+                textColor: { light: '#8E8E93', dark: '#8E8E93' },
                 maxLines: 1
               }
             ]
