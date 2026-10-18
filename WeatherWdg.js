@@ -8,7 +8,7 @@
 const NS = 'qweather-sunrain:v2:'
 const DEFAULTS = {
   location: '自动',
-  fontSize: 'normal', // 可选：small, normal, large, huge 等，或者直接用数字
+  fontSize: 'normal', // 字体大小：small / normal / large / huge，或倍率 0.7–1.8
 }
 
 // ─── 农历与节气常量 ───
@@ -176,12 +176,14 @@ function settings(ctx) {
     cleanEnvCity(saved.location) ||
     DEFAULTS.location ||
     '自动'
-  return { location: loc }
+  const fontSize = String(env.QWEATHER_FONT_SIZE || env.FONT_SIZE || saved.fontSize || DEFAULTS.fontSize).trim().toLowerCase()
+  return { location: loc, fontSize }
 }
 
 function saveSettings(s) {
   const value = {
     location: String(s.location || '').trim() || '自动',
+    fontSize: String(s.fontSize || DEFAULTS.fontSize).trim(),
   }
   storageSet(NS + 'settings', value)
 }
@@ -4192,8 +4194,16 @@ function createContainer(isRoot = false) {
   return wrapper
 }
 
+function getFontScale() {
+  const value = settings(_activeCtx).fontSize
+  const presets = { small: 0.85, normal: 1, large: 1.15, huge: 1.3 }
+  if (presets[value] != null) return presets[value]
+  const n = Number(value)
+  return Number.isFinite(n) ? Math.max(0.7, Math.min(1.8, n)) : 1
+}
+
 function addText(parent, str, opts = {}) {
-  const size = opts.size || 10
+  const size = Math.max(6, Math.round((opts.size || 10) * getFontScale() * 10) / 10)
   const font = { size }
   if (opts.weight) font.weight = opts.weight
   if (opts.monospaced) font.family = 'Menlo'
@@ -4689,13 +4699,13 @@ function buildAccessory(data, family) {
           {
             type: 'text',
             text: `${clean(data.place)} · ${clean(data.now.text)} ${temp(data.now.temp)}`,
-            font: { size: 13, weight: 'semibold' },
+            font: { size: Math.round(13 * getFontScale()), weight: 'semibold' },
             maxLines: 1,
           },
           {
             type: 'text',
             text: `高 ${temp(day && day.tempMax)}  低 ${temp(day && day.tempMin)}  湿度 ${clean(data.now.humidity) || '—'}%`,
-            font: { size: 11 },
+            font: { size: Math.round(11 * getFontScale()) },
             maxLines: 1,
           },
         ],
