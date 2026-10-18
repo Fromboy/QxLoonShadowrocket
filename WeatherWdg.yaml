@@ -30,8 +30,8 @@ rules:
 scriptings:
 - generic:
     name: weathercn
-    script_url: https://raw.githubusercontent.com/SIJULY/egern-radar/main/WeatherWdg.js
-    timeout: 15
+    script_url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/WeatherWdg.js
+    timeout: 10
     env:
       CITY: '{{{weatherCity}}}'
 widgets:
