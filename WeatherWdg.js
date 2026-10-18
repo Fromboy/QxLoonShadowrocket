@@ -4196,7 +4196,7 @@ function createContainer(isRoot = false) {
 
 function getFontScale() {
   const value = settings(_activeCtx).fontSize
-  const presets = { small: 0.85, normal: 1, large: 1.15, huge: 1.3 }
+  const presets = { small: 0.85, normal: 1, large: 1.15, huge: 1.8 }
   if (presets[value] != null) return presets[value]
   const n = Number(value)
   return Number.isFinite(n) ? Math.max(0.7, Math.min(1.8, n)) : 1
@@ -4729,8 +4729,8 @@ function buildAccessory(data, family) {
           direction: 'column',
           alignItems: 'center',
           children: [
-            { type: 'text', text: weatherEmoji(data.now.icon, isNight(data)) || '🌤️', font: { size: 16 } },
-            { type: 'text', text: temp(data.now.temp), font: { size: 12, weight: 'bold' } },
+            { type: 'text', text: weatherEmoji(data.now.icon, isNight(data)) || '🌤️', font: { size: Math.round(16 * getFontScale()) } },
+            { type: 'text', text: temp(data.now.temp), font: { size: Math.round(12 * getFontScale()), weight: 'bold' } },
           ],
         },
       ],
@@ -4742,7 +4742,7 @@ function buildAccessory(data, family) {
       children: [
         {
           type: 'text',
-          text: `${clean(data.place)} ${weatherEmoji(data.now.icon, isNight(data))} ${temp(data.now.temp)} ${clean(data.now.text)}`,
+          text: `${clean(data.place)} ${weatherEmoji(data.now.icon, isNight(data))} ${temp(data.now.temp)} ${clean(data.now.text)}`,\n           font: { size: Math.round(12 * getFontScale()) },
         },
       ],
     }
