@@ -8,6 +8,7 @@
 const NS = 'qweather-sunrain:v2:'
 const DEFAULTS = {
   location: '自动',
+  fontSize: 'normal', // 可选：small, normal, large, huge 等，或者直接用数字
 }
 
 // ─── 农历与节气常量 ───
