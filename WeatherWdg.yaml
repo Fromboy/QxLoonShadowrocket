@@ -1,0 +1,43 @@
+name: 天气·晴雨
+description: 蓝灰 UI 风格 · 含农历节气/逐时预报/五日预报/湿度进度条 · 数据源中国天气网（免 Key）
+author: 小龙女
+icon: https://raw.githubusercontent.com/SIJULY/egern-radar/main/weather-icon.png
+compat_arguments:
+  weatherCity: ''
+compat_arguments_schema:
+  weatherCity:
+    name: 城市
+    description: 要查询的城市，例如 合肥、北京、阳江；留空或填"自动"则按 IP 自动定位（模块自带直连规则）
+    default_value: ''
+dns: {}
+# 天气/IP 定位接口直连，不走代理（否则 IP 定位到代理出口）
+rules:
+  - domain_suffix:
+      match: "weather.com.cn"
+      policy: DIRECT
+  - domain_suffix:
+      match: "bilibili.com"
+      policy: DIRECT
+  - domain_suffix:
+      match: "useragentinfo.com"
+      policy: DIRECT
+  - domain_suffix:
+      match: "ipapi.co"
+      policy: DIRECT
+  - domain_suffix:
+      match: "freeipapi.com"
+      policy: DIRECT
+scriptings:
+- generic:
+    name: weathercn
+    script_url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/Egern/WeatherWdg.js
+    timeout: 10
+    env:
+      CITY: '{{{weatherCity}}}'
+widgets:
+- name: 天气·晴雨
+  script_name: weathercn
+
+
+
+

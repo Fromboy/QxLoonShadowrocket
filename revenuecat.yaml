@@ -1,0 +1,19 @@
+name: RevenueCat 破解解锁
+description: "NtPlayer 脚本重写与 MitM 规则"
+
+scriptings:
+  - http_response:
+      name: RevenueCat 响应体重写
+      match: ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$)
+      script_url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/revenuecat.vip.js
+      body_required: true
+
+  - http_request:
+      name: RevenueCat 请求头修改
+      match: ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts|subscribers)
+      script_url: https://raw.githubusercontent.com/Fromboy/QxLoonShadowrocket/refs/heads/quantumult-x/deleteHeader.js
+
+mitm:
+  hostnames:
+    - api.revenuecat.com
+    - api.rc-backup.com
