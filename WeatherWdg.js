@@ -4617,45 +4617,104 @@ function buildMedium(w, data) {
 }
 
 function buildLarge(w, data) {
-  const warning = clean(data.warnings && data.warnings[0] && data.warnings[0].title)
-  const wind = [clean(data.now.windDir), clean(data.now.windScale) ? `${clean(data.now.windScale)}级` : '']
-    .filter(Boolean)
-    .join(' ')
-  w.setPadding(12, 16, 12, 16)
-  addHeader(w, data)
-  w.addSpacer(4)
-  addHero(w, data, { large: true })
-  w.addSpacer(4)
-  addHumidity(w, data, 100)
-  w.addSpacer(8)
-  if (addHours(w, data)) w.addSpacer(8)
+  // 横向大组件：参考用户示例，采用浅色圆角卡片、醒目的实时温度和七日预报
+  w.setPadding(0, 0, 0, 0)
+  w.backgroundColor = '#393638'
+  const card = w.addStack()
+  card.layoutVertically()
+  card.backgroundColor = '#F1F1F1'
+  card.cornerRadius = 34
+  card.setPadding(14, 22, 12, 22)
 
-  const metrics = w.addStack()
-  metrics.layoutHorizontally()
-  addMetric(metrics, 'thermometer.medium', '体感', temp(data.now.feelsLike))
-  metrics.addSpacer()
-  addMetric(metrics, 'wind', '风向 / 风力', wind || unit(data.now.windSpeed, ' km/h'))
-  metrics.addSpacer()
-  addMetric(metrics, 'eye', '能见度', unit(data.now.vis, ' km'))
+  const top = card.addStack()
+  top.layoutHorizontally()
+  top.centerAlignContent()
+  const iconCol = top.addStack()
+  iconCol.layoutVertically()
+  iconCol.centerAlignContent()
+  addWeatherIcon(iconCol, data.now.icon, 39, isNight(data))
+  top.addSpacer(10)
 
-  w.addSpacer(8)
-  addForecast(w, data, false)
+  const locationCol = top.addStack()
+  locationCol.layoutVertically()
+  addText(locationCol, clean(data.place) || '当前位置', { size: 23, weight: 'bold', color: '#202124', minScale: 0.7 })
+  locationCol.addSpacer(2)
+  addText(locationCol, clean(data.now.text) || '天气实况', { size: 17, color: '#333333' })
+  locationCol.addSpacer(2)
+  addText(locationCol, updated(data), { size: 12, color: '#929397', minScale: 0.7 })
 
-  if (warning) {
-    w.addSpacer(6)
-    const warnBox = w.addStack()
-    warnBox.layoutHorizontally()
-    warnBox.centerAlignContent()
-    warnBox.backgroundColor = COLORS.panel()
-    warnBox.cornerRadius = 8
-    warnBox.setPadding(5, 8, 5, 8)
-    addSymbol(warnBox, 'exclamationmark.triangle.fill', 10, COLORS.amber())
-    warnBox.addSpacer(5)
-    addText(warnBox, `${warning}${data.warnings.length > 1 ? ` · 共${data.warnings.length}条` : ''}`, {
-      size: 10,
-      weight: 'medium',
-      color: COLORS.amber(),
-    })
+  top.addSpacer()
+  const festivalCol = top.addStack()
+  festivalCol.layoutVertically()
+  festivalCol.centerAlignContent()
+  const festival = dateFestival(data).festival
+  if (festival) addText(festivalCol, festival, { size: 15, weight: 'semibold', color: '#FF453A', minScale: 0.7 })
+  addText(festivalCol, '今日天气', { size: 13, color: '#929397' })
+  top.addSpacer(12)
+  const tempCol = top.addStack()
+  tempCol.layoutVertically()
+  tempCol.centerAlignContent()
+  addText(tempCol, `${clean(data.now.temp) || '—'}°C`, { size: 39, weight: 'bold', color: '#19191B', minScale: 0.65, monospaced: true })
+  addHighLow(tempCol, data, 13)
+
+  card.addSpacer(7)
+  const info = [clean(data.now.windDir), clean(data.now.windScale) ? `${clean(data.now.windScale)}级` : '', `降水 ${clean(data.now.precip) || '0'}mm`, `能见度 ${unit(data.now.vis, 'km')}`, data.aqi && clean(data.aqi.value) ? `AQI ${clean(data.aqi.value)}` : ''].filter(Boolean).join(' · ')
+  addText(card, info, { size: 12, color: '#929397', minScale: 0.65 })
+
+  card.addSpacer(7)
+  const raw = numeric(data.now.humidity)
+  const humidity = raw == null ? undefined : Math.max(0, Math.min(100, raw))
+  const humidityRow = card.addStack()
+  humidityRow.layoutHorizontally()
+  humidityRow.centerAlignContent()
+  addText(humidityRow, '相对湿度', { size: 16, color: '#252528' })
+  humidityRow.addSpacer(9)
+  const bar = humidityRow.addStack()
+  bar.layoutHorizontally()
+  bar.centerAlignContent()
+  bar.cornerRadius = 7
+  bar.backgroundColor = '#E2C9E8'
+  bar.children = undefined
+  const segments = [
+    ['#34C759', 0.2], ['#A8D52A', 0.18], ['#FFD60A', 0.18], ['#FF9500', 0.18], ['#FF453A', 0.16], ['#D94BA8', 0.1]
+  ]
+  segments.forEach(([color, share]) => {
+    const seg = bar.addStack()
+    seg.backgroundColor = color
+    seg.cornerRadius = 5
+    seg.addNode({ type: 'spacer' })
+    seg._node.width = `${share * 100}%`
+    seg._node.height = 7
+  })
+  humidityRow.addSpacer(7)
+  addText(humidityRow, humidity == null ? '—%' : `${Math.round(humidity)}%`, { size: 16, weight: 'bold', color: '#202124', monospaced: true })
+
+  card.addSpacer(10)
+  const days = (() => {
+    const base = baseDate(data)
+    if (!base) return []
+    const start = Date.parse(`${base}T00:00:00Z`)
+    return Array.from({ length: 7 }, (_, i) => {
+      const date = new Date(start + i * 86400000).toISOString().slice(0, 10)
+      return { date, day: (data.daily || []).find(d => d.fxDate === date) }
+    }).filter(x => x.day)
+  })()
+  const forecast = card.addStack()
+  forecast.layoutHorizontally()
+  forecast.centerAlignContent()
+  days.forEach(({ date, day }, i) => {
+    if (i > 0) forecast.addSpacer()
+    const col = forecast.addStack()
+    col.layoutVertically()
+    col.centerAlignContent()
+    addText(col, i === 0 ? '今天' : dayLabel(date), { size: 13, color: '#929397', weight: i === 0 ? 'semibold' : 'medium', minScale: 0.7 })
+    col.addSpacer(5)
+    addWeatherIcon(col, day.iconDay, 22, false)
+    col.addSpacer(4)
+    addText(col, temp(day.tempMax), { size: 16, weight: 'semibold', color: '#202124', monospaced: true })
+  })
+  if (!days.length) {
+    addText(forecast, '天气预报暂缺', { size: 12, color: '#929397' })
   }
 }
 
