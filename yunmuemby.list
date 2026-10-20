@@ -18,3 +18,9 @@ DOMAIN-KEYWORD,okemby
 DOMAIN-SUFFIX,ncemby.com
 DOMAIN-KEYWORD,ncemby
 
+# 匹配所有包含 crus-emby 主页的域名（任意子域名和后缀）
+DOMAIN-SUFFIX,yunmu.org
+DOMAIN-KEYWORD,yunmu
+
+
+
